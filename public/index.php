@@ -15,6 +15,11 @@ post($_ENV["PROJECT_PATH"] . 'registration', 'app/Controllers/Registration.php')
 get($_ENV["PROJECT_PATH"] . 'login', 'app/Controllers/Login.php');
 post($_ENV["PROJECT_PATH"] . 'login', 'app/Controllers/Login.php');
 
+//http://localhost/undergraduateapp/admin/add-product
+get($_ENV["PROJECT_PATH"] . 'admin/add-product', 'app/Controllers/admin/Adminproduct.php');
+post($_ENV["PROJECT_PATH"] . 'admin/add-product', 'app/Controllers/admin/Adminproduct.php');
+
+
 // ##################################################
 // ##################################################
 // ##################################################
