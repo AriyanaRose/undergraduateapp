@@ -9,6 +9,7 @@ class Adminproduct extends Product
 
         $data = [
             'product_title' => $inputs["product_title"],
+            'product_brand' => $inputs["product_brand"],
             'product_description' => $inputs["product_description"],
             'product_price' => $inputs["product_price"],
             'product_discount_amount' => $inputs["product_discount_amount"],
@@ -25,6 +26,7 @@ class Adminproduct extends Product
         $sql = "INSERT INTO `undergradapp`.`products`
         (`product_id`,
         `product_title`,
+        `product_brand`,
         `product_description`,
         `product_price`,
         `product_discount_amount`,
@@ -40,6 +42,7 @@ class Adminproduct extends Product
         (
         NULL,
         :product_title,
+        :product_brand,
         :product_description,
         :product_price,
         :product_discount_amount,

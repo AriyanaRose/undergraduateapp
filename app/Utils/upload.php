@@ -53,9 +53,10 @@ function getFilename($file, $upload_folder)
 
 function upload($old_name, $new_name)
 {
+    $new_name = ROOT_DIR . $new_name;
 
     if (move_uploaded_file($_FILES["$old_name"]["tmp_name"], $new_name)) {
-        echo "The file " . htmlspecialchars(basename($_FILES["fileToUpload"]["name"])) . " has been uploaded.";
+        // echo "The file " . htmlspecialchars(basename($_FILES["fileToUpload"]["name"])) . " has been uploaded.";
     } else {
         echo "Sorry, there was an error uploading your file.";
 

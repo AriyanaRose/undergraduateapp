@@ -3,6 +3,9 @@
     <p>Title</p>
     <p><input type="text" name="product_title"></p>
 
+    <p>Author</p>
+    <p><input type="text" name="product_brand"></p>
+
     <p>Description</p>
     <p><input type="text" name="product_description"></p>
 
