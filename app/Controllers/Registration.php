@@ -13,4 +13,6 @@ if (isset($_POST["registration"])) {
 }
 
 // load views
+require_once APP_DIR . "Views/header.php";
 require_once APP_DIR . "Views/pages/registration.php";
+require_once APP_DIR . "Views/footer.php";
