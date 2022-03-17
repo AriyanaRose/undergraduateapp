@@ -19,4 +19,6 @@ if (isset($_POST["login"])) {
 }
 
 // load views
+require_once APP_DIR . "Views/header.php";
 require_once APP_DIR . "Views/pages/login.php";
+require_once APP_DIR . "Views/footer.php";

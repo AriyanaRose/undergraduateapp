@@ -19,6 +19,10 @@ post($_ENV["PROJECT_PATH"] . 'login', 'app/Controllers/Login.php');
 get($_ENV["PROJECT_PATH"] . 'admin/add-product', 'app/Controllers/admin/Adminproduct.php');
 post($_ENV["PROJECT_PATH"] . 'admin/add-product', 'app/Controllers/admin/Adminproduct.php');
 
+//http://http://localhost/undergraduateapp/store
+get($_ENV["PROJECT_PATH"] . 'store', 'app/Controllers/Store.php');
+post($_ENV["PROJECT_PATH"] . 'store', 'app/Controllers/Store.php');
+
 
 // ##################################################
 // ##################################################
