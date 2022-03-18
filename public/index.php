@@ -7,7 +7,6 @@ get($_ENV["PROJECT_PATH"] . 'home', 'app/Controllers/Homepage.php');
 
 
 //http://localhost/undergraduateapp/registration 
-
 get($_ENV["PROJECT_PATH"] . 'registration', 'app/Controllers/Registration.php');
 post($_ENV["PROJECT_PATH"] . 'registration', 'app/Controllers/Registration.php');
 
@@ -22,6 +21,15 @@ post($_ENV["PROJECT_PATH"] . 'admin/add-product', 'app/Controllers/admin/Adminpr
 //http://http://localhost/undergraduateapp/store
 get($_ENV["PROJECT_PATH"] . 'store', 'app/Controllers/Store.php');
 post($_ENV["PROJECT_PATH"] . 'store', 'app/Controllers/Store.php');
+
+
+//http://http://localhost/undergraduateapp/contactus
+get($_ENV["PROJECT_PATH"] . 'contactus', 'app/Controllers/Contactus.php');
+post($_ENV["PROJECT_PATH"] . 'contactus', 'app/Controllers/Contactus.php');
+
+//http://http://localhost/undergraduateapp/emailsub
+get($_ENV["PROJECT_PATH"] . 'emailsub', 'app/Controllers/Emailsub.php');
+post($_ENV["PROJECT_PATH"] . 'emailsub', 'app/Controllers/Emailsub.php');
 
 
 // ##################################################
