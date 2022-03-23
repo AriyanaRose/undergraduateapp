@@ -10,7 +10,7 @@ require_once APP_DIR . "Models/EmailSubscription.php";
 $db_object = new Database();
 $emailSubscription_object = new EmailSubscription($db_object);
 
-debug($_POST);
+
 
 if (isset($_POST["emailsub"])) {
     $emailSubscription_object->getEmailSub($_POST);
