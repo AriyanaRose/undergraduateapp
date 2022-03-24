@@ -21,7 +21,7 @@ class emailSubscription
         $data = [
             'email' => $inputs["email"],
         ];
-        $sql = "INSERT INTO `undergradapp`.`email_subscription`
+        $sql = "INSERT INTO `email_subscription`
         (`sub_id`,
         `email`)
         VALUES

@@ -12,14 +12,7 @@ $emailSubscription_object = new EmailSubscription($db_object);
 
 
 
-if (isset($_POST["emailsub"])) {
+if (isset($_POST["email"])) {
+    echo "you clicked a button";
     $emailSubscription_object->getEmailSub($_POST);
 }
-
-
-//load views
-
-// required views
-require_once APP_DIR . "Views/header.php";
-require APP_DIR . "Views/pages/emailsub.php";
-require_once APP_DIR . "Views/footer.php";

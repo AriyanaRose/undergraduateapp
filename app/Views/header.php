@@ -1,3 +1,4 @@
+<?php require APP_DIR . "Controllers/EmailSub.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 
