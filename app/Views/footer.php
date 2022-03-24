@@ -12,7 +12,7 @@
 
 			<!-- Section: Form -->
 			<section class="">
-				<form action="store" method="post">
+				<form action="emailsub" method="post">
 					<!--Grid row-->
 					<div class="row d-flex justify-content-center">
 						<!--Grid column-->

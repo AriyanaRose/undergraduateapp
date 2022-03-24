@@ -14,6 +14,8 @@ $product_details = $product_object->getProductDetails($id);
 //debug($product_details);
 
 
+debug($_POST);
+
 foreach ($product_details as $data) {
     # code...
 }
