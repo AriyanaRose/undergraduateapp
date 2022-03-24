@@ -23,6 +23,16 @@ get($_ENV["PROJECT_PATH"] . 'store', 'app/Controllers/Store.php');
 post($_ENV["PROJECT_PATH"] . 'store', 'app/Controllers/Store.php');
 
 
+//http://http://localhost/undergraduateapp/details
+get($_ENV["PROJECT_PATH"] . 'details/$id', 'app/Controllers/Details.php');
+post($_ENV["PROJECT_PATH"] . 'details/$id', 'app/Controllers/Details.php');
+
+
+
+
+
+
+
 //http://http://localhost/undergraduateapp/contactus
 get($_ENV["PROJECT_PATH"] . 'contactus', 'app/Controllers/Contactus.php');
 post($_ENV["PROJECT_PATH"] . 'contactus', 'app/Controllers/Contactus.php');

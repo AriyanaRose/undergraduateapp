@@ -166,13 +166,18 @@
     }
 </style>
 
+<h1> Product Page </h1>
+
 <div class="container my-5">
     <div class="row">
-        <?php foreach ($product_details as $data) : ?>
+
+        <?php foreach ($product_details as $data) :
+            $link = "details/" . $data["product_id"];
+        ?>
             <div class="col-md-3 col-sm-6">
                 <div class="product-grid">
                     <div class="product-image">
-                        <a href="#" class="image">
+                        <a href="<?php echo $link ?>" class="image">
                             <img src="<?php echo BASE_URL . $data["product_image1"] ?>">
                         </a>
                         <ul class="product-links">
@@ -184,7 +189,7 @@
                     </div>
                     <div class="product-content">
                         <h5 class="title">
-                            <a href="#"><?php echo $data["product_title"]; ?> </a>
+                            <a href="<?php echo $link ?>"><?php echo $data["product_title"]; ?> </a>
                         </h5>
                         <h6 class=" brand">
                             <a href="#"><?php echo $data["product_brand"]; ?> </a>
