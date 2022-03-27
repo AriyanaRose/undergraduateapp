@@ -19,7 +19,7 @@ class emailSubscription
     {
 
         $data = [
-            'email' => $inputs["email"],
+            'email' => $inputs["emailsub"],
         ];
         $sql = "INSERT INTO `email_subscription`
         (`sub_id`,
