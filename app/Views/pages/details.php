@@ -1,5 +1,8 @@
 <style>
 
+.details-img{
+    height: 600px;
+}
 </style>
 
 
@@ -9,7 +12,7 @@
 
         <div class="col-md-6">
 
-            <img class="img-fluid" src="<?php echo BASE_URL . $data["product_image1"] ?>" alt="">
+            <img class="img-fluid details-img" src="<?php echo BASE_URL . $data["product_image1"] ?>" alt="">
 
         </div>
 
@@ -46,7 +49,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <p class="font-weight-bold mb-0">About this Book </p>
-                    <p> <?php echo $data["product_description"] ?> </p>
+                    <p class="text-wrap"> <?php echo $data["product_description"] ?> </p>
                 </div>
             </div>
 
