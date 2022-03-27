@@ -174,19 +174,19 @@
         <!-- Collection of nav links, forms, and other content for toggling -->
         <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
             <div class="navbar-nav">
-                <a href="#" class="nav-item nav-link">Home</a>
+                <a href="<?php echo BASE_URL?>home" class="nav-item nav-link">Home</a>
                 <a href="#" class="nav-item nav-link">About</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-item nav-link dropdown-toggle" data-toggle="dropdown">Books and Comics</a>
                     <div class="dropdown-menu">
-                        <a href="#" class="dropdown-item">Books</a>
+                        <a href="<?php echo BASE_URL?>store" class="dropdown-item">Books</a>
                         <a href="#" class="dropdown-item">Comics</a>
                         <a href="#" class="dropdown-item">Rare Books</a>
                         <a href="#" class="dropdown-item">Collectibles</a>
                         <a href="#" class="dropdown-item">Box Sets</a>
                     </div>
                 </div>
-                <a href="#" class="nav-item nav-link">Contact Us</a>
+                <a href="<?php echo BASE_URL?>contactus" class="nav-item nav-link">Contact Us</a>
             </div>
             <div class="navbar-nav ml-auto">
                 <div class="navbar-form-wrapper">
@@ -207,11 +207,11 @@
             <div class="nav-item dropdown">
                 <a href="#" class="nav-item nav-link dropdown-toggle" data-toggle="dropdown">Hi Reader</a>
                 <div class="dropdown-menu">
-                    <a href="#" class="dropdown-item">Create Account</a>
+                    <a href="<?php echo BASE_URL?>registration" class="dropdown-item">Create Account</a>
                     <a href="#" class="dropdown-item">My Account</a>
                     <a href="#" class="dropdown-item">Orders</a>
                     <a href="#" class="dropdown-item">Wish List </a>
-                    <a href="#" class="dropdown-item">Log In </a>
+                    <a href="<?php echo BASE_URL?>login" class="dropdown-item">Log In </a>
                 </div>
             </div>
         </div>

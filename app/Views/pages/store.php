@@ -1,3 +1,10 @@
+<ul class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Photos</a></li>
+    <li class="breadcrumb-item"><a href="#">Summer 2017</a></li>
+    <li class="breadcrumb-item"><a href="#">Italy</a></li>
+    <li class="breadcrumb-item active">Rome</li>
+</ul>
+
 <style>
     .product-grid {
         font-family: 'Open Sans', sans-serif;
