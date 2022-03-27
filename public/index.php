@@ -28,9 +28,9 @@ get($_ENV["PROJECT_PATH"] . 'details/$id', 'app/Controllers/Details.php');
 post($_ENV["PROJECT_PATH"] . 'details/$id', 'app/Controllers/Details.php');
 
 
-
-
-
+//http://http://localhost/undergraduateapp/templates 
+get($_ENV["PROJECT_PATH"] . 'templates', 'app/Controllers/Templates.php');
+post($_ENV["PROJECT_PATH"] . 'templates', 'app/Controllers/Templates.php');
 
 
 //http://http://localhost/undergraduateapp/contactus
