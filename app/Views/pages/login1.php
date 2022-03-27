@@ -11,6 +11,12 @@
     }
 </style>
 
+	<!--	URL: https://bbbootstrap.com/snippets/full-page-login-image-81339621
+                Bootstrap 4 Full page login form with image
+                Author:  BBBootstrap Team 
+            -->
+
+
 <div class="container-fluid">
     <div class="row no-gutter">
         <div class="col-md-6 d-none d-md-flex bg-image"></div>

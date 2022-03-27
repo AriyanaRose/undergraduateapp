@@ -45,6 +45,14 @@ post($_ENV["PROJECT_PATH"] . 'emailsub', 'app/Controllers/Emailsub.php');
 get($_ENV["PROJECT_PATH"] . 'thankyousub', 'app/Controllers/Thankyousub.php');
 post($_ENV["PROJECT_PATH"] . 'thankyousub', 'app/Controllers/Thankyousub.php');
 
+//http://http://localhost/undergraduateapp/aboutus
+get($_ENV["PROJECT_PATH"] . 'aboutus', 'app/Controllers/Aboutus.php');
+post($_ENV["PROJECT_PATH"] . 'aboutus', 'app/Controllers/Aboutus.php');
+
+//http://http://localhost/undergraduateapp/blog
+get($_ENV["PROJECT_PATH"] . 'blog', 'app/Controllers/Blog.php');
+post($_ENV["PROJECT_PATH"] . 'blog', 'app/Controllers/Blog.php');
+
 
 // ##################################################
 // ##################################################

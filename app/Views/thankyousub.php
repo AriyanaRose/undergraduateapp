@@ -5,10 +5,10 @@ html,body {
     font-family: 'Raleway', sans-serif;  
 }
 .thankyou-page ._header {
-    background: #fee028;
+    background: #DEB887;
     padding: 100px 30px;
     text-align: center;
-    background: #fee028 url(https://codexcourier.com/images/main_page.jpg) center/cover no-repeat;
+    background: #DEB887 url(https://codexcourier.com/images/main_page.jpg) center/cover no-repeat;
 }
 .thankyou-page ._header .logo {
     max-width: 200px;
@@ -20,7 +20,7 @@ html,body {
 .thankyou-page ._header h1 {
     font-size: 65px;
     font-weight: 800;
-    color: white;
+    color: black;
     margin: 0;
 }
 .thankyou-page ._body {
@@ -39,7 +39,7 @@ html,body {
 .thankyou-page ._body ._box h2 {
     font-size: 32px;
     font-weight: 600;
-    color: #4ab74a;
+    color: #000000;
 }
 .thankyou-page ._footer {
     text-align: center;
@@ -47,7 +47,7 @@ html,body {
 }
 
 .thankyou-page ._footer .btn {
-    background: #4ab74a;
+    background: #000000;
     color: white;
     border: 0;
     font-size: 14px;
@@ -58,8 +58,14 @@ html,body {
     text-transform: uppercase;
 }
 
-
 </style>
+
+
+	<!--	URL: https://https://bootsnipp.com/snippets/A3PWV
+                Thank You Page
+                Author: RizwanAkram
+            -->
+
 
 
 <div class="thankyou-page">
@@ -68,19 +74,17 @@ html,body {
             <img src="https://codexcourier.com/images/banner-logo.png" alt="">
         </div>
         <h1>Thank You!</h1>
+        <h2><strong>You have now been added to our mailing list</strong></h2>
     </div>
     <div class="_body">
         <div class="_box">
             <h2>
-                <strong>Please check your email</strong> for further instructions on how to complete your account setup.
+            Look out for news on Sales and Promotions, New Books and Comics, Books for Pre-Order and other exciting content.
             </h2>
-            <p>
-                Thanks a bunch for filling that out. It means a lot to us, just like you do! We really appreciate you giving us a moment of your time today. Thanks for being you.
-            </p>
         </div>
     </div>
     <div class="_footer">
-        <p>Having trouble? <a href="">Contact us</a> </p>
-        <a class="btn" href="">Back to homepage</a>
+        <p>Having trouble? <a href="?php echo BASE_URL?>contactus">Contact us</a> </p>
+        <a class="btn" href="<?php echo BASE_URL?>home">Back to homepage</a>
     </div>
 </div>

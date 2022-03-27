@@ -4,7 +4,7 @@
             -->
 
 	<!-- Footer -->
-	<footer class="bg-dark text-center text-white">
+	<footer class="bg-light text-center .text-dark">
 		<!-- Grid container -->
 		<div class="container p-4">
 
@@ -36,7 +36,7 @@
 						<!--Grid column-->
 						<div class="col-auto">
 							<!-- Submit button -->
-							<button name="email_sub_button" type="submit" class="btn btn-outline-light mb-4">
+							<button name="email_sub_button" type="submit" class="btn btn-outline-dark mb-4">
 								Subscribe
 							</button>
 						</div>
@@ -50,9 +50,7 @@
 			<!-- Section: Text -->
 			<section class="mb-4">
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
-					repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
-					eum harum corrupti dicta, aliquam sequi voluptate quas.
+				“Rainy days should be spent at home with a cup of tea and a good book.” - Bill Watterson
 				</p>
 			</section>
 			<!-- Section: Text -->
@@ -61,9 +59,9 @@
 			<!-- Grid container -->
 
 			<!-- Copyright -->
-			<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+			<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0);">
 				© 2022 Copyright:
-				<a class="text-white" href="">Quills&Pages</a>
+				<a class="text-dark" href="">Quills&Pages</a>
 			</div>
 			<!-- Copyright -->
 	</footer>

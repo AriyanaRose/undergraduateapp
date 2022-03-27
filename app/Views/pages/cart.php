@@ -134,6 +134,14 @@
 	}
 </style>
 
+
+
+<!--	URL: https://epicbootstrap.com/snippets/shopping-cart
+                Shopping Cart
+                Author:  Epicbootstrap
+            -->
+
+
 <main class="page">
 	<section class="shopping-cart dark">
 		<div class="container">
