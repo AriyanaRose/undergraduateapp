@@ -18,7 +18,7 @@
 
     <style>
         body {
-            background: #FFFFFF;
+            background: #eeeeee;
             font-family: 'Varela Round', sans-serif;
         }
 
@@ -31,7 +31,7 @@
         }
 
         .navbar {
-            background: #F8F8FF;
+            background: #fff;
             padding-left: 16px;
             padding-right: 16px;
             border-bottom: 1px solid #d6d6d6;
