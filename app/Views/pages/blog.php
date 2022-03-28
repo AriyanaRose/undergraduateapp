@@ -1,126 +1,135 @@
-<style>
+<html lang="en">
 
-
-.card {
-    border-radius: 20px;
-    overflow: hidden;
-    border: none;
-    background-color: #fff
-}
-
-.image-card {
-    height: 200px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden
-}
-
-.image-card-1 {
-    background-color: #18A4F7
-}
-
-.image-card-2 {
-    background-color: #00D7D2
-}
-
-.image-card-3 {
-    background-color: #FF75A0
-}
-
-.image-card img {
-    height: 150px;
-    width: 150px;
-    object-fit: cover
-}
-
-.card-text {
-    font-size: 13px
-}
-
-.card-body a {
-    font-size: 12px
-}
-
-.about span {
-    font-size: 12px
-}
-
-</style>
-
-	<!--	URL: https://bbbootstrap.com/snippets/bootstrap-5-related-post-listings-template-20297531
-                Bootstrap 5 related post listings template
-                Author: BBBootstrap Team
+	<!--	URL: https://startbootstrap.com/template/blog-home
+                        startbootstrap-blog-home
+                Author:  davidtmiller 
             -->
-
-
-<div class="container">
-    <div class="row g-3 mt-5 mb-5">
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-img-top image-card image-card-1"> <img src="https://i.imgur.com/CHquE7o.png" alt="..."> </div>
-                <div class="card-body"> <span class="text-uppercase text-danger fw-bold fs-6">Category</span>
-                    <h6 class="card-title text-dark mt-2">What you wants to know about hubspot?</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p> <a href="#" class="text-dark">Read full story...</a>
-                    <div class="mt-4 about d-flex justify-content-between align-items-center"> <span>By Prabhjot Singh</span> <span>On 12 Oct, 2020</span> <span>5 min read</span> </div>
+ 
+        <!-- Page header with logo and tagline-->
+        <header class="py-5 bg-dark border-bottom mb-4">
+            <div class="container">
+                <div class="text-light text-center my-5">
+                    <h1 class="fw-bolder">Welcome to Blog Home!</h1>
+                    <p class="lead mb-0">A Bootstrap 5 starter layout for your next blog homepage</p>
+                </div>
+            </div>
+        </header>
+        <!-- Page content-->
+        <div class="container">
+            <div class="row">
+                <!-- Blog entries-->
+                <div class="col-lg-8">
+                    <!-- Featured blog post-->
+                    <div class="card mb-4">
+                        <a href="#!"><img class="card-img-top" src="https://dummyimage.com/850x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                        <div class="card-body">
+                            <div class="small text-muted">January 1, 2022</div>
+                            <h2 class="card-title">Featured Post Title</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+                            <a class="btn btn-primary" href="#!">Read more →</a>
+                        </div>
+                    </div>
+                    <!-- Nested row for non-featured blog posts-->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <!-- Blog post-->
+                            <div class="card mb-4">
+                                <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                                <div class="card-body">
+                                    <div class="small text-muted">January 1, 2022</div>
+                                    <h2 class="card-title h4">Post Title</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                                    <a class="btn btn-primary" href="#!">Read more →</a>
+                                </div>
+                            </div>
+                            <!-- Blog post-->
+                            <div class="card mb-4">
+                                <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                                <div class="card-body">
+                                    <div class="small text-muted">January 1, 2022</div>
+                                    <h2 class="card-title h4">Post Title</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                                    <a class="btn btn-primary" href="#!">Read more →</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <!-- Blog post-->
+                            <div class="card mb-4">
+                                <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                                <div class="card-body">
+                                    <div class="small text-muted">January 1, 2022</div>
+                                    <h2 class="card-title h4">Post Title</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                                    <a class="btn btn-primary" href="#!">Read more →</a>
+                                </div>
+                            </div>
+                            <!-- Blog post-->
+                            <div class="card mb-4">
+                                <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                                <div class="card-body">
+                                    <div class="small text-muted">January 1, 2022</div>
+                                    <h2 class="card-title h4">Post Title</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam.</p>
+                                    <a class="btn btn-primary" href="#!">Read more →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pagination-->
+                    <nav aria-label="Pagination">
+                        <hr class="my-0" />
+                        <ul class="pagination justify-content-center my-4">
+                            <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">Newer</a></li>
+                            <li class="page-item active" aria-current="page"><a class="page-link" href="#!">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                            <li class="page-item disabled"><a class="page-link" href="#!">...</a></li>
+                            <li class="page-item"><a class="page-link" href="#!">15</a></li>
+                            <li class="page-item"><a class="page-link" href="#!">Older</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Side widgets-->
+                <div class="col-lg-4">
+                    <!-- Search widget-->
+                    <div class="card mb-4">
+                        <div class="card-header">Search</div>
+                        <div class="card-body">
+                            <div class="input-group">
+                                <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
+                                <button class="btn btn-primary" id="button-search" type="button">Go!</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Categories widget-->
+                    <div class="card mb-4">
+                        <div class="card-header">Categories</div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <ul class="list-unstyled mb-0">
+                                        <li><a href="#!">Web Design</a></li>
+                                        <li><a href="#!">HTML</a></li>
+                                        <li><a href="#!">Freebies</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <ul class="list-unstyled mb-0">
+                                        <li><a href="#!">JavaScript</a></li>
+                                        <li><a href="#!">CSS</a></li>
+                                        <li><a href="#!">Tutorials</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Side widget-->
+                    <div class="card mb-4">
+                        <div class="card-header">Side Widget</div>
+                        <div class="card-body">You can put anything you want inside of these side widgets. They are easy to use, and feature the Bootstrap 5 card component!</div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-img-top image-card image-card-2"> <img src="https://i.imgur.com/2TNPTfA.png" alt="..."> </div>
-                <div class="card-body"> <span class="text-uppercase text-danger fw-bold fs-6">Category</span>
-                    <h6 class="card-title text-dark mt-2">What you wants to know about hubspot?</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p> <a href="#" class="text-dark">Read full story...</a>
-                    <div class="mt-4 about d-flex justify-content-between align-items-center"> <span>By Prabhjot Singh</span> <span>On 12 Oct, 2020</span> <span>5 min read</span> </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-img-top image-card image-card-3"> <img src="https://i.imgur.com/pTkFtZq.png" alt="..."> </div>
-                <div class="card-body"> <span class="text-uppercase text-danger fw-bold fs-6">Category</span>
-                    <h6 class="card-title text-dark mt-2">What you wants to know about hubspot?</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p> <a href="#" class="text-dark">Read full story...</a>
-                    <div class="mt-4 about d-flex justify-content-between align-items-center"> <span>By Prabhjot Singh</span> <span>On 12 Oct, 2020</span> <span>5 min read</span> </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row g-3 mt-5 mb-5">
-    <div class="col-md-4">
-            <div class="card">
-                <div class="card-img-top image-card image-card-3"> <img src="https://i.imgur.com/pTkFtZq.png" alt="..."> </div>
-                <div class="card-body"> <span class="text-uppercase text-danger fw-bold fs-6">Category</span>
-                    <h6 class="card-title text-dark mt-2">What you wants to know about hubspot?</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p> <a href="#" class="text-dark">Read full story...</a>
-                    <div class="mt-4 about d-flex justify-content-between align-items-center"> <span>By Prabhjot Singh</span> <span>On 12 Oct, 2020</span> <span>5 min read</span> </div>
-                </div>
-            </div>
-        </div>
-    <div class="col-md-4">
-            <div class="card">
-                <div class="card-img-top image-card image-card-2"> <img src="https://i.imgur.com/2TNPTfA.png" alt="..."> </div>
-                <div class="card-body"> <span class="text-uppercase text-danger fw-bold fs-6">Category</span>
-                    <h6 class="card-title text-dark mt-2">What you wants to know about hubspot?</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p> <a href="#" class="text-dark">Read full story...</a>
-                    <div class="mt-4 about d-flex justify-content-between align-items-center"> <span>By Prabhjot Singh</span> <span>On 12 Oct, 2020</span> <span>5 min read</span> </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-img-top image-card image-card-1"> <img src="https://i.imgur.com/CHquE7o.png" alt="..."> </div>
-                <div class="card-body"> <span class="text-uppercase text-danger fw-bold fs-6">Category</span>
-                    <h6 class="card-title text-dark mt-2">What you wants to know about hubspot?</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p> <a href="#" class="text-dark">Read full story...</a>
-                    <div class="mt-4 about d-flex justify-content-between align-items-center"> <span>By Prabhjot Singh</span> <span>On 12 Oct, 2020</span> <span>5 min read</span> </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+</html>

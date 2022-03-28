@@ -18,7 +18,7 @@
 
     <style>
         body {
-            background: #eeeeee;
+            background: #fdfdfd;
             font-family: 'Varela Round', sans-serif;
         }
 
