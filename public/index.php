@@ -57,6 +57,10 @@ post($_ENV["PROJECT_PATH"] . 'blog', 'app/Controllers/Blog.php');
 get($_ENV["PROJECT_PATH"] . 'faqs', 'app/Controllers/Faqs.php');
 post($_ENV["PROJECT_PATH"] . 'faqs', 'app/Controllers/Faqs.php');
 
+//http://http://localhost/undergraduateapp/cart
+get($_ENV["PROJECT_PATH"] . 'cart', 'app/Controllers/Cart.php');
+post($_ENV["PROJECT_PATH"] . 'cart', 'app/Controllers/Cart.php');
+
 
 // ##################################################
 // ##################################################
