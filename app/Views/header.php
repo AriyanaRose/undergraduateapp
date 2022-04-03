@@ -166,40 +166,43 @@
             -->
 
 
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="<?php echo BASE_URL?>home">Quills&<b>Pages</b></a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Collection of nav links, forms, and other content for toggling -->
-        <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
-            <div class="navbar-nav">
-                <a href="<?php echo BASE_URL?>home" class="nav-item nav-link">Home</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-item nav-link dropdown-toggle" data-toggle="dropdown">About Us</a>
-                    <div class="dropdown-menu">
-                        <a href="<?php echo BASE_URL?>aboutus" class="dropdown-item">About Us</a>
-                        <a href="<?php echo BASE_URL?>contactus" class="dropdown-item">Contact Us</a>
-                        <a href="<?php echo BASE_URL?>faqs" class="dropdown-item">FAQs</a>
-                    </div>
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="<?php echo BASE_URL ?>home">Quills&<b>Pages</b></a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Collection of nav links, forms, and other content for toggling -->
+    <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+        <div class="navbar-nav">
+            <a href="<?php echo BASE_URL ?>home" class="nav-item nav-link">Home</a>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-item nav-link dropdown-toggle" data-toggle="dropdown">About Us</a>
+                <div class="dropdown-menu">
+                    <a href="<?php echo BASE_URL ?>aboutus" class="dropdown-item">About Us</a>
+                    <a href="<?php echo BASE_URL ?>contactus" class="dropdown-item">Contact Us</a>
+                    <a href="<?php echo BASE_URL ?>faqs" class="dropdown-item">FAQs</a>
                 </div>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-item nav-link dropdown-toggle" data-toggle="dropdown">Books and Comics</a>
-                    <div class="dropdown-menu">
-                        <a href="<?php echo BASE_URL?>store" class="dropdown-item">Books</a>
-                        <a href="#" class="dropdown-item">Comics</a>
-                        <a href="#" class="dropdown-item">Rare Books</a>
-                        <a href="#" class="dropdown-item">Collectibles</a>
-                        <a href="#" class="dropdown-item">Box Sets</a>
-                    </div>
-                </div>
-                <a href="<?php echo BASE_URL?>blog" class="nav-item nav-link">Blog</a>
             </div>
-            <div class="navbar-nav ml-auto">
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-item nav-link dropdown-toggle" data-toggle="dropdown">Books and Comics</a>
+                <div class="dropdown-menu">
+                    <a href="<?php echo BASE_URL ?>store" class="dropdown-item">Books</a>
+                    <a href="#" class="dropdown-item">Comics</a>
+                    <a href="#" class="dropdown-item">Used Books</a>
+                    <a href="#" class="dropdown-item">Rare</a>
+                    <a href="#" class="dropdown-item">Box Sets</a>
+                </div>
+            </div>
+            <a href="<?php echo BASE_URL ?>blog" class="nav-item nav-link">Blog</a>
+        </div>
+
+
+        <div class="navbar-nav ml-auto">
+            <form action="store" method="get">
                 <div class="navbar-form-wrapper">
                     <form class="navbar-form form-inline">
                         <div class="input-group search-box">
-                            <input type="text" id="search" class="form-control" placeholder="Search Here...">
+                            <input name="search" type="text" class="form-control" placeholder="Search Here...">
                             <div class="input-group-append">
                                 <span class="input-group-text">
                                     <i class="material-icons">&#xE8B6;</i>
@@ -208,18 +211,21 @@
                         </div>
                     </form>
                 </div>
-                <a href="#" class="nav-item nav-link"><i class="fa fa-shopping-basket"></i></a>
-                <a href="#" class="nav-item nav-link"><i class="fa fa-heart"></i></a>
-            </div>
-            <div class="nav-item dropdown">
-                <a href="#" class="nav-item nav-link dropdown-toggle" data-toggle="dropdown">Hi Reader</a>
-                <div class="dropdown-menu">
-                    <a href="<?php echo BASE_URL?>registration" class="dropdown-item">Create Account</a>
-                    <a href="#" class="dropdown-item">My Account</a>
-                    <a href="#" class="dropdown-item">Orders</a>
-                    <a href="#" class="dropdown-item">Wish List </a>
-                    <a href="<?php echo BASE_URL?>login" class="dropdown-item">Log In </a>
-                </div>
+            </form>
+            <a href="#" class="nav-item nav-link"><i class="fa fa-shopping-basket"></i></a>
+            <a href="#" class="nav-item nav-link"><i class="fa fa-heart"></i></a>
+        </div>
+
+
+        <div class="nav-item dropdown">
+            <a href="#" class="nav-item nav-link dropdown-toggle" data-toggle="dropdown">Hi Reader</a>
+            <div class="dropdown-menu">
+                <a href="<?php echo BASE_URL ?>registration" class="dropdown-item">Create Account</a>
+                <a href="#" class="dropdown-item">My Account</a>
+                <a href="#" class="dropdown-item">Orders</a>
+                <a href="#" class="dropdown-item">Wish List </a>
+                <a href="<?php echo BASE_URL ?>login" class="dropdown-item">Log In </a>
             </div>
         </div>
-    </nav>
+    </div>
+</nav>

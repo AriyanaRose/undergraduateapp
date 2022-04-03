@@ -1,5 +1,3 @@
-
-
 <style>
     .product-grid {
         font-family: 'Open Sans', sans-serif;
@@ -168,17 +166,29 @@
     }
 </style>
 
-	<!--	URL: https:
+<!--	URL: https:
                 Name:
                 Author: 
             -->
-            
 
-<h1> Books </h1>
+<!-- Banner	-->
+
+<header class="py-2 bg-light border-bottom mb-4">
+    <div class="container">
+        <div class="text-info text-center my-5">
+            <h1 class="fw-bolder">Books & Comics</h1>
+            <p class="lead mb-0"></p>
+        </div>
+    </div>
+</header>
+
 
 <div class="container my-5">
-    <div class="row">
 
+    <!-- Sort and Filter Buttons	-->
+    <?php require_once APP_DIR . "Views/includes/store-filter.php"; ?>
+
+    <div class="row">
         <?php foreach ($product_details as $data) :
             $link = "details/" . $data["product_id"];
         ?>

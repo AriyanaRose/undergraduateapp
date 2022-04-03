@@ -10,8 +10,21 @@ $db_object = new Database();
 //$user_object = new User($db_object);
 $product_object = new Product($db_object);
 
-$product_details = $product_object->getAllProducts();
+debug ($_GET);
+
+//$product_details = $product_object->getAllProducts();
+
+
 //debug($product_details);
+
+if($_SERVER ["REQUEST_METHOD"] == "GET"){
+    if (!empty($_GET)){
+        $product_details = $product_object->filterProducts($_GET);
+    } else{
+
+        $product_details = $product_object->getAllProducts();
+    }
+}
 
 
 // load views

@@ -63,7 +63,7 @@
             <a href="<?php echo BASE_URL ?>login" class="text-reset">Log In</a>
           </p>
           <p>
-            <a href="" <?php echo BASE_URL ?>contactus" " class=" text-reset">Contact Us</a>
+            <a href="<?php echo BASE_URL ?>contactus" " class=" text-reset">Contact Us</a>
           </p>
           <p>
             <a href="#!" class="text-reset">Help</a>
