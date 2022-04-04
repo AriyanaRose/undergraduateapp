@@ -26,7 +26,7 @@ class Product
 
     public function getAllCategories()
     {
-        $sql = "SELECT DISTINCT product_category FROM products";
+        $sql = "SELECT DISTINCT product_category FROM products  ORDER BY product_category ASC";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute();
         $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -36,7 +36,7 @@ class Product
 
     public function getAllBrands()
     {
-        $sql = "SELECT DISTINCT product_brand FROM products";
+        $sql = "SELECT DISTINCT product_brand FROM products ORDER BY product_brand ASC";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute();
         $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
