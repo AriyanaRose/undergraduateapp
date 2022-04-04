@@ -43,6 +43,7 @@ class Product
         return $result;
     }
 
+
     public function getProductDetails($product_id)
     {
 
@@ -53,7 +54,7 @@ class Product
         return $result;
     }
 
-   
+
 
     public function filterProducts($inputs)
     {
@@ -63,14 +64,14 @@ class Product
 
         foreach ($inputs as $key => $value) {
 
-            if (empty($value)){
+            if (empty($value)) {
                 continue;
             }
 
             switch ($key) {
 
                 case 'search':
-                    $sql .= " AND product_title ='%$value%' ";
+                    $sql .= " AND product_title LIKE '%$value%' ";
                     break;
 
                 case 'category':
@@ -81,13 +82,26 @@ class Product
                     $sql .= " AND product_format ='$value' ";
                     break;
 
-                    case 'brand':
-                        $sql .= " AND product_brand ='$value' ";
-                        break;   
+                case 'brand':
+                    $sql .= " AND product_brand ='$value' ";
+                    break;
 
-                        case 'order':
-                            $sql .= $this->orderBy($value);
-                            break;  
+                case 'format':
+                    $sql .= " AND product_format ='$value' ";
+                    break;
+
+                case 'condition':
+                    $sql .= " AND product_condition ='$value' ";
+                    break;
+
+                case 'subcategory':
+                    $sql .= " AND product_subcategory ='$value' ";
+                    break;
+
+
+                case 'order':
+                    $sql .= $this->orderBy($value);
+                    break;
 
                 default:
                     # code...
@@ -102,7 +116,8 @@ class Product
         return $result;
     }
 
-    public function orderBy($value){
+    public function orderBy($value)
+    {
         switch ($value) {
             case 'order-title':
                 return " ORDER BY product_title ASC";
@@ -114,7 +129,7 @@ class Product
                 return " ORDER BY product_price ASC";
                 break;
             case 'order-price-desc':
-                return " ORDER BY product_price ASC";
+                return " ORDER BY product_price DESC";
                 break;
 
             default:

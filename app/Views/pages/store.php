@@ -176,7 +176,7 @@
 <header class="py-2 bg-light border-bottom mb-4">
     <div class="container">
         <div class="text-info text-center my-5">
-            <h1 class="fw-bolder">Books & Comics</h1>
+            <h1 class="fw-bolder">Books</h1>
             <p class="lead mb-0"></p>
         </div>
     </div>

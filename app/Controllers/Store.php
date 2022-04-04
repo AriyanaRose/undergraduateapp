@@ -10,7 +10,7 @@ $db_object = new Database();
 //$user_object = new User($db_object);
 $product_object = new Product($db_object);
 
-debug ($_GET);
+//debug ($_GET);
 
 //$product_details = $product_object->getAllProducts();
 
