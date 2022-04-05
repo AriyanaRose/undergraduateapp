@@ -48,7 +48,7 @@
 
                     </div>
                     <div class="col-md-10">
-                        <button name="add_to_cart" type="submit" class="btn btn-danger btn-lg">Add to Cart</button>
+                        <button name="add_to_cart" type="submit" class="btn btn-danger btn-lg">Add to Basket</button>
                     </div>
                 </div>
 

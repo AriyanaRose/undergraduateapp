@@ -189,15 +189,18 @@
     <?php require_once APP_DIR . "Views/includes/store-filter.php"; ?>
 
     <div class="row">
+        <!-- Code don't delete	-->
         <?php foreach ($product_details as $data) :
             $link = "details/" . $data["product_id"];
         ?>
             <div class="col-md-3 col-sm-6">
                 <div class="product-grid">
                     <div class="product-image">
+                    <!-- Code don't delete	-->
                         <a href="<?php echo $link ?>" class="image">
                             <img src="<?php echo BASE_URL . $data["product_image1"] ?>">
                         </a>
+
                         <ul class="product-links">
                             <li><a href="#" data-tip="Add to Cart"><i class="fa fa-cart-arrow-down"></i></a></li>
                             <li><a href="#" data-tip="Add to Wishlist"><i class="far fa-heart"></i></a></li>
@@ -207,16 +210,19 @@
                     </div>
                     <div class="product-content">
                         <h5 class="title">
+                            <!-- Code don't delete	-->
                             <a href="<?php echo $link ?>"><?php echo $data["product_title"]; ?> </a>
                         </h5>
                         <h6 class=" brand">
+                            <!-- Code don't delete	-->
                             <a href="#"><?php echo $data["product_brand"]; ?> </a>
                         </h6>
+                        <!-- Code don't delete	-->
                         <div class="price"><?php echo $data["product_price"]; ?></div>
                     </div>
                 </div>
             </div>
-
+            <!-- Code don't delete	-->
         <?php endforeach; ?>
     </div>
 </div>
