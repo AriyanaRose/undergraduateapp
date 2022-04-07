@@ -214,7 +214,7 @@
         <a href="#" class="nav-item nav-link"><i class="fa fa-envelope"></i></a>
         <a href="#" class="nav-item nav-link"><i class="fa fa-bell"></i></a>
         <a href="#" class="nav-item nav-link"><i class="fa fa-heart"></i></a>
-        <a href="#" class="nav-item nav-link"><i class="fa fa-shopping-basket"></i></a>
+        <a href="<?php echo BASE_URL ?>cart" class="nav-item nav-link"><i class="fa fa-shopping-basket"></i></a>
     </div>
 
 

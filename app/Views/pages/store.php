@@ -159,6 +159,46 @@
         text-decoration: line-through;
     }
 
+
+    .product-grid .add-to-cart {
+        color: #000;
+        background: #fff;
+        font-size: 13px;
+        font-weight: 600;
+        text-align: left;
+        width: 75%;
+        margin: 0 auto;
+        border: 1px solid #033772;
+        display: block;
+        transition: all .3s ease;
+    }
+
+    .product-grid .add-to-cart:hover {
+        color: #fff;
+        background: #033772;
+    }
+
+    .product-grid .add-to-cart i {
+        color: #fff;
+        background-color: #033772;
+        text-align: center;
+        line-height: 35px;
+        height: 35px;
+        width: 35px;
+        border-right: 1px solid #fff;
+        display: inline-block;
+    }
+
+    .product-grid .add-to-cart span {
+        text-align: center;
+        line-height: 35px;
+        height: 35px;
+        width: calc(100% - 40px);
+        padding: 0 6px;
+        vertical-align: top;
+        display: inline-block;
+    }
+
     @media screen and (max-width: 990px) {
         .product-grid {
             margin: 0 0 30px;
@@ -218,7 +258,10 @@
                             <a href="#"><?php echo $data["product_brand"]; ?> </a>
                         </h6>
                         <!-- Code don't delete	-->
-                        <div class="price"><?php echo $data["product_price"]; ?></div>
+                        <div class="price">$<?php echo $data["product_price"]; ?></div>
+                        <a class="add-to-cart" href="#">
+                            <i class="fa fa-shopping-basket"></i> <span>ADD TO BASKET</span>
+                        </a>
                     </div>
                 </div>
             </div>
