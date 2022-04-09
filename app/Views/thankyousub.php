@@ -85,6 +85,6 @@ html,body {
     </div>
     <div class="_footer">
         <p>Having trouble? <a href="?php echo BASE_URL?>contactus">Contact us</a> </p>
-        <a class="btn" href="<?php echo BASE_URL?>home">Back to homepage</a>
+        <a class="btn" href="<?php echo BASE_URL?>home">Back to Homepage</a>
     </div>
 </div>

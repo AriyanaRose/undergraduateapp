@@ -57,7 +57,7 @@
             Useful links
           </h6>
           <p>
-            <a href="<?php echo BASE_URL ?>registration" " class=" text-reset">Registration</a>
+            <a href="<?php echo BASE_URL ?>registration" class=" text-reset">Registration</a>
           </p>
           <p>
             <a href="<?php echo BASE_URL ?>login" class="text-reset">Log In</a>

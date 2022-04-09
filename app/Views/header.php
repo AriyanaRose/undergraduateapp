@@ -139,6 +139,12 @@
             border: 0;
         }
 
+        /* .fa {
+                  color: red
+              } */
+
+
+
         @media (min-width: 992px) {
             .form-inline .input-group {
                 width: 250px;
