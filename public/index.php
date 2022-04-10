@@ -65,6 +65,10 @@ post($_ENV["PROJECT_PATH"] . 'cart', 'app/Controllers/Cart.php');
 get($_ENV["PROJECT_PATH"] . 'wishlist', 'app/Controllers/Wishlist.php');
 post($_ENV["PROJECT_PATH"] . 'wishlist', 'app/Controllers/Wishlist.php');
 
+//http://http://localhost/undergraduateapp/thankyou
+get($_ENV["PROJECT_PATH"] . 'thankyoucontactus', 'app/Controllers/Thankyoucontactus.php');
+post($_ENV["PROJECT_PATH"] . 'thankyoucontactus', 'app/Controllers/Thankyoucontactus.php');
+
 
 // ##################################################
 // ##################################################

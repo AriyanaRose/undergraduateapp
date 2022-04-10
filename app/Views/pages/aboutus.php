@@ -1,123 +1,33 @@
 <style>
-  .features-boxed {
-    color: #313437;
-
+  .bg-cover {
+    background-size: cover !important;
+    opacity: 0.6
   }
 
-  .features-boxed p {
-    color: #7d8285;
-  }
-
-  .features-boxed h2 {
-    font-weight: bold;
-    margin-bottom: 40px;
-    padding-top: 40px;
-    color: inherit;
-  }
-
-  @media (max-width:767px) {
-    .features-boxed h2 {
-      margin-bottom: 25px;
-      padding-top: 25px;
-      font-size: 24px;
-    }
-  }
-
-  .features-boxed .intro {
-    font-size: 16px;
-    max-width: 500px;
-    margin: 0 auto;
-  }
-
-  .features-boxed .intro p {
-    margin-bottom: 0;
-  }
-
-  .features-boxed .features {
-    padding: 50px 0;
-  }
-
-  .features-boxed .item {
-    text-align: center;
-  }
-
-  .features-boxed .item .box {
-    text-align: center;
-    padding: 30px;
-    background-color: #f2f2f2;
-    margin-bottom: 30px;
-  }
-
-  .features-boxed .item .icon {
-    font-size: 30px;
-    color: #08355F;
-    margin-top: 20px;
-    margin-bottom: 35px;
-  }
-
-  .features-boxed .item .name {
-    font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 8px;
-    margin-top: 0;
-    color: inherit;
-  }
-
-  .features-boxed .item .description {
-    font-size: 15px;
-    margin-top: 15px;
-    margin-bottom: 20px;
+  body {
+    min-height: 100vh;
   }
 </style>
 
-<!--	URL:https://epicbootstrap.com/snippets/features-boxed
-                Features Boxed
-                Author: Epic Bootstrap
-            -->
-<div class="features-boxed">
-  <div class="container">
-    <div class="intro">
-      <h2 class="text-center">About Us </h2>
-      <p class="text-center text-dark">
-        We specialize in a wide range of new and used books and comics to meet the needs of every reader.</p>
+<div style="background: url('images/bookself3.jpg')" class="jumbotron bg-cover text-white">
+</div>
+
+
+
+<div class="container py-5">
+  <h1 class="h1 font-italic mb-4">About Us</h1>
+  <div class="row">
+    <div class="col-lg-5">
+      <img src="images/bookcorner.jpg" alt="" class="w-100 mb-4 border border-md border-white shadow-sm">
     </div>
-    <div class="row justify-content-center features">
-      <div class="col-sm-6 col-md-5 col-lg-4 item">
-        <div class="box"><i class="fa fa-map-marker icon"></i>
-          <h3 class="name">Works everywhere</h3>
-          <p class="description text-dark">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-5 col-lg-4 item">
-        <div class="box"><i class="fa fa-clock-o icon"></i>
-          <h3 class="name">Always available</h3>
-          <p class="description text-dark">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-5 col-lg-4 item">
-        <div class="box"><i class="fa fa-list-alt icon"></i>
-          <h3 class="name">Customizable </h3>
-          <p class="description text-dark">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-5 col-lg-4 item">
-        <div class="box"><i class="fa fa-leaf icon"></i>
-          <h3 class="name">Organic </h3>
-          <p class="description text-dark">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-5 col-lg-4 item">
-        <div class="box"><i class="fa fa-plane icon"></i>
-          <h3 class="name">Fast </h3>
-          <p class="description text-dark">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-5 col-lg-4 item">
-        <div class="box"><i class="fa fa-phone icon"></i>
-          <h3 class="name">Mobile-first</h3>
-          <p class="description text-dark">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p>
-        </div>
-      </div>
+    <div class="col-lg-7">
+      <p class="font-italic text-muted"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio ipsum quaerat, itaque sint odit id beatae, vero aliquam numquam placeat officiis fugiat, consequuntur est ut fugit amet illum obcaecati sed.</p>
+      <p class="font-italic text-muted"> div Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur iure dolore dolorum eum ex, expedita voluptate est adipisci repudiandae. Minus tenetur ut veritatis non hic beatae velit? Eius, totam, officia?</p>
+      <p class="font-italic text-muted">Enim numquam autem, suscipit repellat vero, voluptas adipisci provident ad quidem dolorum minus, architecto. Nostrum deleniti nesciunt consequatur tempora repudiandae quos quas, animi perspiciatis nam consectetur earum adipisci, repellendus laudantium.</p>
     </div>
   </div>
+  <p class="font-italic text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
+  <p class="font-italic text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
+
+</div>
 </div>

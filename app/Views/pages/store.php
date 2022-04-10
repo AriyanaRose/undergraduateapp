@@ -207,7 +207,14 @@
 
     .bg-cover {
         background-size: cover !important;
+        opacity: 0.5
     }
+
+    .h1 {
+      
+        opacity: 1
+    }
+
 
     body {
         min-height: 100vh;
@@ -221,11 +228,7 @@
 
 <!-- Banner	-->
 
-<div style="background: url('images/bookself2.jpg')" class="jumbotron bg-cover text-white">
-    <div class="container py-5 text-center">
-        <h1 class="display-4 font-weight-bold">Books</h1>
-        </p>
-    </div>
+<div style="background: url('images/bookself2.jpg')" class="jumbotron bg-cover text-dark">
 </div>
 
 

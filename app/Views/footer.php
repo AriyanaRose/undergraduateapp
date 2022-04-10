@@ -1,10 +1,19 @@
+<style>
+
+footer  { 
+ 
+  background-color: 	#03396c;
+}
+
+</style>
+
 <!--	URL: https://mdbootstrap.com/docs/standard/navigation/footer/
                 Basic example with newsletter section from Advanced example
                 Author: Tutorial Republic
             -->
 
 <!-- Footer -->
-<footer class="text-center text-lg-start bg-light text-dark ">
+<footer class="text-center text-lg-start text-light">
   <!-- Section: Social media -->
   <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
 
@@ -26,7 +35,7 @@
             "A bookworm's paradise"
           </h6>
           <p>
-           We specialize in a wide range of new and used books and comics to meet the needs of every reader.
+            We specialize in a wide range of new and used books and comics to meet the needs of every reader.
           </p>
         </div>
         <!-- Grid column -->
@@ -120,7 +129,7 @@
         <!--Grid column-->
         <div class="col-auto">
           <!-- Submit button -->
-          <button name="email_sub_button" type="submit" class="btn btn-outline-dark mb-4">
+          <button name="email_sub_button" type="submit" class="btn btn-outline-light mb-4">
             Subscribe
           </button>
         </div>

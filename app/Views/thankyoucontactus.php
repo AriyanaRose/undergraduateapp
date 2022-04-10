@@ -78,17 +78,16 @@
             <img src="https://codexcourier.com/images/banner-logo.png" alt="">
         </div>
         <h1>Thank You!</h1>
-        <h2><strong>You have now been added to our mailing list</strong></h2>
+        <h2><strong>Your Message Has Been Received</strong></h2>
     </div>
     <div class="_body">
         <div class="_box">
             <h2>
-                Look out for news on Sales and Promotions, New Books and Comics, Books for Pre-Order and other exciting content.
+            One of our trusted customer services representatives will contact you in shortly.
             </h2>
         </div>
     </div>
     <div class="_footer">
-        <p>Having trouble? <a href="?php echo BASE_URL?>contactus">Contact us</a> </p>
         <a class="btn" href="<?php echo BASE_URL ?>home">Back to Homepage</a>
     </div>
 </div>

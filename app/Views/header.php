@@ -18,7 +18,7 @@
 
     <style>
         body {
-            background: #fdfdfd;
+            background: #FFFFFF;
             font-family: 'Varela Round', sans-serif;
         }
 
@@ -61,17 +61,17 @@
 
         .navbar .navbar-brand b {
             font-weight: bold;
-            color: #0b5394;
+            color: 	#011f4b;
         }
 
         .navbar .navbar-nav a:hover,
         .navbar .navbar-nav a:focus {
-            color: #0b5394 !important;
+            color: #011f4b !important;
         }
 
         .navbar .navbar-nav a.active,
         .navbar .navbar-nav a.active:hover {
-            color: #0b5394 !important;
+            color: 	#011f4b !important;
             background: transparent !important;
         }
 
@@ -88,7 +88,7 @@
         }
 
         .search-box input.form-control:focus {
-            border-color: #0b5394;
+            border-color: 	#011f4b;
         }
 
         .search-box .input-group-text {
