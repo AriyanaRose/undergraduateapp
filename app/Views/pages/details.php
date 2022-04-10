@@ -4,6 +4,10 @@
 .details-img{
     height: 600px;
 }
+
+
+
+
 </style>
 
 

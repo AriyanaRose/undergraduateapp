@@ -1,67 +1,172 @@
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+    body {
+        background-color: #eeeeee;
+        font-family: 'Open Sans', serif;
+        font-size: 14px
+    }
+
+    .container-fluid {
+        margin-top: 70px
+    }
+
+    .card-body {
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        padding: 1.40rem
+    }
+
+    .img-sm {
+        width: 80px;
+        height: 80px
+    }
+
+    .itemside .info {
+        padding-left: 15px;
+        padding-right: 7px
+    }
+
+    .table-shopping-cart .price-wrap {
+        line-height: 1.2
+    }
+
+    .table-shopping-cart .price {
+        font-weight: bold;
+        margin-right: 5px;
+        display: block
+    }
+
+    .text-muted {
+        color: #969696 !important
+    }
+
+    a {
+        text-decoration: none !important
+    }
+
+    .card {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0, 0, 0, .125);
+        border-radius: 0px
+    }
+
+    .itemside {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%
+    }
+
+    .dlist-align {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex
+    }
+
+    [class*="dlist-"] {
+        margin-bottom: 5px
+    }
+
+    .coupon {
+        border-radius: 1px
+    }
+
+    .price {
+        font-weight: 600;
+        color: #212529
+    }
+
+    .btn.btn-out {
+        outline: 1px solid #fff;
+        outline-offset: -5px
+    }
+
+    .btn-main {
+        border-radius: 2px;
+        text-transform: capitalize;
+        font-size: 15px;
+        padding: 10px 19px;
+        cursor: pointer;
+        color: #fff;
+        width: 100%
+    }
+
+    .btn-light {
+        color: #ffffff;
+        background-color: #F44336;
+        border-color: #f8f9fa;
+        font-size: 12px
+    }
+
+    .btn-light:hover {
+        color: #ffffff;
+        background-color: #F44336;
+        border-color: #F44336
+    }
+
+    .btn-apply {
+        font-size: 11px
+    }
+</style>
+
 <!--	
-                URL: https://bootstraptor.com/snippets/bootstrap-4-snippet-shopping-cart/
-               Bootstrap 4 snippet: shopping cart example e-commerce page template
+                URL:https://bbbootstrap.com/snippets/simple-shopping-cart-coupon-code-input-text-39165166
+               Bootstrap 4 simple ecommerce shopping cart with coupon code input text
                 Author: Ask SNB
 
             -->
 
+<div class="container my-5">
+    <div class="row">
+        <aside class="col-lg-12">
+            <div class="card">
+                <div class="table-responsive">
+                    <table class="table table-borderless table-shopping-cart">
+                        <thead class="text-muted">
+                            <tr class="small text-uppercase">
+                                <th scope="col">Product</th>
+                                <th scope="col" width="120">Quantity</th>
+                                <th scope="col" width="120">Price</th>
+                                <th scope="col" class="text-right d-none d-md-block" width="200"></th>
+                            </tr>
+                        </thead>
 
-<section class="pt-5 pb-5">
-    <div class="container-lg">
-        <div class="row w-100">
-            <div class="col-lg-12 col-md-12 col-12">
-                <h3 class="display-5 mb-2 text-center">Shopping Cart</h3>
-                <p class="mb-5 text-center">
-                    <i class="text-info font-weight-bold">3</i> items in your cart
-                </p>
-                <table id="shoppingCart" class="table table-condensed table-responsive">
-                    <thead>
-                        <tr>
-                            <th style="width:60%">Product</th>
-                            <th style="width:12%">Price</th>
-                            <th style="width:10%">Quantity</th>
-                            <th style="width:16%"></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td data-th="Product">
-                                <div class="row">
-                                    <div class="col-md-3 text-left">
-                                        <img src="https://via.placeholder.com/250x250/5fa9f8/ffffff" alt="" class="img-fluid d-none d-md-block rounded mb-2 shadow ">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <figure class="itemside align-items-center">
+                                        <div class="aside"><img src="https://i.imgur.com/1eq5kmC.png" class="img-sm"></div>
+                                        <figcaption class="info"> <a href="#" class="title text-dark" data-abc="true">Tshirt with round nect</a>
+                                            <p class="text-muted small"> SIZE: L <br> Brand: MAXTRA <br> Brand: MAXTRA</p>
+                                        </figcaption>
+                                    </figure>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <input type="number" value="1" name="cart_quantity" class="form-control" id="usr">
                                     </div>
-                                    <div class="col-md-9 text-left mt-sm-2">
-                                        <h4>Product Name</h4>
-                                        <p class="font-weight-light">Brand &amp; Name</p>
-                                        <p class="font-weight-light">Brand &amp; Name</p>
-                                        <p class="font-weight-light">Brand &amp; Name</p>
-                                    </div>
-                                </div>
-                            </td>
-                            <td data-th="Price">$49.00</td>
-                            <td data-th="Quantity">
-                                <input type="number" class="form-control form-control-lg text-center" value="1">
-                            </td>
-                            <td class="actions" data-th="">
-                                <div class="text-right">
-                                    <button class="btn btn-white border-secondary bg-white btn-md mb-2">
-                                        <i class="fas fa-trash"></i>
-                                    </button>
-                                    <button class="btn btn-white border-secondary bg-white btn-md mb-2">
-                                        <i class="fa fa-shopping-basket"></i>
-                                    </button>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                                <td>
+                                    <div class="price-wrap"> <var class="price">$10.00</var> </div>
+                                </td>
+                                <td class="text-right d-none d-md-block"> <a data-original-title="Save to Wishlist" title="" href="" class="btn btn-light" data-toggle="tooltip" data-abc="true"> <i class="fa fa-trash"></i></a> <a href="" class="btn btn-light" data-abc="true"> Add to Cart</a> </td>
+                            </tr>
+                        </tbody>
+
+
+                    </table>
+                </div>
             </div>
-        </div>
-        <div class="row mt-4 d-flex align-items-center">
-            <div class="col-sm-6 mb-3 mb-m-1 order-md-1 text-md-left">
-                <a href="catalog.html">
-                    <i class="fas fa-arrow-left mr-2"></i> Continue Shopping</a>
-            </div>
-        </div>
+        </aside>
+
     </div>
-</section>
+</div>
