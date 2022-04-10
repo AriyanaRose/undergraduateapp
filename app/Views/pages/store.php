@@ -16,7 +16,7 @@
 
     .product-grid .product-image img {
         width: 100%;
-        height: auto;
+        height: 400px;
         transition: all 0.05s ease 0s;
     }
 
@@ -27,7 +27,7 @@
     .product-grid .product-sale-label {
         color: #fff;
         background-color: #b83616;
-        font-size: 13px;
+        font-size: 12px;
         text-transform: capitalize;
         padding: 3px 18px;
         position: absolute;
@@ -95,7 +95,7 @@
         content: attr(data-tip);
         color: #fff;
         background: #000;
-        font-size: 13px;
+        font-size: 12px;
         font-weight: 500;
         line-height: 18px;
         text-shadow: none;
@@ -204,6 +204,14 @@
             margin: 0 0 30px;
         }
     }
+
+    .bg-cover {
+        background-size: cover !important;
+    }
+
+    body {
+        min-height: 100vh;
+    }
 </style>
 
 <!--	URL: https:
@@ -213,14 +221,12 @@
 
 <!-- Banner	-->
 
-<header class="py-2 bg-light border-bottom mb-4">
-    <div class="container">
-        <div class="text-info text-center my-5">
-            <h1 class="fw-bolder">Books</h1>
-            <p class="lead mb-0"></p>
-        </div>
+<div style="background: url('images/bookself2.jpg')" class="jumbotron bg-cover text-white">
+    <div class="container py-5 text-center">
+        <h1 class="display-4 font-weight-bold">Books</h1>
+        </p>
     </div>
-</header>
+</div>
 
 
 <div class="container my-5">
@@ -236,7 +242,7 @@
             <div class="col-md-3 col-sm-6">
                 <div class="product-grid">
                     <div class="product-image">
-                    <!-- Code don't delete	-->
+                        <!-- Code don't delete	-->
                         <a href="<?php echo $link ?>" class="image">
                             <img src="<?php echo BASE_URL . $data["product_image1"] ?>">
                         </a>
@@ -259,6 +265,7 @@
                         </h6>
                         <!-- Code don't delete	-->
                         <div class="price">$<?php echo $data["product_price"]; ?></div>
+                        
                         <a class="add-to-cart" href="#">
                             <i class="fa fa-shopping-basket"></i> <span>ADD TO BASKET</span>
                         </a>

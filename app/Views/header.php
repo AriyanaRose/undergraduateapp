@@ -61,17 +61,17 @@
 
         .navbar .navbar-brand b {
             font-weight: bold;
-            color: #eb5844;
+            color: #0b5394;
         }
 
         .navbar .navbar-nav a:hover,
         .navbar .navbar-nav a:focus {
-            color: #f08373 !important;
+            color: #0b5394 !important;
         }
 
         .navbar .navbar-nav a.active,
         .navbar .navbar-nav a.active:hover {
-            color: #eb5844 !important;
+            color: #0b5394 !important;
             background: transparent !important;
         }
 
@@ -88,7 +88,7 @@
         }
 
         .search-box input.form-control:focus {
-            border-color: #f08373;
+            border-color: #0b5394;
         }
 
         .search-box .input-group-text {
@@ -138,12 +138,6 @@
             margin-left: 0;
             border: 0;
         }
-
-        /* .fa {
-                  color: red
-              } */
-
-
 
         @media (min-width: 992px) {
             .form-inline .input-group {
@@ -219,7 +213,7 @@
         </form>
         <a href="#" class="nav-item nav-link"><i class="fa fa-envelope"></i></a>
         <a href="#" class="nav-item nav-link"><i class="fa fa-bell"></i></a>
-        <a href="#" class="nav-item nav-link"><i class="fa fa-heart"></i></a>
+        <a href="<?php echo BASE_URL ?>wishlist" class="nav-item nav-link"><i class="fa fa-heart"></i></a>
         <a href="<?php echo BASE_URL ?>cart" class="nav-item nav-link"><i class="fa fa-shopping-basket"></i></a>
     </div>
 

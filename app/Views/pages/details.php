@@ -42,6 +42,7 @@
                     </div>
                     <div class="col-md-10">
                         <button name="add_to_cart" type="submit" class="btn btn-danger btn-lg">Add to Basket</button>
+                        <button name="add_to_wishlist" type="submit" class="btn btn-success btn-lg">Add to Wish List</button>
                     </div>
                 </div>
 

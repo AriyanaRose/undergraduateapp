@@ -4,7 +4,7 @@
             -->
 
 <!-- Footer -->
-<footer class="text-center text-lg-start bg-light text-info ">
+<footer class="text-center text-lg-start bg-light text-dark ">
   <!-- Section: Social media -->
   <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
 
@@ -22,9 +22,11 @@
           <h6 class="text-uppercase fw-bold mb-4">
             Quills & Pages
           </h6>
+          <h6>
+            "A bookworm's paradise"
+          </h6>
           <p>
-            "A book worm's paradise"
-            We specialise in a wide range of books and comics to meet the needs of every reader.
+           We specialize in a wide range of new and used books and comics to meet the needs of every reader.
           </p>
         </div>
         <!-- Grid column -->
