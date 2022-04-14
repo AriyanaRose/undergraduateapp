@@ -74,10 +74,10 @@ footer  {
             <a href="<?php echo BASE_URL ?>login" class="text-reset">Log In</a>
           </p>
           <p>
-            <a href="<?php echo BASE_URL ?>contactus" " class=" text-reset">Contact Us</a>
+            <a href="<?php echo BASE_URL ?>contactus" class=" text-reset">Contact Us</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Help</a>
+            <a href="<?php echo BASE_URL ?>faqs" class="text-reset">Help</a>
           </p>
         </div>
         <!-- Grid column -->
@@ -144,7 +144,7 @@ footer  {
   <!-- Copyright -->
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
     © 2022 Copyright:
-    <a class="text-reset fw-bold" href="#">Quills & Pages</a>
+    <a class="text-reset fw-bold" href="<?php echo BASE_URL ?>home">Quills & Pages</a>
   </div>
   <!-- Copyright -->
 </footer>

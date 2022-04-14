@@ -1,6 +1,6 @@
 <style>
 	.faqHeader {
-		font-size: 27px;
+		font-size: 23px;
 		margin: 25px;
 	}
 
@@ -9,7 +9,7 @@
 		/* "play" icon */
 		float: right;
 		color: #F58723;
-		font-size: 13px;
+		font-size: 10px;
 		line-height: 13px;
 		/* rotate "play" icon from > (right arrow) to down arrow */
 		-webkit-transform: rotate(-90deg);
@@ -23,6 +23,7 @@
 		/* rotate "play" icon from > (right arrow) to ^ (up arrow) */
 		-webkit-transform: rotate(90deg);
 		margin: 25px;
+		font-size: 10px;
 		-moz-transform: rotate(90deg);
 		-ms-transform: rotate(90deg);
 		-o-transform: rotate(90deg);
@@ -51,15 +52,19 @@
 
 <div class="container">
 
-	<div class="faqHeader text-center">Frequently Asked Questions</div>
+	<div class="text-dark text-center my-3">
+		<h2 class="fw-bolder">Frequently Asked Questions</h2>
+	</div>
+
+	<div class="faqHeader text-center"></div>
 	<div class="" id="accordion">
 		<div class="faqHeader">General Questions</div>
 
 		<div name="card1" class="card">
 			<div class="card-header">
-				<h4 class="card-header">
+				<h5 class="card-header">
 					<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Why do I need to register on the site before I can place an order?</a>
-				</h4>
+				</h5>
 			</div>
 			<div id="collapseOne" class="panel-collapse collapse in">
 				<div class="card-body">
@@ -69,21 +74,21 @@
 		</div>
 		<div name="card2" class="card">
 			<div class="card-header">
-				<h4 class="card-header">
+				<h5 class="card-header">
 					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">Do you sell used books?</a>
-				</h4>
+				</h5>
 			</div>
 			<div id="collapseTen" class="panel-collapse collapse">
 				<div class="card-body">
-					Yes we do sell used books, these are not limited to older books but also new books. Popular books in used condition often go quickly and its advisable to sign up for our newsletter to receive updates on new stock.
+				<p>Yes we do sell used books, these are not limited to older books but also new books. Popular books in used condition often go quickly and its advisable to sign up for our newsletter to receive updates on new stock.</p>
 				</div>
 			</div>
 		</div>
 		<div name="card3" class="card">
 			<div class="card-header">
-				<h4 class="card-header">
+				<h5 class="card-header">
 					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven">What condition are used books in?</a>
-				</h4>
+				</h5>
 			</div>
 			<div id="collapseEleven" class="panel-collapse collapse">
 				<div class="card-body">
@@ -93,9 +98,9 @@
 		</div>
 		<div name="card4" class="card ">
 			<div class="card-header">
-				<h4 class="card-header">
+				<h5 class="card-header">
 					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwenty">What is the currency are products sold in?</a>
-				</h4>
+				</h5>
 			</div>
 			<div id="collapseTwenty" class="panel-collapse collapse">
 				<div class="card-body">
@@ -107,9 +112,9 @@
 		<div class="faqHeader">Orders, Delivery & Billing</div>
 		<div name="card5" class="card ">
 			<div class="card-header">
-				<h4 class="card-header">
+				<h5 class="card-header">
 					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">My order hasn't arrived yet; can I check the status of my order online?</a>
-				</h4>
+				</h5>
 			</div>
 			<div id="collapseTwo" class="panel-collapse collapse">
 				<div class="card-body">
@@ -119,9 +124,9 @@
 		</div>
 		<div name="card6" class="card">
 			<div class="card-header">
-				<h4 class="card-header">
+				<h5 class="card-header">
 					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Shipping rates & delivery times</a>
-				</h4>
+				</h5>
 			</div>
 			<div id="collapseThree" class="panel-collapse collapse">
 				<div class="card-body">
@@ -132,9 +137,9 @@
 		</div>
 		<div name="card7" class="card ">
 			<div class="card-header">
-				<h4 class="card-header">
+				<h5 class="card-header">
 					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">Do you ship outside the Caribbean?</a>
-				</h4>
+				</h5>
 			</div>
 			<div id="collapseFive" class="panel-collapse collapse">
 				<div class="card-body">
@@ -144,9 +149,9 @@
 		</div>
 		<div name="card8" class="card ">
 			<div class="card-header">
-				<h4 class="card-header">
+				<h5 class="card-header">
 					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">How can I cancel my order?</a>
-				</h4>
+				</h5>
 			</div>
 			<div id="collapseSix" class="panel-collapse collapse">
 				<div class="card-body">
@@ -155,9 +160,9 @@
 			</div>
 			<div name="card9" class="card">
 				<div class="card-header">
-					<h4 class="card-header">
+					<h5 class="card-header">
 						<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">What are the payment options?</a>
-					</h4>
+					</h5>
 				</div>
 				<div id="collapseEight" class="panel-collapse collapse">
 					<div class="card-body">
@@ -167,9 +172,9 @@
 			</div>
 			<div name="card10" class="card">
 				<div class="card-header">
-					<h4 class="card-header">
+					<h5 class="card-header">
 						<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseNine">Are transactions safe?</a>
-					</h4>
+					</h5>
 				</div>
 				<div id="collapseNine" class="panel-collapse collapse">
 					<div class="card-body">
@@ -189,21 +194,21 @@
 		<div class="faqHeader">Wish List, Custom Orders & Pre-Orders</div>
 		<div name="card10" class="card ">
 			<div class="card-header">
-				<h4 class="card-header">
+				<h5 class="card-header">
 					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Will Items be removed from my wish list after log out?</a>
-				</h4>
+				</h5>
 			</div>
 			<div id="collapseFour" class="panel-collapse collapse">
 				<div class="card-body">
-					No. You wishlist will reflect all items added unless you delete the item or add them to cart, if the item is out of stock it will be reflected in the status. 
+					No. You wishlist will reflect all items added unless you delete the item or add them to cart, if the item is out of stock it will be reflected in the status.
 				</div>
 			</div>
 		</div>
 		<div name="card11" class="card ">
 			<div class="card-header">
-				<h4 class="card-header">
+				<h5 class="card-header">
 					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFifteen">Can I place a custom order?</a>
-				</h4>
+				</h5>
 			</div>
 			<div id="collapseFifteen" class="panel-collapse collapse">
 				<div class="card-body">
@@ -211,11 +216,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="card ">
+		<div name="card12" class="card ">
 			<div class="card-header">
-				<h4 class="card-header">
+				<h5 class="card-header">
 					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFourteen">How do I order Pre-Order Items</a>
-				</h4>
+				</h5>
 			</div>
 			<div id="collapseFourteen" class="panel-collapse collapse">
 				<div class="card-body">

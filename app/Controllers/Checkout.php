@@ -2,9 +2,6 @@
 
 require_once APP_DIR . "utils/code.precheckout.php";
 
-//$cart_object->addToCart(1,1,2,);
-//$cart_object->addToCart(2,2,2,);
-//cart_object->removeFromCart(1,1);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST["cart_id"])) {
@@ -13,9 +10,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 $cart_details = $cart_object->getCartDetails($user_id);
-//debug($cart_details);
+
+$cart_object->calculateTotal();
+
 
 // load views
 require_once APP_DIR . "Views/header.php";
-require_once APP_DIR . "Views/pages/cart.php";
+require_once APP_DIR . "Views/pages/checkout.php";
 require_once APP_DIR . "Views/footer.php";

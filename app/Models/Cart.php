@@ -34,8 +34,10 @@ class Cart
         $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         foreach ($result as $product) {
-            $this->subtotal += $product["product_price"];
+            $this->subtotal += $product["product_price"] * $product["cart_quantity"];
         }
+
+        $this->cart_details = $result;
 
         return $result;
     }
@@ -79,7 +81,24 @@ class Cart
         $stmt->execute([$cart_id, $user_id]);
     }
 
+
     public function updateCart()
     {
+    }
+
+
+    public function getSubtotal()
+    {
+        return $this->subtotal;
+    }
+
+    public function getTotal()
+    {
+        return $this->total;
+    }
+
+    public function calculateTotal()
+    {
+        $this->total = $this->subtotal;
     }
 }

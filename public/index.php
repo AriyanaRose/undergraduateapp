@@ -14,6 +14,10 @@ post($_ENV["PROJECT_PATH"] . 'registration', 'app/Controllers/Registration.php')
 get($_ENV["PROJECT_PATH"] . 'login', 'app/Controllers/Login.php');
 post($_ENV["PROJECT_PATH"] . 'login', 'app/Controllers/Login.php');
 
+//http://localhost/undergraduateapp/logout 
+get($_ENV["PROJECT_PATH"] . 'logout', 'app/Controllers/Logout.php');
+post($_ENV["PROJECT_PATH"] . 'logout', 'app/Controllers/Logout.php');
+
 //http://localhost/undergraduateapp/admin/add-product
 get($_ENV["PROJECT_PATH"] . 'admin/add-product', 'app/Controllers/admin/Adminproduct.php');
 post($_ENV["PROJECT_PATH"] . 'admin/add-product', 'app/Controllers/admin/Adminproduct.php');
@@ -61,6 +65,18 @@ post($_ENV["PROJECT_PATH"] . 'faqs', 'app/Controllers/Faqs.php');
 get($_ENV["PROJECT_PATH"] . 'cart', 'app/Controllers/Cart.php');
 post($_ENV["PROJECT_PATH"] . 'cart', 'app/Controllers/Cart.php');
 
+//http://http://localhost/undergraduateapp/checkout
+get($_ENV["PROJECT_PATH"] . 'checkout', 'app/Controllers/Checkout.php');
+post($_ENV["PROJECT_PATH"] . 'checkout', 'app/Controllers/Checkout.php');
+
+//http://http://localhost/undergraduateapp/checkout/stripe
+get($_ENV["PROJECT_PATH"] . 'checkout/stripe', 'app/Controllers/Checkout.php');
+post($_ENV["PROJECT_PATH"] . 'checkout/stripe', 'app/Controllers/Checkout.php');
+
+//http://http://localhost/undergraduateapp/checkout/stripe
+get($_ENV["PROJECT_PATH"] . 'checkout/success/$payment/$id', 'app/Controllers/Checkout-success.php');
+post($_ENV["PROJECT_PATH"] . 'checkout/success/$payment/$id', 'app/Controllers/Checkout-success.php');
+
 //http://http://localhost/undergraduateapp/wishlist
 get($_ENV["PROJECT_PATH"] . 'wishlist', 'app/Controllers/Wishlist.php');
 post($_ENV["PROJECT_PATH"] . 'wishlist', 'app/Controllers/Wishlist.php');
@@ -68,6 +84,7 @@ post($_ENV["PROJECT_PATH"] . 'wishlist', 'app/Controllers/Wishlist.php');
 //http://http://localhost/undergraduateapp/thankyou
 get($_ENV["PROJECT_PATH"] . 'thankyoucontactus', 'app/Controllers/Thankyoucontactus.php');
 post($_ENV["PROJECT_PATH"] . 'thankyoucontactus', 'app/Controllers/Thankyoucontactus.php');
+
 
 
 // ##################################################
