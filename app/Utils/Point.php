@@ -12,24 +12,32 @@ class Point
 
     public static function getDiscountAmount($points_used){
         switch ($points_used) {
-            case '100':
-                return 5;
-                break;
-
             case '200':
-                return 10;
+                return 20;
                 break;
 
             case '300':
-                return 15;
+                return 30;
+                break;
+
+            case '400':
+                return 40;
                 break;
 
             case '500':
-                return 25;
+                return 50;
                 break;
 
             case '1000':
-                return 1000;
+                return 100;
+                break;
+
+            case '1500':
+                return 150;
+                break;
+            
+            case '2000':
+                return 200;
                 break;
 
             default:
