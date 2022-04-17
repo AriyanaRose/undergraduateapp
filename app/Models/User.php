@@ -91,4 +91,19 @@ class User
 
         echo "Ariyana";
     }
+
+
+    public function updateTotalPoints($user_id, $total_points)
+    {
+
+        $sql = "UPDATE users SET total_points = ? WHERE user_id =?";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute([$total_points, $user_id]);
+    }
+
+    public function setTotalPoints($points_gained)
+    {
+        $_SESSION["current_user"]["total_points"] += $points_gained;
+    }
+    
 }

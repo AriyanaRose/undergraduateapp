@@ -15,6 +15,7 @@ class Cart
     {
         if (!isset($pdo->pdo)) return null;
         $this->pdo = $pdo->pdo;
+        $this->setSessions();
     }
 
 
@@ -99,6 +100,121 @@ class Cart
 
     public function calculateTotal()
     {
-        $this->total = $this->subtotal;
+        //total is 100
+        //discount as int [10,0,5]
+        //additional cost [20,5]
+        $total = $this->subtotal;
+        $amount_to_add = [0, 0, 40, 0];
+        $amount_to_subtract = [$_SESSION["checkout"]["points_discount_amount"], 0, 0];
+
+        $total = $this->calculateAmountOff($total, $amount_to_subtract);
+        $total = $this->calculateAmountAdded($total, $amount_to_add);
+        $this->total = $total;
+    }
+
+
+    public function calculateAmountOff($total, $array_of_values)
+    {
+        //  
+        $amount = array_sum($array_of_values);
+        return $total - $amount;
+    }
+
+    public function calculateAmountAdded($total, $array_of_values)
+    {
+        //
+        $amount = array_sum($array_of_values);
+        return $total + $amount;
+    }
+
+    public function setSessions()
+    {
+        $names = [
+            "points_used",
+            "points_gained",
+            "points_discount_amount"
+        ];
+
+        foreach ($names as $key) {
+            if (empty($_SESSION["checkout"][$key])) {
+                $_SESSION["checkout"][$key] = 0;
+            }
+        }
+    }
+
+
+    public function resetSessions()
+    {
+        session_unset($_SESSION["checkout"]);
+    }
+
+
+    //=================================================
+    //POINTS
+    //=================================================
+
+    public function setPointsUsed($points_used)
+    {
+        //convert points to dollars
+        $points_discount_amount = POINT::getDiscountAmount($points_used);
+
+        //check if the user's points redeemed is not greater than cart subtotal
+
+        if ($points_discount_amount >= $this->subtotal) {
+            $this->resetPoints();
+            echo "Discount cannot be greater than cart subtotal";
+            return;
+        }
+
+        //if user has enough points then discount can be applied
+        if ($_SESSION["current_user"]["total_points"] >= $points_used) {
+            //can exchange
+            $_SESSION["checkout"]["points_used"] = $points_used;
+            $_SESSION["checkout"]["points_discount_amount"] = POINT::getDiscountAmount($points_used);
+            echo "Discount Applied";
+        } else {
+            //cannot exchnage
+            echo "Not enough points";
+            return;
+        }
+    }
+
+    public function resetPoints()
+    {
+
+        $_SESSION["checkout"]["points_used"] = 0;
+        $_SESSION["checkout"]["points_discount_amount"] = 0;
+    }
+
+
+    public function setUserTotalPoints()
+    {
+        //
+
+    }
+
+
+    public function getUserTotalPoints()
+    {
+        return $_SESSION["current_user"]["total_points"];
+    }
+
+
+    public function getPointsGained()
+    {
+        return POINT::getPoints($this->total);
+    }
+
+
+    public function getPointsUsed()
+    {
+
+        return $_SESSION["checkout"]["points_used"];
+    }
+
+
+    public function getPointsDiscountAmount()
+    {
+        return $_SESSION["checkout"]["points_discount_amount"];
     }
 }

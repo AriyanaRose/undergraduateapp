@@ -11,7 +11,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 $cart_details = $cart_object->getCartDetails($user_id);
 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_POST["points"])) {
+        $cart_object->setPointsUsed($_POST["points"]);
+    }
+}
+
+
 $cart_object->calculateTotal();
+
+debug($_POST);
+debug($_SESSION);
 
 
 // load views

@@ -51,3 +51,13 @@ if (!$completed || empty($data)) {
 
 
 //insert order details
+
+
+
+
+
+//update user points
+
+$user_object->updateTotalPoints($user_id, 500);
+
+$cart_object->resetSessions();
