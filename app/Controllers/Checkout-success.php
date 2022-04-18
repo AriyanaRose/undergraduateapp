@@ -46,6 +46,15 @@ if (!$completed || empty($data)) {
     echo "payment process not completed";
 }
 
+
+//set points info
+$points_used = $cart_object->getPointsUsed();
+$points_gained = $cart_object->getPointsGained();
+$points_discount_amount = $cart_object->getPointsDiscountAmount();
+$total_points = ($cart_object->getUserTotalPoints() + $points_gained) - $points_used;
+
+
+
 //insert order
 
 
@@ -57,7 +66,8 @@ if (!$completed || empty($data)) {
 
 
 //update user points
-
-$user_object->updateTotalPoints($user_id, 500);
+echo $total_points;
+$user_object->updateTotalPoints($user_id, $total_points);
+$user_object->setTotalPoints($points_gained);
 
 $cart_object->resetSessions();

@@ -145,7 +145,7 @@ class Cart
 
     public function resetSessions()
     {
-        session_unset($_SESSION["checkout"]);
+        unset($_SESSION["checkout"]);
     }
 
 
