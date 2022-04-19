@@ -115,7 +115,7 @@
 
             </div>
             <div class="col-12 text-center">
-              <button name="contactus" class="btn btn-warning" type="submit">Submit</button>
+              <button name="contactus" class="btn btn-warning btn-block" type="submit">Submit</button>
             </div>
           </div>
         </form>

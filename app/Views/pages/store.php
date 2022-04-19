@@ -210,11 +210,6 @@
         opacity: 0.5
     }
 
-    .h1 {
-      
-        opacity: 1
-    }
-
 
     body {
         min-height: 100vh;

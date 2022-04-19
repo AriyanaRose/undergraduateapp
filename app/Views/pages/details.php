@@ -45,8 +45,8 @@
 
                     </div>
                     <div class="col-md-10">
-                        <button name="add_to_cart" type="submit" class="btn btn-danger btn-lg">Add to Basket</button>
-                        <button name="add_to_wishlist" type="submit" class="btn btn-success btn-lg">Add to Wish List</button>
+                        <button name="add_to_cart" type="submit" class="btn btn btn-outline-danger btn-md">Add to Basket</button>
+                        <button name="add_to_wishlist" type="submit" class="btn btn-outline-success btn-md">Add to Wish List</button>
                     </div>
                 </div>
 
