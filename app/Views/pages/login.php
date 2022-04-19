@@ -13,7 +13,6 @@
     .btn-block {
         background-color: #003C63;
     }
-
 </style>
 
 <!--	URL: https://bbbootstrap.com/snippets/full-page-login-image-81339621
@@ -34,7 +33,7 @@
                             <form action="login" method="post">
                                 <div class="form-group mb-3"> <input name="email" id="inputEmail" type="email" placeholder="Email address" required autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4"> </div>
                                 <div class="form-group mb-3"> <input name="password" id="inputPassword" type="password" placeholder="Password" required class="form-control rounded-pill border-0 shadow-sm px-4 text-danger"><br> </div>
-                                <div class="custom-control custom-checkbox mb-3"> <input id="customCheck1" type="checkbox" checked class="custom-control-input"> <label for="customCheck1" class="custom-control-label">Remember password</label> </div> <button name="login" type="submit" class="btn btn-block text-light" >Sign In</button>
+                                <div class="custom-control custom-checkbox mb-3"> <input id="customCheck1" type="checkbox" checked class="custom-control-input"> <label for="customCheck1" class="custom-control-label">Remember password</label> </div> <button name="login" type="submit" class="btn btn-block text-light">Sign In</button>
                                 <div class="text-center d-flex justify-content-between mt-4">
                                     <p> OR &nbsp<a href="<?php echo BASE_URL ?>registration" class="font-italic text-muted"> <u>Create Account</u></a></p>
                                 </div>

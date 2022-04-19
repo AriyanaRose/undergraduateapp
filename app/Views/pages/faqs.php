@@ -42,6 +42,7 @@
 </style>
 
 
+
 <div style="background: url('images/bookself4.jpg')" class="jumbotron bg-cover text-white">
 </div>
 
@@ -58,7 +59,7 @@
 
 	<div class="faqHeader text-center"></div>
 	<div class="" id="accordion">
-		<div class="faqHeader">General Questions</div>
+		<div class="faqHeader text-center">General Questions</div>
 
 		<div name="card1" class="card">
 			<div class="card-header">
@@ -109,7 +110,7 @@
 			</div>
 		</div>
 
-		<div class="faqHeader">Orders, Delivery & Billing</div>
+		<div class="faqHeader text-center">Orders, Delivery & Billing</div>
 		<div name="card5" class="card ">
 			<div class="card-header">
 				<h5 class="card-header">
@@ -191,7 +192,7 @@
 
 		</div>
 
-		<div class="faqHeader">Wish List, Custom Orders & Pre-Orders</div>
+		<div class="faqHeader text-center">Wish List, Custom Orders & Pre-Orders</div>
 		<div name="card10" class="card ">
 			<div class="card-header">
 				<h5 class="card-header">

@@ -24,7 +24,7 @@
                 <li> <strong> Points Gain:</strong> <?php echo $cart_object->getPointsGained(); ?></li>
             </ul>
 
-            <button name="points_btn" type="submit" class="btn btn-success btn-lg btn-block">Exchange Points</button>
+            <button name="points_btn" type="submit" class="btn btn-secondary btn-lg btn-block">Exchange Points</button>
         </form>
     </div>
 </div>

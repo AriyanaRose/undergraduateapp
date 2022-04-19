@@ -172,7 +172,7 @@
                                                         </div>
                                                         <div class="d flex">
                                                             <form action="cart" method="post">
-                                                                <button class="btn btn-danger btn-sm" name="remove_from_cart" type="submit">Remove</button>
+                                                                <button class="btn btn-outline-warning btn-sm" name="remove_from_cart" type="submit">Remove</button>
                                                                 <input type="hidden" name="cart_id" value="<?php echo $data["cart_id"] ?>">
                                                             </form>
                                                         </div>
@@ -207,7 +207,7 @@
 
                         <?php require_once APP_DIR . "views/includes/checkout-points.php" ?>
 
-                        <button type="button" class="btn btn-primary btn-lg btn-block">Checkout</button>
+                        <button type="button" class="btn btn-success btn-lg btn-block">Checkout</button>
                     </div>
                 </div>
             </div>

@@ -147,7 +147,6 @@
 	<div class="container">
 		<div class="block-heading">
 			<h2>Shopping Cart</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
 		</div>
 		<div class="content">
 			<div class="row">
@@ -172,8 +171,8 @@
 														</div>
 														<div class="d flex">
 															<form action="cart" method="post">
-																<button class="btn btn-success btn-sm" name="add_to_wishlist" type="submit">Wish List</button>
-																<button class="btn btn-danger btn-sm" name="remove_from_cart" type="submit">Remove</button>
+																<button class="btn btn-outline-danger btn-sm" name="add_to_wishlist" type="submit">Wish List</i></button>
+																<button class="btn btn-outline-warning btn-sm" name="remove_from_cart" type="submit">Remove</i></button>
 																<input type="hidden" name="cart_id" value="<?php echo $data["cart_id"] ?>">
 															</form>
 														</div>
@@ -184,7 +183,7 @@
 													<input id="quantity" type="number" value="<?php echo $data["cart_quantity"] ?>" class="form-control quantity-input">
 												</div>
 												<div class="col-md-3 price">
-													<span>$<?php echo $data["product_price"] ?></span>
+													<span> <small> $<?php echo $data["product_price"] ?></small></span>
 												</div>
 											</div>
 										</div>
@@ -205,7 +204,7 @@
 						<div class="summary-item"><span class="text">Shipping</span><span class="price">TBD</span></div>
 
 						<div class="summary-item"><span class="text">Total</span><span class="price">$<?php echo $cart_object->getSubtotal(); ?> </span></div>
-						<button type="button" class="btn btn-primary btn-lg btn-block">Checkout</button>
+						<button type="button" class="btn btn-success btn-lg btn-block">Checkout</button>
 					</div>
 				</div>
 			</div>
