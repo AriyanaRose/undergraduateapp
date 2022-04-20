@@ -3,6 +3,10 @@
         background-size: cover !important;
         opacity: 0.5
     }
+
+    body{
+       background-color: #f6f6f6;
+    }
 </style>
 
 <!--	
@@ -26,13 +30,13 @@
                         <thead>
                             <tr>
                                 <th scope="col" class="border-0 bg-light">
-                                    <div class="p-2 px-3 text-uppercase">Product</div>
+                                    <div class="p-2 px-3 text-dark">Product</div>
                                 </th>
                                 <th scope="col" class="border-0 bg-light">
-                                    <div class="py-2 text-uppercase">Price</div>
+                                    <div class="py-2  text-dark">Price</div>
                                 </th>
                                 <th scope="col" class="border-0 bg-light">
-                                    <div class="py-2 text-uppercase">Remove</div>
+                                    <div class="py-2 text-dark">Remove</div>
                                 </th>
                             </tr>
                         </thead>
@@ -40,12 +44,12 @@
                             <tr>
                                 <th scope="row" class="border-0">
                                     <div class="p-2">
-                                        <img src="https://bootstrapious.com/i/snippets/sn-cart/product-1.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
+                                        <img src="" alt="" width="70" class="img-fluid rounded shadow-sm">
                                         <div class="ml-3 d-inline-block align-middle">
                                             <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">Timex Unisex Originals</a></h5>
-                                            <span class="text-muted font-weight-normal font-italic d-block">Category: Watches</span>
-                                            <span class="text-muted font-weight-normal font-italic d-block">Category: Watches</span>
-                                            <span class="text-muted font-weight-normal font-italic d-block">Category: Watches</span>
+                                            <span class="text-muted font-weight-normal font-italic d-block">Author: Watches</span>
+                                            <span class="text-muted font-weight-normal font-italic d-block">Format: Watches</span>
+                                            <span class="text-muted font-weight-normal font-italic d-block">Condition: Watches</span>
                                         </div>
                                     </div>
                                 </th>

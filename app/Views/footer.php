@@ -1,10 +1,8 @@
 <style>
+  footer {
 
-footer  { 
- 
-  background-color: 	#03396c;
-}
-
+    background-color: #011F4B;
+  }
 </style>
 
 <!--	URL: https://mdbootstrap.com/docs/standard/navigation/footer/

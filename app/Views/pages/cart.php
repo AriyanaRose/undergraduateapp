@@ -1,7 +1,6 @@
 <style>
 	.shopping-cart {
 		padding-bottom: 50px;
-		font-family: 'Montserrat', sans-serif;
 	}
 
 	.shopping-cart.dark {
@@ -169,6 +168,7 @@
 															<div>Format: <span class="value"><?php echo $data["product_format"] ?></span></div>
 															<div>Condition: <span class="value"><?php echo $data["product_condition"] ?></span></div>
 														</div>
+														<br>
 														<div class="d flex">
 															<form action="cart" method="post">
 																<button class="btn btn-outline-danger btn-sm" name="add_to_wishlist" type="submit">Wish List</i></button>
