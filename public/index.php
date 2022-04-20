@@ -86,6 +86,11 @@ get($_ENV["PROJECT_PATH"] . 'thankyoucontactus', 'app/Controllers/Thankyoucontac
 post($_ENV["PROJECT_PATH"] . 'thankyoucontactus', 'app/Controllers/Thankyoucontactus.php');
 
 
+//http://http://localhost/undergraduateapp/thankyou
+get($_ENV["PROJECT_PATH"] . 'blogpage', 'app/Controllers/Templates.php');
+post($_ENV["PROJECT_PATH"] . 'blogpage', 'app/Controllers/Templates');
+
+
 
 // ##################################################
 // ##################################################

@@ -1,5 +1,7 @@
 <?php
 
+require_once APP_DIR . "utils/code.precheckout.php";
+
 
 
 // load views

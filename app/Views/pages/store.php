@@ -214,6 +214,10 @@
     body {
         min-height: 100vh;
     }
+
+    .btn-lg {
+        background-color: #011f4b;
+    }
 </style>
 
 <!--	URL: https:
@@ -253,20 +257,19 @@
                         </ul>
                     </div>
                     <div class="product-content">
-                        <h5 class="title">
+                        <h5 class="title font-weight-bold text-center">
                             <!-- Code don't delete	-->
                             <a href="<?php echo $link ?>"><?php echo $data["product_title"]; ?> </a>
                         </h5>
-                        <h6 class=" brand">
+                        <h6 class="brand font-weight-light text-center">
                             <!-- Code don't delete	-->
-                            <a href="#"><?php echo $data["product_brand"]; ?> </a>
+                            <a><?php echo $data["product_brand"]; ?> </a>
                         </h6>
                         <!-- Code don't delete	-->
-                        <div class="price">$<?php echo $data["product_price"]; ?></div>
-                        
-                        <a class="add-to-cart" href="#">
-                            <i class="fa fa-shopping-basket"></i> <span>ADD TO BASKET</span>
-                        </a>
+                        <div class="price text-center">$<?php echo $data["product_price"]; ?></div>
+                        <form action="post">
+                        <button name="add_to_cart" type="submit" class="btn btn-lg btn-block text-light">Add to Basket</button>
+                        </form>
                     </div>
                 </div>
             </div>
