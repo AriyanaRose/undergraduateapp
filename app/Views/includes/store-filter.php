@@ -1,4 +1,4 @@
-<div class="card p-2 my-3">
+<div class="card p-2 my-3 bg-light text-dark">
 
     <div class="row">
 
@@ -6,7 +6,7 @@
             <form action="store" method="get">
                 <div class="input-group">
                     <div class="input-group-prepend">
-                        <select name="brand" class="form-control form-control-lg" id="brand">
+                        <select name="brand" class="form-control form-control-md" id="brand">
                             <option value="0">Author</option>
                             <?php
                             $brands = $product_object->getAllBrands();
@@ -25,7 +25,7 @@
             <form action="store" method="get">
                 <div class="input-group">
                     <div class="input-group-prepend">
-                        <select name="category" class="form-control form-control-lg" id="category">
+                        <select name="category" class="form-control form-control-md" id="category">
                             <option value="0">Genre</option>
                             <?php
                             $categories = $product_object->getAllCategories();
@@ -43,7 +43,7 @@
             <form action="store" method="get">
                 <div class="input-group">
                     <div class="input-group-prepend">
-                        <select name="subcategory" class="form-control form-control-lg" id="subcategory">
+                        <select name="subcategory" class="form-control form-control-md" id="subcategory">
                             <option value="0">Category</option>
                             <option>Best Seller</option>
                             <option>Box Set</option>
@@ -65,7 +65,7 @@
             <form action="store" method="get">
                 <div class="input-group">
                     <div class="input-group-prepend">
-                        <select name="format" class="form-control form-control-lg" id="format">
+                        <select name="format" class="form-control form-control-md" id="format">
                             <option value="0">Format</option>
                             <option>Hardcover</option>
                             <option>Paperback</option>
@@ -81,7 +81,7 @@
             <form action="store" method="get">
                 <div class="input-group">
                     <div class="input-group-prepend">
-                        <select name="condition" class="form-control form-control-lg" id="condition">
+                        <select name="condition" class="form-control form-control-md" id="condition">
                             <option value="0">Condition</option>
                             <option>New</option>
                             <option>Used</option>
@@ -96,7 +96,7 @@
             <form action="store" method="get">
                 <div class="input-group">
                     <div class="input-group-prepend">
-                        <select name="order" class="form-control form-control-lg" id="order">
+                        <select name="order" class="form-control form-control-md" id="order">
                             <option value="0">Sort</option>
                             <option value="order-title">Title (A-Z)</option>
                             <option value="order-title-desc">Title (Z-A)</option>

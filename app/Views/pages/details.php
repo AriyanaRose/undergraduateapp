@@ -38,8 +38,8 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <button name="add_to_wishlist" type="submit" class="btn btn-outline-danger btn-lg"> <i class="fa fa-heart"></i></button>
-                            <button name="add_to_cart" type="submit" class="btn btn btn-outline-success btn-lg">Add to Basket</button>
+                            <button name="add_to_wishlist" type="submit" class="btn btn-outline-danger btn-lg"> Add to Wish List  <i class="fa fa-heart"></i></button>
+                            <button name="add_to_cart" type="submit" class="btn btn btn-outline-success btn-lg">Add to Basket  <i class="fa fa-shopping-basket"></i></button>
 
                         </div>
                     </div>
