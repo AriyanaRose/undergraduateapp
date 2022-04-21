@@ -13,6 +13,7 @@ if (isset($_POST["login"])) {
 
     if ($user_object->login($_POST)) {
         echo "it works";
+        header("location: " . BASE_URL . "home");
     } else {
         echo "it does not work";
     }

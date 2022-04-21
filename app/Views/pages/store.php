@@ -229,9 +229,9 @@
 
 <div style="background: url('images/bookself2.jpg')" class="jumbotron bg-cover text-dark">
 
-<div class="container py-5 text-center">
+    <div class="container py-5 text-center">
 
-</div>
+    </div>
 </div>
 
 
@@ -271,8 +271,10 @@
                         </h6>
                         <!-- Code don't delete	-->
                         <div class="price text-center">$<?php echo $data["product_price"]; ?></div>
-                        <form action="post">
-                        <button name="add_to_cart" type="submit" class="btn btn-lg btn-block text-light">Add to Basket</button>
+                        <form action="cart" method="post">
+                            <input name="cart_quantity" value="1" type="hidden">
+                            <input name="product_id" value="<?php echo $data["product_id"]; ?>" type="hidden">
+                            <button name="add_to_cart" type="submit" class="btn btn-lg btn-block text-light">Add to Basket</button>
                         </form>
                     </div>
                 </div>

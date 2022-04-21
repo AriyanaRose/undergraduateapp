@@ -5,10 +5,17 @@ require_once APP_DIR . "utils/code.precheckout.php";
 //$cart_object->addToCart(1,1,2,);
 //$cart_object->addToCart(2,2,2,);
 //cart_object->removeFromCart(1,1);
+debug($_POST);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST["cart_id"])) {
         $cart_object->removeFromCart($_POST["cart_id"], $user_id);
+    }
+
+    if (isset($_POST["cart_quantity"])) {
+        echo "you clicked a button";
+        require_once APP_DIR . "utils/code.isLoggedIn.php";
+        $cart_object->addToCart($user_id, $_POST["product_id"], $_POST["cart_quantity"]);
     }
 }
 

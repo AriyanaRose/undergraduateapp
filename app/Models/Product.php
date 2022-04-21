@@ -23,6 +23,15 @@ class Product
         return $result;
     }
 
+    public function getBestSeller()
+    {
+        $sql = "SELECT * FROM products WHERE product_subcategory = 'Best Seller' LIMIT 4";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute();
+        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $result;
+    }
+
 
     public function getAllCategories()
     {

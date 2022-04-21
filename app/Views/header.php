@@ -61,7 +61,7 @@
 
         .navbar .navbar-brand b {
             font-weight: bold;
-            color: 	#011f4b;
+            color: #011f4b;
         }
 
         .navbar .navbar-nav a:hover,
@@ -71,7 +71,7 @@
 
         .navbar .navbar-nav a.active,
         .navbar .navbar-nav a.active:hover {
-            color: 	#011f4b !important;
+            color: #011f4b !important;
             background: transparent !important;
         }
 
@@ -88,7 +88,7 @@
         }
 
         .search-box input.form-control:focus {
-            border-color: 	#011f4b;
+            border-color: #011f4b;
         }
 
         .search-box .input-group-text {
@@ -184,7 +184,7 @@
                 </div>
             </div>
             <div class="nav-item dropdown">
-                <a href="" class="nav-item nav-link dropdown-toggle" data-toggle="dropdown">Books and Comics</a>
+                <a href="<?php echo BASE_URL ?>store" " class=" nav-item nav-link">Books and Comics</a>
                 <div class="dropdown-menu">
                     <a href="<?php echo BASE_URL ?>store" class="dropdown-item">Books</a>
                     <a href="#" class="dropdown-item">Comics</a>
@@ -219,7 +219,15 @@
 
 
     <div class="nav-item dropdown">
-        <a href="#" class="nav-item nav-link dropdown-toggle" data-toggle="dropdown">Hi Reader</a>
+        <a href="#" class="nav-item nav-link dropdown-toggle" data-toggle="dropdown"> Hi
+            <?php
+
+            if (isset($_SESSION["current_user"]["user_id"])) {
+                echo $_SESSION["current_user"]["first_name"];
+            } else {
+                echo "Reader";
+            } ?>
+        </a>
         <div class="dropdown-menu">
             <a href="<?php echo BASE_URL ?>registration" class="dropdown-item">Create Account</a>
             <a href="#" class="dropdown-item">My Account</a>

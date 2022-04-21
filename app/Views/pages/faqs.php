@@ -44,9 +44,9 @@
 
 
 <div style="background: url('images/bookself4.jpg')" class="jumbotron bg-cover text-white">
-<div class="container py-5 text-center">
+	<div class="container py-5 text-center">
 
-</div>
+	</div>
 </div>
 
 <!--	URL: http://www.prepbootstrap.com/bootstrap-template/faq-example
@@ -84,7 +84,7 @@
 			</div>
 			<div id="collapseTen" class="panel-collapse collapse">
 				<div class="card-body">
-				<p>Yes we do sell used books, these are not limited to older books but also new books. Popular books in used condition often go quickly and its advisable to sign up for our newsletter to receive updates on new stock.</p>
+					<p>Yes we do sell used books, these are not limited to older books but also new books. Popular books in used condition often go quickly and its advisable to sign up for our newsletter to receive updates on new stock.</p>
 				</div>
 			</div>
 		</div>
