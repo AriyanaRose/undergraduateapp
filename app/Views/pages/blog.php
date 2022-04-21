@@ -20,6 +20,9 @@
 
 <!-- Page header with logo and tagline-->
 <div style="background: url('images/bookself1.jpg')" class="jumbotron bg-cover text-white">
+<div class="container py-5 text-center">
+
+</div>
 </div>
 
 <!-- Page content-->

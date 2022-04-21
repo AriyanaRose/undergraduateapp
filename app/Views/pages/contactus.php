@@ -76,6 +76,9 @@
             -->
 
 <div style="background: url('images/bookself5.jpg')" class="jumbotron bg-cover text-white">
+<div class="container py-5 text-center">
+
+</div>
 </div>
 
 

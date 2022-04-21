@@ -228,6 +228,10 @@
 <!-- Banner	-->
 
 <div style="background: url('images/bookself2.jpg')" class="jumbotron bg-cover text-dark">
+
+<div class="container py-5 text-center">
+
+</div>
 </div>
 
 

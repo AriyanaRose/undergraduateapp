@@ -20,9 +20,14 @@
             -->
 
 <div style="background: url('images/bookself3.jpg')" class="jumbotron bg-cover text-white">
+  <div class="container py-5 text-center">
+
+  </div>
+
+
 </div>
 
-<div class="container py-2">
+<div class="container">
   <h1 class="h1 mb-4 text-center">About Us</h1>
   <p class="text-dark mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
   <br />

@@ -20,8 +20,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 $cart_object->calculateTotal();
 
-debug($_POST);
-debug($_SESSION);
+//debug($_POST);
+//debug($_SESSION);
 
 
 // load views

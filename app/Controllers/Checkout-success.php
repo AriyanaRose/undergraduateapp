@@ -56,6 +56,15 @@ $total_points = ($cart_object->getUserTotalPoints() + $points_gained) - $points_
 
 
 //insert order
+$order_object->insertOrder(
+    $user_id,
+    $data["subtotal"],
+    $data["total"],
+    $data["total_discount_amount"],
+    $data["payment"],
+    $data["payment_id"],
+);
+
 
 
 
