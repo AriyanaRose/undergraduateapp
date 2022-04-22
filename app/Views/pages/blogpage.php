@@ -14,20 +14,20 @@
                     <!-- Post header-->
                     <header class="mb-4">
                         <!-- Post title-->
-                        <h1 class="fw-bolder mb-1">Welcome to Blog Post!</h1>
+                        <h2 class="fw-bolder mb-1">The Flatshare by Beth O'Leary - Review</h2>
                         <!-- Post meta content-->
-                        <div class="text-muted fst-italic mb-2">Posted on January 1, 2022 by Start Bootstrap</div>
+                        <div class="text-muted fst-italic mb-2">Posted on May 5th, 2022 by Admin</div>
                     </header>
                     <!-- Preview image figure-->
                     <figure class="mb-4"><img class="img-fluid rounded" src="images/blog1.jpg" alt="..." /></figure>
                     <!-- Post content-->
                     <section class="mb-5">
-                        <p class="fs-5 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe.</p>
-                        <p class="fs-5 mb-4">The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-5 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
-                        <h2 class="fw-bolder mb-4 mt-5">I have odd cosmic thoughts every day</h2>
-                        <p class="fs-5 mb-4">For me, the most fascinating interface is Twitter. I have odd cosmic thoughts every day and I realized I could hold them to myself or share them with people who might be interested.</p>
-                        <p class="fs-5 mb-4">Venus has a runaway greenhouse effect. I kind of want to know what happened there because we're twirling knobs here on Earth without knowing the consequences of it. Mars once had running water. It's bone dry today. Something bad happened there as well.</p>
+                        <p class="fs-5 mb-4">This is a sweet and lovely work of modern fiction by Beth O'Leary, based on the intriguing idea of a one-bedroom flat in London shared by two inhabitants who never meet, each in residency, sleeping in the same bed when the other is out or working. This is a more kind and humorous take on the grave financial problems many workers confront in a city where rents are sky high. Leon Twomey, a kind palliative care nurse with few words, has a girlfriend, Kay, and a younger brother, Richie, who is in jail after being falsely accused of armed robbery.</p>
+                        <p class="fs-5 mb-4">Tiffany 'Tiffy' Moore comes in because Leon needs money to pay Richie's lawyer to gain an appeal hearing, and for months they never meet, their paths never cross, yet a strange and odd connection develops between the two of them through the medium of post-it notes. Tiffy hasn't forgotten about her ex-boyfriend, the affluent and manipulative Justin, who booted her from his home when she became engaged with another woman.</p>
+                        <p class="fs-5 mb-4"></p>
+                        <h2 class="fw-bolder mb-4 mt-5">“You’re lovely, and I will never hurt you how he hurt you. (That part was me.) Leon xx” ― Beth O'Leary, The Flatshare</h2>
+                        <p class="fs-5 mb-4">You can't help but fall for Tiffy and Leon, as well as the great supporting cast of Richie, Gerty, Mo, and Rachel, in Beth O'Leary's compelling story. Then there are Leon's hospice patients, for whom Leon will go to any length, such as going on a search for the elderly Mr Robert Prior's lost love, and the young, feisty Holly, who knows she is Leon's favorite patient despite his never saying so. This is such an engaging, interesting, and fascinating book, even though it touches on some of the most serious problems of abuse and justice miscarriages. It comes highly recommended.</p>
+                        <p class="fs-5 mb-4"></p>
                     </section>
                 </article>
             </div>

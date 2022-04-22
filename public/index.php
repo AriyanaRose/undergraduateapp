@@ -57,6 +57,10 @@ post($_ENV["PROJECT_PATH"] . 'aboutus', 'app/Controllers/Aboutus.php');
 get($_ENV["PROJECT_PATH"] . 'blog', 'app/Controllers/Blog.php');
 post($_ENV["PROJECT_PATH"] . 'blog', 'app/Controllers/Blog.php');
 
+//http://http://localhost/undergraduateapp/blogpape
+get($_ENV["PROJECT_PATH"] . 'blogpage', 'app/Controllers/Blogpage.php');
+post($_ENV["PROJECT_PATH"] . 'blogpage', 'app/Controllers/Blogpage.php');
+
 //http://http://localhost/undergraduateapp/faqs
 get($_ENV["PROJECT_PATH"] . 'faqs', 'app/Controllers/Faqs.php');
 post($_ENV["PROJECT_PATH"] . 'faqs', 'app/Controllers/Faqs.php');
@@ -86,9 +90,7 @@ get($_ENV["PROJECT_PATH"] . 'thankyoucontactus', 'app/Controllers/Thankyoucontac
 post($_ENV["PROJECT_PATH"] . 'thankyoucontactus', 'app/Controllers/Thankyoucontactus.php');
 
 
-//http://http://localhost/undergraduateapp/thankyou
-get($_ENV["PROJECT_PATH"] . 'blogpage', 'app/Controllers/Templates.php');
-post($_ENV["PROJECT_PATH"] . 'blogpage', 'app/Controllers/Templates');
+
 
 
 

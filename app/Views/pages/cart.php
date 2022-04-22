@@ -76,8 +76,8 @@
 	}
 
 	.shopping-cart .summary {
-		border-top: 2px solid #5ea4f3;
-		background-color: #f7fbff;
+		border-top: 2px solid #000000;
+		background-color: #DDF4F9;
 		height: 100%;
 		padding: 30px;
 	}
@@ -130,6 +130,10 @@
 			padding: 4px 10px;
 			text-align: center;
 		}
+	}
+
+	hr.dashed {
+		border-top: 2px dashed #999;
 	}
 </style>
 
@@ -196,9 +200,13 @@
 				<div class="col-md-12 col-lg-4">
 					<div class="summary">
 						<h3>Summary</h3>
+						<div class="mb-4">
+							<h6 class=" text-uppercase"></h6>
+							<!-- Dashed divider -->
+							<hr class="dashed">
+						</div>
 
-
-						<div class="summary-item"><span class="text">Subtotal</span><span class="price">$ <?php echo $cart_object->getSubtotal(); ?> </span></div>
+						<div class="summary-item"><span class="text">Subtotal</span><span class="price">$ <?php echo $cart_object->getSubtotal(); ?></span></div>
 
 						<div class="summary-item"><span class="text">Discount</span><span class="price">TBD</span></div>
 						<div class="summary-item"><span class="text">Shipping</span><span class="price">TBD</span></div>

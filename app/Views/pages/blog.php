@@ -20,14 +20,12 @@
 
 <!-- Page header with logo and tagline-->
 <div style="background: url('images/bookself1.jpg')" class="jumbotron bg-cover text-white">
-<div class="container py-5 text-center">
 
-</div>
 </div>
 
 <!-- Page content-->
 <div class="text-dark text-center my-5">
-    <h1 class="fw-bolder">Welcome to Quills & Pages Blog Spot!</h1>
+    <h1 class="fw-bolder">Welcome to Quills & Pages Blog</h1>
 </div>
 <div class="container">
     <div class="row">
@@ -37,9 +35,10 @@
             <div class="card mb-4">
                 <a href="#!"><img class="card-img-top" src="images/blog1.jpg" alt="..." /></a>
                 <div class="card-body">
-                    <div class="small text-muted">January 1, 2022</div>
-                    <h2 class="card-title">Featured Post Title</h2>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+                    <div class="small text-muted">May 5th,2022</div>
+                    <h2 class="card-title">The Flatshare by Beth O'Leary - Review</h2>
+                    <h6><a href="#!">Romance</a></h6>
+                    <p class="card-text"></p>
                     <a class="btn btn-primary" href="<?php echo BASE_URL ?>blogpage">Read more →</a>
                 </div>
             </div>
@@ -50,9 +49,9 @@
                     <div class="card mb-4">
                         <a href="#!"><img class="card-img-top" src="images/blog2.jpg" alt="..." /></a>
                         <div class="card-body">
-                            <div class="small text-muted">January 1, 2022</div>
-                            <h2 class="card-title h4">Post Title</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                            <div class="small text-muted">April 30th, 2022</div>
+                            <h6 class="card-title h4">Upcoming Thrillers June 2022</h6>
+                            <h6><a href="#!">Thriller & Mystery</a></h6>
                             <a class="btn btn-primary" href="#!">Read more →</a>
                         </div>
                     </div>
@@ -60,9 +59,9 @@
                     <div class="card mb-4">
                         <a href="#!"><img class="card-img-top" src="images/blog3.jpg" alt="..." /></a>
                         <div class="card-body">
-                            <div class="small text-muted">January 1, 2022</div>
-                            <h2 class="card-title h4">Post Title</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                            <div class="small text-muted">April 10th, 2022</div>
+                            <h2 class="card-title h4">Upcoming Thrillers May 2022</h2>
+                            <h6><a href="#!">Thriller & Mystery</a></h6>
                             <a class="btn btn-primary" href="#!">Read more →</a>
                         </div>
                     </div>
@@ -72,9 +71,9 @@
                     <div class="card mb-4">
                         <a href="#!"><img class="card-img-top" src="images/blog4.jpg" alt="..." /></a>
                         <div class="card-body">
-                            <div class="small text-muted">January 1, 2022</div>
-                            <h2 class="card-title h4">Post Title</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                            <div class="small text-muted">April 15th, 2022</div>
+                            <h2 class="card-title h4">Best Summer Beach Reads Part 2</h2>
+                            <h6><a href="#!">Romance</a></h6>
                             <a class="btn btn-primary" href="#!">Read more →</a>
                         </div>
                     </div>
@@ -82,9 +81,9 @@
                     <div class="card mb-4">
                         <a href="#!"><img class="card-img-top" src="images/blog5.jpg" alt="..." /></a>
                         <div class="card-body">
-                            <div class="small text-muted">January 1, 2022</div>
-                            <h2 class="card-title h4">Post Title</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam.</p>
+                            <div class="small text-muted">April 5th, 2022</div>
+                            <h2 class="card-title h4">Best Summer Beach Reads Part 1</h2>
+                            <h6><a href="#!">Romance</a></h6>
                             <a class="btn btn-primary" href="#!">Read more →</a>
                         </div>
                     </div>

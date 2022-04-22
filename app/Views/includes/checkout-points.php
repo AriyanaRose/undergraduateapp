@@ -4,7 +4,9 @@
     <div class="col-md-12">
 
         <h5 class="text-center"> <STRONG> Exchange Points </STRONG></h5>
-        <br>
+        <div class="mb-4">
+            <hr class="solid">
+        </div>
         <form action="checkout" method="post">
             <select name="points" class="form-control form-control-lg" id="points">
                 <option value="0">Reset</option>

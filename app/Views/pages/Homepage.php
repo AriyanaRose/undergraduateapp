@@ -219,6 +219,18 @@
         background-color: #011f4b;
     }
 </style>
+
+<!--	URL: 
+    https://bbbootstrap.com/snippets/bootstrap-4-simple-catalog-template-59154867
+    Bootstrap 4 simple catalog template
+    Author: Anand Vunnam
+
+    https://bootstrapious.com/p/bootstrap-image-hover
+    BOOTSTRAP IMAGE HOVER
+     Author:  Bootstrapious   
+            -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -231,6 +243,10 @@
 
 <body>
     <h1>Home Page</h1>
+
+        <!-- Sort and Filter Buttons	-->
+        <?php require_once APP_DIR . "Views/includes/store-filter.php"; ?>
+        
     <div class="container my-5">
 
 

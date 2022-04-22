@@ -5,7 +5,7 @@
         <div class="col-md-4">
             <form action="store" method="get">
                 <div class="input-group">
-                    <div class="input-group-prepend">
+                    <div class="input-group-prepend w-75">
                         <select name="brand" class="form-control form-control-md" id="brand">
                             <option value="0">Author</option>
                             <?php
@@ -16,7 +16,7 @@
                             <?php endforeach; ?>
                         </select>
                     </div>
-                    <button class="btn btn-default"><i class="fas fa-check"></i></button>
+                    <button class="btn btn-sm"><i class="fas fa-check"></i></button>
                 </div>
             </form>
         </div>
@@ -24,7 +24,7 @@
         <div class="col-md-4">
             <form action="store" method="get">
                 <div class="input-group">
-                    <div class="input-group-prepend">
+                    <div class="input-group-prepend w-75">
                         <select name="category" class="form-control form-control-md" id="category">
                             <option value="0">Genre</option>
                             <?php
@@ -35,14 +35,14 @@
                             <?php endforeach; ?>
                         </select>
                     </div>
-                    <button class="btn btn-default"><i class="fas fa-check"></i></button>
+                    <button class="btn btn-sm"><i class="fas fa-check"></i></button>
                 </div>
             </form>
         </div>
         <div class="col-md-4">
             <form action="store" method="get">
                 <div class="input-group">
-                    <div class="input-group-prepend">
+                    <div class="input-group-prepend w-75">
                         <select name="subcategory" class="form-control form-control-md" id="subcategory">
                             <option value="0">Category</option>
                             <option>Best Seller</option>
@@ -54,7 +54,7 @@
                             <option>Turned into Film/TV</option>
                         </select>
                     </div>
-                    <button class="btn btn-default"><i class="fas fa-check"></i></button>
+                    <button class="btn btn-sm"><i class="fas fa-check"></i></button>
                 </div>
             </form>
         </div>
@@ -64,7 +64,7 @@
         <div class="col-md-4">
             <form action="store" method="get">
                 <div class="input-group">
-                    <div class="input-group-prepend">
+                    <div class="input-group-prepend w-75">
                         <select name="format" class="form-control form-control-md" id="format">
                             <option value="0">Format</option>
                             <option>Hardcover</option>
@@ -72,7 +72,7 @@
                         </select>
 
                     </div>
-                    <button class="btn btn-default"><i class="fas fa-check"></i></button>
+                    <button class="btn btn-sm"><i class="fas fa-check"></i></button>
                 </div>
             </form>
         </div>
@@ -80,14 +80,14 @@
         <div class="col-md-4">
             <form action="store" method="get">
                 <div class="input-group">
-                    <div class="input-group-prepend">
+                    <div class="input-group-prepend w-75">
                         <select name="condition" class="form-control form-control-md" id="condition">
                             <option value="0">Condition</option>
                             <option>New</option>
                             <option>Used</option>
                         </select>
                     </div>
-                    <button class="btn btn-default"><i class="fas fa-check"></i></button>
+                    <button class="btn btn-sm"><i class="fas fa-check"></i></button>
                 </div>
             </form>
         </div>
@@ -95,7 +95,7 @@
         <div class="col-md-4">
             <form action="store" method="get">
                 <div class="input-group">
-                    <div class="input-group-prepend">
+                    <div class="input-group-prepend w-75">
                         <select name="order" class="form-control form-control-md" id="order">
                             <option value="0">Sort</option>
                             <option value="order-title">Title (A-Z)</option>
@@ -104,7 +104,7 @@
                             <option value="order-price_desc">$(Highest-Lowest)</option>
                         </select>
                     </div>
-                    <button class="btn btn-default"><i class="fas fa-check"></i></button>
+                    <button class="btn btn-sm"><i class="fas fa-check"></i></button>
                 </div>
             </form>
         </div>
