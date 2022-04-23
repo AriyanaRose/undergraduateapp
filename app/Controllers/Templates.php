@@ -16,5 +16,5 @@ $product_details = $product_object->getAllProducts();
 
 // load views
 require_once APP_DIR . "Views/header.php";
-require_once APP_DIR . "Views/pages/store2.php";
+require_once APP_DIR . "Views/pages/useraccount.php";
 require_once APP_DIR . "Views/footer.php";

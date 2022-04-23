@@ -89,7 +89,9 @@ post($_ENV["PROJECT_PATH"] . 'wishlist', 'app/Controllers/Wishlist.php');
 get($_ENV["PROJECT_PATH"] . 'thankyoucontactus', 'app/Controllers/Thankyoucontactus.php');
 post($_ENV["PROJECT_PATH"] . 'thankyoucontactus', 'app/Controllers/Thankyoucontactus.php');
 
-
+//http://http://localhost/undergraduateapp/useraccount
+get($_ENV["PROJECT_PATH"] . 'useraccount', 'app/Controllers/Useraccount.php');
+post($_ENV["PROJECT_PATH"] . 'useraccount', 'app/Controllers/Useraccount.php');
 
 
 

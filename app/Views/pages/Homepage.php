@@ -1,4 +1,12 @@
 <style>
+    img,
+    figure {
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;
+    }
+
+
     .product-grid {
         font-family: 'Open Sans', sans-serif;
         text-align: center;
@@ -160,35 +168,6 @@
     }
 
 
-    .product-grid .add-to-cart {
-        color: #000;
-        background: #fff;
-        font-size: 13px;
-        font-weight: 600;
-        text-align: left;
-        width: 75%;
-        margin: 0 auto;
-        border: 1px solid #033772;
-        display: block;
-        transition: all .3s ease;
-    }
-
-    .product-grid .add-to-cart:hover {
-        color: #fff;
-        background: #033772;
-    }
-
-    .product-grid .add-to-cart i {
-        color: #fff;
-        background-color: #033772;
-        text-align: center;
-        line-height: 35px;
-        height: 35px;
-        width: 35px;
-        border-right: 1px solid #fff;
-        display: inline-block;
-    }
-
     .product-grid .add-to-cart span {
         text-align: center;
         line-height: 35px;
@@ -220,36 +199,67 @@
     }
 </style>
 
-<!--	URL: 
-    https://bbbootstrap.com/snippets/bootstrap-4-simple-catalog-template-59154867
-    Bootstrap 4 simple catalog template
-    Author: Anand Vunnam
-
-    https://bootstrapious.com/p/bootstrap-image-hover
-    BOOTSTRAP IMAGE HOVER
-     Author:  Bootstrapious   
+<!--	URL: http://www.prepbootstrap.com/bootstrap-template/faq-example
+                Bootstrap FAQ Bootsrap Frequently Asked Questions
+                Author:  PrepBootstrap
             -->
 
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
 <body>
-    <h1>Home Page</h1>
+    <div class="container my-5 bg-white">
+        <!-- Heading Row-->
+        <div class="row gx-4 gx-lg-5 align-items-center my-5">
+            <div class="col-lg-7 bg-dark">
+                <div id="demo" class="carousel slide" data-ride="carousel">
 
-        <!-- Sort and Filter Buttons	-->
-        <?php require_once APP_DIR . "Views/includes/store-filter.php"; ?>
-        
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/homepage1.png" alt="Los Angeles">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/homepage2.png" alt="Chicago">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/homepage3.png" alt="New York">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
+
+            </div>
+            <div class="col-lg-5 bg-white">
+                <h2 class="font-weight-light">Welcome to Quills & Pages</h2>
+                <p class="font-weight-light"></p>
+                <p class="font-weight-light">We specialize in a wide range of new and used books and comics to meet the needs of every reader</p>
+                <p class="font-weight-light">Sign up for an account today and earn 200 points to redeem at checkout!</p>
+                <div></div>
+                <p class="font-weight-light">Do see something you like? Want to customize your order? Want to request a special item? Contact us and our friendly staff are waiting to accomodate your needs!</p>
+                <a class="btn btn-primary text-center" href="<?php echo BASE_URL ?>store">Shop Here</a> 
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sort and Filter Buttons	-->
+    <?php require_once APP_DIR . "Views/includes/home-category.php"; ?>
+
+
     <div class="container my-5">
-
-
 
         <div class="row">
             <!-- Code don't delete	-->
@@ -257,19 +267,12 @@
                 $link = "details/" . $data["product_id"];
             ?>
                 <div class="col-md-3 col-sm-6">
-                    <div class="product-grid">
+                    <div class="product-grid bg-white">
                         <div class="product-image">
                             <!-- Code don't delete	-->
                             <a href="<?php echo $link ?>" class="image">
                                 <img src="<?php echo BASE_URL . $data["product_image1"] ?>">
                             </a>
-
-                            <ul class="product-links">
-                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-cart-arrow-down"></i></a></li>
-                                <li><a href="#" data-tip="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                <li><a href="#" data-tip="Compare"><i class="fa fa-random"></i></a></li>
-                                <li><a href="#" data-tip="Quick View"><i class="far fa-eye"></i></a></li>
-                            </ul>
                         </div>
                         <div class="product-content">
                             <h5 class="title font-weight-bold text-center">
@@ -280,13 +283,6 @@
                                 <!-- Code don't delete	-->
                                 <a><?php echo $data["product_brand"]; ?> </a>
                             </h6>
-                            <!-- Code don't delete	-->
-                            <div class="price text-center">$<?php echo $data["product_price"]; ?></div>
-                            <form action="cart" method="post">
-                                <input name="cart_quantity" value="1" type="hidden">
-                                <input name="product_id" value="<?php echo $data["product_id"]; ?>" type="hidden">
-                                <button name="add_to_cart" type="submit" class="btn btn-lg btn-block text-light">Add to Basket</button>
-                            </form>
                         </div>
                     </div>
                 </div>
@@ -295,6 +291,5 @@
         </div>
     </div>
 
-</body>
-
-</html>
+       <!-- Sort and Filter Buttons	-->
+       <?php require_once APP_DIR . "Views/includes/home-authors.php"; ?>

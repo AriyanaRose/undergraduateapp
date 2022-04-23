@@ -40,7 +40,7 @@ class User
             :email,
             :password,
             current_timestamp(),
-            'user'
+            'customer'
         );
         ";
 

@@ -229,9 +229,9 @@
         </a>
         <div class="dropdown-menu">
             <a href="<?php echo BASE_URL ?>registration" class="dropdown-item">Create Account</a>
-            <a href="#" class="dropdown-item">My Account</a>
+            <a href="<?php echo BASE_URL ?>useraccount" class="dropdown-item">My Account</a>
             <a href="#" class="dropdown-item">Orders</a>
-            <a href="#" class="dropdown-item">Wish List </a>
+            <a href="<?php echo BASE_URL ?>wishlist" class="dropdown-item">Wish List </a>
             <a href="<?php echo BASE_URL ?>login" class="dropdown-item">Log In </a>
         </div>
     </div>
