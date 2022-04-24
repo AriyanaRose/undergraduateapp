@@ -15,7 +15,7 @@
 
 <!--	URL: https://startbootstrap.com/template/blog-home
                         startbootstrap-blog-home
-                Author:  davidtmiller 
+            
             -->
 
 <!-- Page header with logo and tagline-->

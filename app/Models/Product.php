@@ -23,9 +23,18 @@ class Product
         return $result;
     }
 
-    public function getBestSeller()
+    public function getComingSoon()
     {
-        $sql = "SELECT * FROM products WHERE product_subcategory = 'Best Seller' LIMIT 4";
+        $sql = "SELECT * FROM products WHERE product_subcategory = 'Coming Soon' ORDER BY product_title ASC LIMIT 8";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute();
+        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $result;
+    }
+
+    public function getNewArrivals()
+    {
+        $sql = "SELECT * FROM products WHERE product_subcategory = 'New Arrivals' ORDER BY product_title ASC LIMIT 8";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute();
         $result = $stmt->fetchAll(PDO::FETCH_ASSOC);

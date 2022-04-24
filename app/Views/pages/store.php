@@ -220,8 +220,9 @@
     }
 </style>
 
-<!--	URL: https:
-                Name:
+<!--	URL: http://bestjquery.com/tutorial/product-grid/demo165/
+            http://bestjquery.com/tutorial/product-grid/demo81/
+                Name: Product Grid Style : Demo 165 and 81
                 Author: 
             -->
 

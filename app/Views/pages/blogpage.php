@@ -1,8 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-</head>
+<!--	URL: https://startbootstrap.com/template/blog-post
+                        startbootstrap-blog-home
+                
+            -->
 
 <body>
     <!-- Page content-->

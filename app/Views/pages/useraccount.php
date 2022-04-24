@@ -5,9 +5,9 @@
 </style>
 
 
-<!--	URL: https://bootsnipp.com/snippets/N6bPx
-                "maps google and form contact"
-                Author:  PaoloF
+<!--	URL: https://www.bootdey.com/snippets/view/bs4-edit-profile-page#css
+                Bootstrap snippet. bs4 edit profile page
+                Author:  Bootdey
             -->
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">

@@ -1,129 +1,179 @@
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
     body {
-  min-height: 100vh;
-  background: #fafafa;
-}
+        background-color: #F5F5F5
+    }
 
+    .box {
+        padding: 15px 15px;
+        transition: all .4s ease-in-out;
+        cursor: pointer background-color #f8f8f8;
+    }
 
-.social-link {
-  width: 30px;
-  height: 30px;
-  border: 1px solid #ddd;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #666;
-  border-radius: 50%;
-  transition: all 0.3s;
-  font-size: 0.9rem;
-}
+    .box:hover {
+        box-shadow: 2px 2px 10px #a5a5a5;
+        transform: scale(1.03)
+    }
 
-.social-link:hover,
-.social-link:focus {
-  background: #ddd;
-  text-decoration: none;
-  color: #555;
-}
+    a:hover {
+        text-decoration: none
+    }
 
-.progress {
-  height: 10px;
-}
+    p.text-muted {
+        margin: 0;
+        font-size: 0.9rem
+    }
+
+    b {
+        font-size: 1.12rem
+    }
+
+    .rounded-circle {
+        width: 60px;
+        height: 60px;
+        background-color: red
+    }
+
+    .blue {
+        background-color: #bedcfa;
+        transform: rotateZ(90deg)
+    }
+
+    .pale-blue {
+        background-color: #eff8ff
+    }
+
+    .pale-orange {
+        background-color: #ffe5b9
+    }
+
+    .pale-purple {
+        background-color: #e8e8e8
+    }
+
+    .pale-cyan {
+        background-color: #cffffe
+    }
+
+    .pale-pink {
+        background-color: #ffe4e4
+    }
+
+    .pale-pale {
+        background-color: #f4eeff
+    }
+
+    .pale-green {
+        background-color: #a0ffe6
+    }
+
+    .pale-pista {
+        background-color: #dbf6e9
+    }
+
+    hr.dotted {
+        border-top: 2px dotted #999;
+    }
 </style>
 
+<!--	URL: https://bbbootstrap.com/snippets/bootstrap-4-simple-catalog-template-59154867
+                Bootstrap 4 simple catalog template
+                Author:  Anand Vunnam 
+            -->
 
 <div class="container my-5 bg-white">
-  <!-- Third Row [Profiles]-->
-  <h2 class="font-weight-bold mb-2 text-center">Active Profiles</h2>
-  <div class="row pb-5 mb-4">
-
-    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-      <!-- Card-->
-      <div class="card rounded shadow-sm border-0">
-        <div class="card-body p-0">
-          <div class="bg-primary px-5 py-4 text-center card-img-top"><img src="https://bootstrapious.com/i/snippets/sn-cards/teacher-4.jpg" alt="..." width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-            <h5 class="text-white mb-0">Emma Nevoresky</h5>
-            <p class="small text-white mb-0">Elite user</p>
-          </div>
-          <div class="p-4 d-flex justify-content-center">
-            <ul class="list-inline mb-0">
-              <li class="list-inline-item">
-                <h5 class="font-weight-bold mb-0 d-block">241</h5><small class="text-muted"><i class="fa fa-picture-o mr-1 text-primary"></i>Photos</small>
-              </li>
-              <li class="list-inline-item">
-                <h5 class="font-weight-bold mb-0 d-block">84K</h5><small class="text-muted"><i class="fa fa-user-circle-o mr-1 text-primary"></i>Followers</small>
-              </li>
-            </ul>
-          </div>
+    <div class="h4 font-weight-bold text-center py-3">Customer's Favourite Authors</div>
+    <hr class="dotted">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 my-lg-0 my-3">
+            <div class="box bg-white">
+                <div class="d-flex align-items-center">
+                    <div class="rounded-circle mx-3 d-flex align-items-center justify-content-center pale-orange"> <img src="images/authors/paulo.jpg" alt=""> </div>
+                    <div class="d-flex flex-column"> <b></b> 
+                    <a href="http://localhost/undergraduateapp/store?brand=Paulo+Coelho" class="d-flex flex-column text-dark">Paulo Coelho</a> </div> 
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-
-    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-      <!-- Card-->
-      <div class="card rounded shadow-sm border-0">
-        <div class="card-body p-0">
-          <div class="bg-success px-5 py-4 text-center card-img-top"><img src="https://bootstrapious.com/i/snippets/sn-cards/teacher-2.jpg" alt="..." width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-            <h5 class="text-white mb-0">Samuel Hardy</h5>
-            <p class="small text-white mb-0">Elite user</p>
-          </div>
-          <div class="p-4 d-flex justify-content-center">
-            <ul class="list-inline mb-0">
-              <li class="list-inline-item">
-                <h5 class="font-weight-bold mb-0 d-block">241</h5><small class="text-muted"><i class="fa fa-picture-o mr-1 text-success"></i>Photos</small>
-              </li>
-              <li class="list-inline-item">
-                <h5 class="font-weight-bold mb-0 d-block">84K</h5><small class="text-muted"><i class="fa fa-user-circle-o mr-1 text-success"></i>Followers</small>
-              </li>
-            </ul>
-          </div>
+        <div class="col-lg-4 col-md-6 my-lg-0 my-3">
+            <div class="box bg-white">
+                <div class="d-flex align-items-center">
+                    <div class="rounded-circle mx-3 d-flex align-items-center justify-content-center pale-orange"> <img src="images/authors/lisa.jpg" alt=""> </div>
+                    <div class="d-flex flex-column"> <b></b> 
+                    <a href="http://localhost/undergraduateapp/store?brand=Lisa+Jewell" class="d-flex flex-column text-dark">Lisa Jewell</a> </div> 
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-
-    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-      <!-- Card-->
-      <div class="card rounded shadow-sm border-0">
-        <div class="card-body p-0">
-          <div class="bg-info px-5 py-4 text-center card-img-top"><img src="https://bootstrapious.com/i/snippets/sn-cards/teacher-7.jpg" alt="..." width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-            <h5 class="text-white mb-0">Tom Sunderland</h5>
-            <p class="small text-white mb-0">Elite user</p>
-          </div>
-          <div class="p-4 d-flex justify-content-center">
-            <ul class="list-inline mb-0">
-              <li class="list-inline-item">
-                <h5 class="font-weight-bold mb-0 d-block">241</h5><small class="text-muted"><i class="fa fa-picture-o mr-1 text-info"></i>Photos</small>
-              </li>
-              <li class="list-inline-item">
-                <h5 class="font-weight-bold mb-0 d-block">84K</h5><small class="text-muted"><i class="fa fa-user-circle-o mr-1 text-info"></i>Followers</small>
-              </li>
-            </ul>
-          </div>
+        <div class="col-lg-4 col-md-6 my-lg-0 my-3">
+            <div class="box bg-white">
+                <div class="d-flex align-items-center">
+                    <div class="rounded-circle mx-3 d-flex align-items-center justify-content-center pale-purple"> <img src="images/authors/roald.jpg" alt=""> </div>
+                    <div class="d-flex flex-column"> <b></b> 
+                    <a href="http://localhost/undergraduateapp/store?brand=Roald+Dahl" class="d-flex flex-column text-dark">Roald Dahl</a> 
+                 </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-
-    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-      <!-- Card-->
-      <div class="card rounded shadow-sm border-0">
-        <div class="card-body p-0">
-          <div class="bg-warning px-5 py-4 text-center card-img-top"><img src="https://bootstrapious.com/i/snippets/sn-cards/teacher-1.jpg" alt="..." width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
-            <h5 class="text-white mb-0">John Tarly</h5>
-            <p class="small text-white mb-0">Elite user</p>
-          </div>
-          <div class="p-4 d-flex justify-content-center">
-            <ul class="list-inline mb-0">
-              <li class="list-inline-item">
-                <h5 class="font-weight-bold mb-0 d-block">241</h5><small class="text-muted"><i class="fa fa-picture-o mr-1 text-warning"></i>Photos</small>
-              </li>
-              <li class="list-inline-item">
-                <h5 class="font-weight-bold mb-0 d-block">84K</h5><small class="text-muted"><i class="fa fa-user-circle-o mr-1 text-warning"></i>Followers</small>
-              </li>
-            </ul>
-          </div>
+        <div class="col-lg-4 col-md-6 my-lg-3 my-3">
+            <div class="box bg-white">
+                <div class="d-flex align-items-center">
+                    <div class="rounded-circle mx-3 d-flex align-items-center justify-content-center pale-cyan"> <img src="images/authors/beth.jpg" alt=""> </div>
+                    <div class="d-flex flex-column"> <b></b> 
+                    <a href="http://localhost/undergraduateapp/store?brand=Beth+OLeary" class="d-flex flex-column text-dark">Beth O'Leary</a> 
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="col-lg-4 col-md-6 my-lg-3 my-3">
+            <div class="box bg-white">
+                <div class="d-flex align-items-center">
+                    <div class="rounded-circle mx-3 d-flex align-items-center justify-content-center pale-pink"> <img src="images/authors/khalid.jpg" alt=""> </div>
+                    <div class="d-flex flex-column"> <b></b> 
+                    <a href="http://localhost/undergraduateapp/store?brand=Khaled+Hosseini" class="d-flex flex-column text-dark">Khaled Hosseini</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 my-lg-3 my-3">
+            <div class="box bg-white">
+                <div class="d-flex align-items-center">
+                    <div class="rounded-circle mx-3 d-flex align-items-center justify-content-center pale-orange"> <img src="images/authors/jasmine.jpg" alt=""> </div>
+                    <div class="d-flex flex-column"> <b></b> 
+                    <a href="http://localhost/undergraduateapp/store?brand=Jasmine+Guillory" class="d-flex flex-column text-dark">Jasmine Guillory</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 my-lg-0 my-3">
+            <div class="box bg-white">
+                <div class="d-flex align-items-center">
+                    <div class="rounded-circle mx-3 d-flex align-items-center justify-content-center pale-orange"> <img src="images/authors/peter.jpg" alt=""> </div>
+                    <div class="d-flex flex-column"> <b></b> 
+                    <a href="http://localhost/undergraduateapp/store?brand=Peter+Swanson" class="d-flex flex-column text-dark">Peter Swanson</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 my-lg-0 my-3">
+            <div class="box bg-white">
+                <div class="d-flex align-items-center">
+                    <div class="rounded-circle mx-3 d-flex align-items-center justify-content-center pale-green"> <img src="images/authors/chloe.jpg" alt=""> </div>
+                    <div class="d-flex flex-column"> <b></b> 
+                    <a href="http://localhost/undergraduateapp/store?brand=Chloe+Gong" class="d-flex flex-column text-dark">Chloe Gong</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 my-lg-0 my-3">
+            <div class="box bg-white">
+                <div class="d-flex align-items-center">
+                    <div class="rounded-circle mx-3 d-flex align-items-center justify-content-center pale-pista"> <img src="images/authors/eric.jpg" alt=""> </div>
+                    <div class="d-flex flex-column"> <b></b>
+                    <a href="" class="d-flex flex-column text-dark">Eric Jerome Dickey</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+    <br>
 </div>
-
-<br>

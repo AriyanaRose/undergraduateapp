@@ -8,9 +8,7 @@
 
 
     .product-grid {
-        font-family: 'Open Sans', sans-serif;
         text-align: center;
-        border: 1px solid #ebebeb;
     }
 
     .product-grid .product-image {
@@ -23,8 +21,8 @@
     }
 
     .product-grid .product-image img {
-        width: 100%;
-        height: 300px;
+        width: 50%;
+        height: 50%;
         transition: all 0.05s ease 0s;
     }
 
@@ -103,11 +101,11 @@
         content: attr(data-tip);
         color: #fff;
         background: #000;
-        font-size: 12px;
+        font-size: 10px;
         font-weight: 500;
         line-height: 18px;
         text-shadow: none;
-        padding: 5px 10px;
+        padding: 5px 5px;
         white-space: nowrap;
         display: none;
         transform: translateY(-50%);
@@ -134,7 +132,7 @@
 
     .product-grid .product-content {
         text-align: left;
-        padding: 25px 15px;
+        padding: 10px 10px;
     }
 
     .product-grid .title {
@@ -155,7 +153,7 @@
 
     .product-grid .price {
         color: #b83616;
-        font-size: 15px;
+        font-size: 10px;
         font-weight: 700;
         margin: 0 0 4px;
     }
@@ -189,12 +187,19 @@
         opacity: 0.5
     }
 
-
     body {
         min-height: 100vh;
     }
 
     .btn-lg {
+        background-color: #011f4b;
+    }
+
+    hr.dotted {
+        border-top: 2px dotted #999;
+    }
+
+    .jumbotron-fluid {
         background-color: #011f4b;
     }
 </style>
@@ -204,92 +209,80 @@
                 Author:  PrepBootstrap
             -->
 
-<body>
-    <div class="container my-5 bg-white">
-        <!-- Heading Row-->
-        <div class="row gx-4 gx-lg-5 align-items-center my-5">
-            <div class="col-lg-7 bg-dark">
-                <div id="demo" class="carousel slide" data-ride="carousel">
 
-                    <!-- Indicators -->
-                    <ul class="carousel-indicators">
-                        <li data-target="#demo" data-slide-to="0" class="active"></li>
-                        <li data-target="#demo" data-slide-to="1"></li>
-                        <li data-target="#demo" data-slide-to="2"></li>
-                    </ul>
+<!-- Home Carousel	-->
+<?php require_once APP_DIR . "Views/includes/home-cara.php"; ?>
 
-                    <!-- The slideshow -->
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="images/homepage1.png" alt="Los Angeles">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/homepage2.png" alt="Chicago">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/homepage3.png" alt="New York">
-                        </div>
+<!-- Category	-->
+<?php require_once APP_DIR . "Views/includes/home-category.php"; ?>
+<!-- Authors	-->
+<?php require_once APP_DIR . "Views/includes/home-authors.php"; ?>
+
+<!-- New Arrivals	-->
+<div class="container my-5 bg-white">
+    <h2 class="h4 font-weight-bold text-center py-3">New Arrivals</h2>
+    <hr class="dotted">
+    <div class="row">
+        <!-- Code don't delete	-->
+        <?php foreach ($product_new as $data) :
+            $link = "details/" . $data["product_id"];
+        ?>
+            <div class="col-lg-3 w-100">
+                <div class="product-grid">
+                    <div class="product-image">
+                        <!-- Code don't delete	-->
+                        <a href="<?php echo $link ?>" class="image">
+                            <img src="<?php echo BASE_URL . $data["product_image1"] ?>">
+                        </a>
                     </div>
-
-                    <!-- Left and right controls -->
-                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#demo" data-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </a>
-
-                </div>
-
-            </div>
-            <div class="col-lg-5 bg-white">
-                <h2 class="font-weight-light">Welcome to Quills & Pages</h2>
-                <p class="font-weight-light"></p>
-                <p class="font-weight-light">We specialize in a wide range of new and used books and comics to meet the needs of every reader</p>
-                <p class="font-weight-light">Sign up for an account today and earn 200 points to redeem at checkout!</p>
-                <div></div>
-                <p class="font-weight-light">Do see something you like? Want to customize your order? Want to request a special item? Contact us and our friendly staff are waiting to accomodate your needs!</p>
-                <a class="btn btn-primary text-center" href="<?php echo BASE_URL ?>store">Shop Here</a> 
-                <br>
-            </div>
-        </div>
-    </div>
-
-    <!-- Sort and Filter Buttons	-->
-    <?php require_once APP_DIR . "Views/includes/home-category.php"; ?>
-
-
-    <div class="container my-5">
-
-        <div class="row">
-            <!-- Code don't delete	-->
-            <?php foreach ($product_details as $data) :
-                $link = "details/" . $data["product_id"];
-            ?>
-                <div class="col-md-3 col-sm-6">
-                    <div class="product-grid bg-white">
-                        <div class="product-image">
+                    <div class="product-content">
+                        <h5 class="title font-weight-bold text-center text-sm">
                             <!-- Code don't delete	-->
-                            <a href="<?php echo $link ?>" class="image">
-                                <img src="<?php echo BASE_URL . $data["product_image1"] ?>">
-                            </a>
-                        </div>
-                        <div class="product-content">
-                            <h5 class="title font-weight-bold text-center">
-                                <!-- Code don't delete	-->
-                                <a href="<?php echo $link ?>"><?php echo $data["product_title"]; ?> </a>
-                            </h5>
-                            <h6 class="brand font-weight-light text-center">
-                                <!-- Code don't delete	-->
-                                <a><?php echo $data["product_brand"]; ?> </a>
-                            </h6>
-                        </div>
+                            <a href="<?php echo $link ?>"><?php echo $data["product_title"]; ?> </a>
+                        </h5>
+                        <h6 class="brand font-weight-light text-center">
+                            <!-- Code don't delete	-->
+                            <a><?php echo $data["product_brand"]; ?> </a>
+                        </h6>
                     </div>
                 </div>
-                <!-- Code don't delete	-->
-            <?php endforeach; ?>
-        </div>
+            </div>
+            <!-- Code don't delete	-->
+        <?php endforeach; ?>
     </div>
+</div>
 
-       <!-- Sort and Filter Buttons	-->
-       <?php require_once APP_DIR . "Views/includes/home-authors.php"; ?>
+<!-- Coming Soon	-->
+<div class="container my-5 bg-white">
+    <h2 class="h4 font-weight-bold text-center py-3">Coming Soon</h2>
+    <hr class="dotted">
+
+    <div class="row">
+        <!-- Code don't delete	-->
+        <?php foreach ($product_details as $data) :
+            $link = "details/" . $data["product_id"];
+        ?>
+            <div class="col-md-3 w-100">
+                <div class="product-grid">
+                    <div class="product-image">
+                        <!-- Code don't delete	-->
+                        <a href="<?php echo $link ?>" class="image">
+                            <img src="<?php echo BASE_URL . $data["product_image1"] ?>">
+                        </a>
+                    </div>
+                    <div class="product-content">
+                        <h5 class="title font-weight-bold text-center text-sm">
+                            <!-- Code don't delete	-->
+                            <a href="<?php echo $link ?>"><?php echo $data["product_title"]; ?> </a>
+                        </h5>
+                        <h6 class="brand font-weight-light text-center">
+                            <!-- Code don't delete	-->
+                            <a><?php echo $data["product_brand"]; ?> </a>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Code don't delete	-->
+        <?php endforeach; ?>
+    </div>
+</div>

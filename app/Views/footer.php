@@ -6,8 +6,8 @@
 </style>
 
 <!--	URL: https://mdbootstrap.com/docs/standard/navigation/footer/
-                Basic example with newsletter section from Advanced example
-                Author: Tutorial Republic
+                Advanced example
+                Author: MDBOOTSTRAP
             -->
 
 <!-- Footer -->

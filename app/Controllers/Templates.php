@@ -13,8 +13,7 @@ $product_object = new Product($db_object);
 $product_details = $product_object->getAllProducts();
 //debug($product_details);
 
-
 // load views
 require_once APP_DIR . "Views/header.php";
-require_once APP_DIR . "Views/pages/useraccount.php";
+require_once APP_DIR . "Views/includes/home-authors.php";
 require_once APP_DIR . "Views/footer.php";

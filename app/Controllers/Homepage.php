@@ -19,10 +19,20 @@ $product_object = new Product($db_object);
 
 if($_SERVER ["REQUEST_METHOD"] == "GET"){
     if (!empty($_GET)){
-         $product_details = $product_object->getBestSeller();
+         $product_details = $product_object->getComingSoon();
     } else{
 
-        $product_details = $product_object->getBestSeller();
+        $product_details = $product_object->getComingSoon();
+    }
+}
+
+
+if($_SERVER ["REQUEST_METHOD"] == "GET"){
+    if (!empty($_GET)){
+         $product_new = $product_object->getNewArrivals();
+    } else{
+
+        $product_new = $product_object->getNewArrivals();
     }
 }
 
