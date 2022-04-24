@@ -56,6 +56,7 @@ class Order
 
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute($data);
+        return $this->pdo->lastInsertId();
     }
 
 
@@ -78,12 +79,13 @@ class Order
             array_push($update_data, ["cart_id" => $data["cart_id"]]);
         }
 
+        $this->multiInsert($insert_data);
         $this->multiUpdate($update_data);
     }
 
 
 
-    public function multiInsert()
+    public function multiInsert($data)
     {
 
         $sql = "INSERT INTO `undergradapp`.`order_details`
@@ -104,7 +106,9 @@ class Order
         );
         ";
         $stmt = $this->pdo->prepare($sql);
-        $stmt->execute();
+        foreach ($data as $array) {
+            $stmt->execute($array);
+        }
     }
 
 
@@ -112,6 +116,8 @@ class Order
     {
         $sql = "UPDATE cart SET cart_status = 'purchased' WHERE cart_id = :cart_id";
         $stmt = $this->pdo->prepare($sql);
-        $stmt->execute();
+        foreach ($data as $array) {
+            $stmt->execute($array);
+        }
     }
 }

@@ -5,7 +5,7 @@ require_once APP_DIR . "utils/code.precheckout.php";
 //$cart_object->addToCart(1,1,2,);
 //$cart_object->addToCart(2,2,2,);
 //cart_object->removeFromCart(1,1);
-debug($_POST);
+//debug($_POST);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST["cart_id"])) {

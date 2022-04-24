@@ -43,6 +43,11 @@
 	hr.dashed {
     border-top: 2px dashed #999;
 }
+
+hr.solid {
+    border-top: 2px solid #999;
+}
+
 </style>
 
 
@@ -60,11 +65,10 @@
 	<div class="text-dark text-center my-3">
 		<h2 class="fw-bolder">Frequently Asked Questions</h2>
 	</div>
-	<hr class="dashed">
 
 	<div class="faqHeader text-center"></div>
 	<div class="" id="accordion">
-		<div class="faqHeader text-center">General Questions</div>
+		<div class="faqHeader">General Questions</div>
 		<hr class="dashed">
 		<div name="card1" class="card">
 			<div class="card-header">
@@ -115,9 +119,9 @@
 			</div>
 		</div>
 
-		<hr class="dashed">
+		<hr class="solid">
 
-		<div class="faqHeader text-center">Orders, Delivery & Billing</div>
+		<div class="faqHeader">Orders, Delivery & Billing</div>
 		<hr class="dashed">
 		<div name="card5" class="card ">
 			<div class="card-header">
@@ -200,9 +204,9 @@
 
 		</div>
 
-		<hr class="dashed">
+		<hr class="solid">
 
-		<div class="faqHeader text-center">Wish List, Custom Orders & Pre-Orders</div>
+		<div class="faqHeader">Wish List, Custom Orders & Pre-Orders</div>
 		<hr class="dashed">
 		<div name="card10" class="card ">
 			<div class="card-header">
@@ -241,7 +245,7 @@
 			</div>
 		</div>
 
-		<hr class="dashed">
+		<hr class="solid">
 
 	</div>
 

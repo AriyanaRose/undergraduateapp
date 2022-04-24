@@ -149,7 +149,7 @@
 <section class="shopping-cart dark">
 	<div class="container">
 		<div class="block-heading">
-			<h2>Shopping Cart</h2>
+			<h2 class="text-dark">Shopping Cart</h2>
 		</div>
 		<div class="content">
 			<div class="row">

@@ -10,6 +10,12 @@ $completed = false;
 $cart_details = $cart_object->getCartDetails($user_id);
 
 
+//check if cart is empty
+if(empty($cart_details)){
+    echo "Cart is empty";
+    exit;
+}
+
 //calculate total
 $cart_object->calculateTotal();
 
@@ -56,7 +62,7 @@ $total_points = ($cart_object->getUserTotalPoints() + $points_gained) - $points_
 
 
 //insert order
-$order_object->insertOrder(
+$order_id = $order_object->insertOrder(
     $user_id,
     $data["subtotal"],
     $data["total"],
@@ -67,9 +73,8 @@ $order_object->insertOrder(
 
 
 
-
 //insert order details
-
+$order_object->insertOrderDetails($cart_details, $order_id);
 
 
 
@@ -78,5 +83,4 @@ $order_object->insertOrder(
 echo $total_points;
 $user_object->updateTotalPoints($user_id, $total_points);
 $user_object->setTotalPoints($points_gained);
-
 $cart_object->resetSessions();
