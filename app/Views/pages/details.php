@@ -1,6 +1,7 @@
 <style>
     .details-img {
         height: 600px;
+        width: auto;
     }
 
     /* Bullet */
@@ -10,7 +11,7 @@
 </style>
 
 
-<div class="container my-5">
+<div class="container my-2">
 
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb breadcrumb-bullet">
@@ -23,9 +24,14 @@
     <div class="row">
 
         <div class="col-md-6">
-
+            <form method="post">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button name="add_to_wishlist" type="submit" class="btn btn-outline-danger btn-md float-right "><i class="fa fa-heart"></i></button>
+                    </div>
+                </div>
+            </form>
             <img class="img-fluid details-img" src="<?php echo BASE_URL . $data["product_image1"] ?>" alt="">
-
         </div>
 
 
@@ -51,8 +57,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <button name="add_to_wishlist" type="submit" class="btn btn-outline-danger btn-md"> Add to Wish List</button>
-                            <button name="add_to_cart" type="submit" class="btn btn-outline-success btn-md">Add to Basket</button>
+                            <button name="add_to_cart" type="submit" class="btn btn-outline-success btn-lg">Add to Basket</button>
                         </div>
                     </div>
                 </form>

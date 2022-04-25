@@ -20,8 +20,6 @@ $product_details = $product_object->getProductDetails($id);
 //debug($product_details);
 
 
-debug($_POST);
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST["cart_quantity"])) {
         echo "you clicked a button";
@@ -34,6 +32,13 @@ foreach ($product_details as $data) {
     # code...
 }
 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_POST["add_to_wishlist"])) {
+        echo "you clicked a button";
+        require_once APP_DIR . "utils/code.isLoggedIn.php";
+        $wish_object->addtoWishlist($user_id, $id,$_POST["add_to_wishlist"]);
+    }
+}
 
 // load views
 require_once APP_DIR . "Views/header.php";

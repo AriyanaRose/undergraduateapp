@@ -91,7 +91,7 @@ hr.solid {
 			</div>
 			<div id="collapseOne" class="panel-collapse collapse in">
 				<div class="card-body">
-					Establishing an online account with Quills & Pages assures you that your purchasing information is secure, confidential and accessible to you. Once you establish an account, you will only need to sign-in to place an order in the future, check on the status of your current order, view past purchases or update your profile information.
+					Establishing an online account with Quills & Parchment assures you that your purchasing information is secure, confidential and accessible to you. Once you establish an account, you will only need to sign-in to place an order in the future, check on the status of your current order, view past purchases or update your profile information.
 				</div>
 			</div>
 		</div>

@@ -123,10 +123,10 @@
           </div>
         </form>
         <div class="text-dark">
-          <h2 class="text mt-4 font-weight-bold text-center">Quills & Pages</h2>
+          <h2 class="text mt-4 font-weight-bold text-center">Quills & Parchment</h2>
           <i class="fas fa-phone mt-3"></i> <a href="tel:+">(+1868) 267-8123</a><br>
           <i class="fas fa-phone mt-3"></i> <a href="tel:+">(+1868) 636-9548</a><br>
-          <i class="fa fa-envelope mt-3"></i> <a href="">quillsandpages@mail.com</a><br>
+          <i class="fa fa-envelope mt-3"></i> <a href="">quillsandparchment@mail.com</a><br>
           <i class="fa fa-address-card mt-3"></i> McBean Village, Couva, Trinidad & Tobago<br>
         </div>
       </div>

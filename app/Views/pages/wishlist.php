@@ -11,116 +11,116 @@
     @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 
-.container-fluid {
-    margin-top: 70px
-}
+    .container-fluid {
+        margin-top: 70px
+    }
 
-.card-body {
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    padding: 1.40rem
-}
+    .card-body {
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        padding: 1.40rem
+    }
 
-.img-sm {
-    width: 80px;
-    height: 80px
-}
+    .img-sm {
+        width: 80px;
+        height: 80px
+    }
 
-.itemside .info {
-    padding-left: 15px;
-    padding-right: 7px
-}
+    .itemside .info {
+        padding-left: 15px;
+        padding-right: 7px
+    }
 
-.table-shopping-cart .price-wrap {
-    line-height: 1.2
-}
+    .table-shopping-cart .price-wrap {
+        line-height: 1.2
+    }
 
-.table-shopping-cart .price {
-    font-weight: bold;
-    margin-right: 5px;
-    display: block
-}
+    .table-shopping-cart .price {
+        font-weight: bold;
+        margin-right: 5px;
+        display: block
+    }
 
-.text-muted {
-    color: #969696 !important
-}
+    .text-muted {
+        color: #969696 !important
+    }
 
-a {
-    text-decoration: none !important
-}
+    a {
+        text-decoration: none !important
+    }
 
-.card {
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, .125);
-    border-radius: 0px
-}
+    .card {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0, 0, 0, .125);
+        border-radius: 0px
+    }
 
-.itemside {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%
-}
+    .itemside {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%
+    }
 
-.dlist-align {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex
-}
+    .dlist-align {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex
+    }
 
-[class*="dlist-"] {
-    margin-bottom: 5px
-}
+    [class*="dlist-"] {
+        margin-bottom: 5px
+    }
 
-.coupon {
-    border-radius: 1px
-}
+    .coupon {
+        border-radius: 1px
+    }
 
-.price {
-    font-weight: 600;
-    color: #212529
-}
+    .price {
+        font-weight: 600;
+        color: #212529
+    }
 
-.btn.btn-out {
-    outline: 1px solid #fff;
-    outline-offset: -5px
-}
+    .btn.btn-out {
+        outline: 1px solid #fff;
+        outline-offset: -5px
+    }
 
-.btn-main {
-    border-radius: 2px;
-    text-transform: capitalize;
-    font-size: 15px;
-    padding: 10px 19px;
-    cursor: pointer;
-    color: #fff;
-    width: 100%
-}
+    .btn-main {
+        border-radius: 2px;
+        text-transform: capitalize;
+        font-size: 15px;
+        padding: 10px 19px;
+        cursor: pointer;
+        color: #fff;
+        width: 100%
+    }
 
-.btn-light {
-    color: #ffffff;
-    background-color: #F44336;
-    border-color: #f8f9fa;
-    font-size: 12px
-}
+    .btn-light {
+        color: #ffffff;
+        background-color: #F44336;
+        border-color: #f8f9fa;
+        font-size: 12px
+    }
 
-.btn-light:hover {
-    color: #ffffff;
-    background-color: #F44336;
-    border-color: #F44336
-}
+    .btn-light:hover {
+        color: #ffffff;
+        background-color: #F44336;
+        border-color: #F44336
+    }
 
-.btn-apply {
-    font-size: 11px
-}
+    .btn-apply {
+        font-size: 11px
+    }
 </style>
 
 <!--	
@@ -137,6 +137,7 @@ a {
     <div class="row">
         <aside class="col-lg-12">
             <div class="card">
+
                 <div class="table-responsive">
                     <table class="table table-borderless table-shopping-cart">
                         <thead class="text-muted">
@@ -154,7 +155,7 @@ a {
                                         <div class="aside"><img src="https://i.imgur.com/1eq5kmC.png" class="img-sm"></div>
                                         <figcaption class="info"> <a href="#" class="title text-dark" data-abc="true">Tshirt with round nect</a>
                                             <p class="text-muted small">Author: L <br> Condition: MAXTRA <br> Format: MAXTRA</p>
-                                            
+
                                         </figcaption>
                                     </figure>
                                 </td>
@@ -173,6 +174,7 @@ a {
                         </tbody>
                     </table>
                 </div>
+
             </div>
         </aside>
     </div>

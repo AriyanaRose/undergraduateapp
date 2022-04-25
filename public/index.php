@@ -93,6 +93,10 @@ post($_ENV["PROJECT_PATH"] . 'thankyoucontactus', 'app/Controllers/Thankyouconta
 get($_ENV["PROJECT_PATH"] . 'useraccount', 'app/Controllers/Useraccount.php');
 post($_ENV["PROJECT_PATH"] . 'useraccount', 'app/Controllers/Useraccount.php');
 
+//http://http://localhost/undergraduateapp/useraccount
+get($_ENV["PROJECT_PATH"] . 'rewards', 'app/Controllers/Rewards.php');
+post($_ENV["PROJECT_PATH"] . 'rewards', 'app/Controllers/Rewards.php');
+
 
 
 

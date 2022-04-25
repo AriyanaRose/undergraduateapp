@@ -167,7 +167,7 @@
 
 
 <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="<?php echo BASE_URL ?>home">Quills&<b>Pages</b></a>
+    <a class="navbar-brand" href="<?php echo BASE_URL ?>home">Quills&<b>Parchment</b></a>
     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
     </button>

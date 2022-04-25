@@ -27,7 +27,7 @@
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
           <h6 class="text fw-bold mb-4">
-            Quills & Pages
+            Quills & Parchment
           </h6>
           <h6>
             "A bookworm's paradise"
@@ -89,7 +89,7 @@
           <p><i class="fas fa-home me-3"></i> Couva, Trinidad & Tobago</p>
           <p>
             <i class="fas fa-envelope me-3"></i>
-            quillsandpages@mail.com
+            quillsandparchment@mail.com
           </p>
           <p><i class="fas fa-phone me-3"></i> + 1 868 267 8895</p>
           <p><i class="fas fa-print me-3"></i> + 1 868 267 8978</p>
@@ -142,7 +142,7 @@
   <!-- Copyright -->
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
     © 2022 Copyright:
-    <a class="text-reset fw-bold" href="<?php echo BASE_URL ?>home">Quills & Pages</a>
+    <a class="text-reset fw-bold" href="<?php echo BASE_URL ?>home">Quills & Parchment</a>
   </div>
   <!-- Copyright -->
 </footer>

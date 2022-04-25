@@ -16,7 +16,7 @@
                             <?php endforeach; ?>
                         </select>
                     </div>
-                    <button class="btn btn-sm"><i class="fas fa-check"></i></button>
+                    <button class="btn btn-sm"><i class="fa fa-magic"></i></button>
                 </div>
             </form>
         </div>
@@ -35,7 +35,7 @@
                             <?php endforeach; ?>
                         </select>
                     </div>
-                    <button class="btn btn-sm"><i class="fas fa-check"></i></button>
+                    <button class="btn btn-sm"><i class="fa fa-magic"></i></button>
                 </div>
             </form>
         </div>
@@ -54,7 +54,7 @@
                             <option>Turned into Film/TV</option>
                         </select>
                     </div>
-                    <button class="btn btn-sm"><i class="fas fa-check"></i></button>
+                    <button class="btn btn-sm"><i class="fa fa-magic"></i></button>
                 </div>
             </form>
         </div>
@@ -72,7 +72,7 @@
                         </select>
 
                     </div>
-                    <button class="btn btn-sm"><i class="fas fa-check"></i></button>
+                    <button class="btn btn-sm"><i class="fa fa-magic"></i></button>
                 </div>
             </form>
         </div>
@@ -87,7 +87,7 @@
                             <option>Used</option>
                         </select>
                     </div>
-                    <button class="btn btn-sm"><i class="fas fa-check"></i></button>
+                    <button class="btn btn-sm"><i class="fa fa-magic"></i></button>
                 </div>
             </form>
         </div>
@@ -104,7 +104,7 @@
                             <option value="order-price_desc">$(Highest-Lowest)</option>
                         </select>
                     </div>
-                    <button class="btn btn-sm"><i class="fas fa-check"></i></button>
+                    <button class="btn btn-sm"><i class="fa fa-magic"></i></button>
                 </div>
             </form>
         </div>

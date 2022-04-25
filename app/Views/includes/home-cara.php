@@ -28,7 +28,8 @@
         top: 0;
         left: 0;
         min-width: 100%;
-        height: 32rem;
+        height: 100%;
+        opacity: 0.2;
     }
 
 
@@ -104,32 +105,47 @@
     </ol>
     <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
-            <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+            <img class="first-slide" src="images/home6.jpg" alt="First slide">
             <div class="container">
                 <div class="carousel-caption d-none d-md-block text-left">
-                    <h1>Reward Points</h1>
-                    <p>Sign up for an account today and earn 200 Points to redeem at Checkout</p>
+                    <h1 class="text-white">
+                        <bold>Why choose Us?</bold>
+                    </h1>
+                    <h1 class="text-white">
+                        <bold>We offer members reward points</bold>
+                    </h1>
+                    <p class="text-white">Sign up for an account today and earn 200 Points and for every $1 spent earn 1 point to redeem at checkout. See reward points section for more details.</p>
                     <p><a class="btn btn-lg btn-primary" href="<?php echo BASE_URL ?>registration" role="button">Sign up today</a></p>
                 </div>
             </div>
         </div>
         <div class="carousel-item">
-            <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+            <img class="second-slide" src="images/home2.jpg" alt="Second slide">
             <div class="container">
                 <div class="carousel-caption d-none d-md-block">
-                    <h1>Another example headline.</h1>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                    <h1 class="text-white">
+                        <bold>Why choose Us?</bold>
+                    </h1>
+                    <h1 class="text-white">
+                        <bold>We offer a wide range of new and used books and comics to suit every interest and pocket.</bold>
+                    </h1>
+                    <p>Whether you love adventure, mystery, manga or romance we have an extensive selection to satisfy your inner biblophile.</p>
+                    <p><a class="btn btn-lg btn-primary" href="<?php echo BASE_URL ?>store" role="button">See books and comics</a></p>
                 </div>
             </div>
         </div>
         <div class="carousel-item">
-            <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+            <img class="third-slide" src="images/home3.jpg" alt="Third slide">
             <div class="container">
                 <div class="carousel-caption d-none d-md-block text-right">
-                    <h1>One more for good measure.</h1>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                    <h1 class="text-white">
+                        <bold>Why choose Us?</bold>
+                    </h1>
+                    <h1 class="text-white">
+                        <bold>Don't see something you like? Want to customize an order? We are happy to facilitate your requests.</bold>
+                    </h1>
+                    <p class="text-white">Fill out a contact form and one of our book wizards will contact you in shortly to discuss your purchasing needs.</p>
+                    <p><a class="btn btn-lg btn-primary" href="<?php echo BASE_URL ?>contactus" role="button">Contact Us</a></p>
                 </div>
             </div>
         </div>

@@ -25,7 +25,7 @@
 
 <!-- Page content-->
 <div class="text-dark text-center my-5">
-    <h1 class="fw-bolder">Welcome to Quills & Pages Blog</h1>
+    <h1 class="fw-bolder">Welcome to Quills & Parchment Blog</h1>
 </div>
 <div class="container">
     <div class="row">

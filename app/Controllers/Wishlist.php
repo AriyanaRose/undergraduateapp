@@ -14,7 +14,9 @@ $wish_object = new Wishlist($db_object);
 
 
 $wish_details = $wish_object->getWishlistDetails(1);
-debug($wish_details);
+//debug($wish_details);
+
+
 
 // load views
 require_once APP_DIR . "Views/header.php";

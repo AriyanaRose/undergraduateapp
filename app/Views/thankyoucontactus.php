@@ -83,7 +83,7 @@
     <div class="_body">
         <div class="_box">
             <h2>
-            One of our trusted customer services representatives will contact you in shortly.
+            One of our trusted book wizards will contact you in shortly.
             </h2>
         </div>
     </div>
