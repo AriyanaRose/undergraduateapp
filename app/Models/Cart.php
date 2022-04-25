@@ -83,8 +83,11 @@ class Cart
     }
 
 
-    public function updateCart()
+    public function updateCart($user_id, $product_id, $cart_quantity)
     {
+        $sql = "UPDATE cart SET cart_quantity = ? WHERE cart.user_id = ? AND product_id =?;";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute($cart_quantity, $user_id, $product_id);
     }
 
 

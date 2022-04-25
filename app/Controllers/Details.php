@@ -5,6 +5,8 @@ require_once APP_DIR . "Config/Database.php";
 require_once APP_DIR . "Models/User.php";
 require_once APP_DIR . "Models/Product.php";
 require_once APP_DIR . "Models/Cart.php";
+require_once APP_DIR . "Models/Wishlist.php";
+
 
 
 // create objects
@@ -12,12 +14,13 @@ $db_object = new Database();
 $user_object = new User($db_object);
 $product_object = new Product($db_object);
 $cart_object = new Cart($db_object);
+$wish_object = new Wishlist($db_object);
 
 $product_details = $product_object->getProductDetails($id);
 //debug($product_details);
 
 
-//debug($_POST);
+debug($_POST);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST["cart_quantity"])) {
@@ -30,6 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 foreach ($product_details as $data) {
     # code...
 }
+
 
 // load views
 require_once APP_DIR . "Views/header.php";

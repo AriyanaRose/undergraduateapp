@@ -2,10 +2,23 @@
     .details-img {
         height: 600px;
     }
+
+    /* Bullet */
+    .breadcrumb-bullet .breadcrumb-item+.breadcrumb-item::before {
+        content: '•';
+    }
 </style>
 
 
 <div class="container my-5">
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-bullet">
+            <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
+            <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>store" class="text-uppercase">Store</a></li>
+            <li aria-current="page" class="breadcrumb-item active text-uppercase">Details</li>
+        </ol>
+    </nav>
 
     <div class="row">
 
@@ -38,9 +51,8 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <button name="add_to_wishlist" type="submit" class="btn btn-outline-danger btn-lg"> Add to Wish List <i class="fa fa-heart"></i></button>
-                            <button name="add_to_cart" type="submit" class="btn btn-outline-success btn-lg">Add to Basket <i class="fa fa-shopping-basket"></i></button>
-
+                            <button name="add_to_wishlist" type="submit" class="btn btn-outline-danger btn-md"> Add to Wish List</button>
+                            <button name="add_to_cart" type="submit" class="btn btn-outline-success btn-md">Add to Basket</button>
                         </div>
                     </div>
                 </form>
@@ -55,6 +67,7 @@
         </div>
 
     </div>
+
 
 
 

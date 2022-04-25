@@ -6,6 +6,7 @@ require_once APP_DIR . "Models/User.php";
 require_once APP_DIR . "Models/Cart.php";
 require_once APP_DIR . "utils/Point.php";
 require_once APP_DIR . "Models/Order.php";
+require_once APP_DIR . "Models/Wishlist.php";
 require_once APP_DIR . "utils/code.isLoggedIn.php";
 
 
@@ -14,3 +15,4 @@ $db_object = new Database();
 $user_object = new User($db_object);
 $cart_object = new Cart($db_object);
 $order_object = new Order($db_object);
+$wish_object = new Wishlist($db_object);
