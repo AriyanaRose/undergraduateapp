@@ -180,7 +180,7 @@
                 <div class="dropdown-menu">
                     <a href="<?php echo BASE_URL ?>aboutus" class="dropdown-item">About Us</a>
                     <a href="<?php echo BASE_URL ?>contactus" class="dropdown-item">Contact Us</a>
-                    <a href="<?php echo BASE_URL ?>faqs" class="dropdown-item">FAQs</a>
+                    <a href="<?php echo BASE_URL ?>faqs" class="dropdown-item">Help</a>
                 </div>
             </div>
             <div class="nav-item dropdown">

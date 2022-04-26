@@ -8,7 +8,7 @@
         background-color: #f8f9fa;
     }
 
-    @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+    @import url();
 
 
     .container-fluid {

@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if (isset($_POST["cart_quantity"])) {
-        echo "you clicked a button";
+        header("location: " . BASE_URL . "cart");
         require_once APP_DIR . "utils/code.isLoggedIn.php";
         $cart_object->addToCart($user_id, $_POST["product_id"], $_POST["cart_quantity"]);
     }

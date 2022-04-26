@@ -49,7 +49,7 @@
                                             </div>
                                         </div>
                                         <div class="text-center text-sm-right">
-                                            <span class="badge badge-secondary">administrator</span>
+                                            <span class="badge badge-secondary">User Points</span>
                                             <div class="text-muted"><small>Joined 09 Dec 2017</small></div>
                                         </div>
                                     </div>
@@ -92,8 +92,16 @@
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <div class="row">
+                                                        <div class="col d-flex justify-content-end">
+                                                            <button class="btn btn-primary" type="submit">Save Changes</button>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
+                                        </form>
+                                        <div></div>
+                                        <form action="">
                                             <div class="row">
                                                 <div class="col-12 col-sm-6 mb-3">
                                                     <div class="mb-2"><b>Change Password</b></div>
@@ -114,7 +122,10 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div></div>
+                                                <br>
                                                 <div class="col-12 col-sm-5 offset-sm-1 mb-3">
+                                                    <br>
                                                     <div class="mb-2"><b>Keeping in Touch</b></div>
                                                     <div class="row">
                                                         <div class="col">
@@ -143,7 +154,6 @@
                                                 </div>
                                             </div>
                                         </form>
-
                                     </div>
                                 </div>
                             </div>

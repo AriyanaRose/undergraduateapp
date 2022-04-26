@@ -199,13 +199,14 @@
 				</div>
 				<div class="col-md-12 col-lg-4">
 					<div class="summary">
+						<button name="return" type="submit" class="btn btn-primary btn-lg btn-block"><a href="<?php echo BASE_URL ?>store"></a>Continue Shopping</button>
+						<br>
 						<h3>Summary</h3>
 						<div class="mb-4">
 							<h6 class=" text-uppercase"></h6>
 							<!-- Dashed divider -->
 							<hr class="dashed">
 						</div>
-
 						<div class="summary-item"><span class="text">Subtotal</span><span class="price">$ <?php echo $cart_object->getSubtotal(); ?></span></div>
 
 						<div class="summary-item"><span class="text">Discount</span><span class="price">TBD</span></div>

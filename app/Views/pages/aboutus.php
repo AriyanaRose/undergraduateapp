@@ -30,14 +30,14 @@
 <div class="container">
   <h1 class="h1 mb-4 text-center">About Us</h1>
   <p class="text-dark mb-0">Quills & Parchment is an independent bookstore located in Trinidad and Tobago, we specialize in new and used books to suit the interests of novice readers and bibliophile alike. Whether you are a romance lover, manga collector, or a thriller seeker, we have a wide range of books to satisfy your interests.</p>
-  
+
   <div class="row">
     <div class="col-lg-5">
       <img src="images/bookcorner.jpg" alt="" class="w-100 mb-4 border border-md border-white shadow-sm">
     </div>
     <div class="col-lg-7">
-      <p class="text-dark"> Ariyana Clarke started Quills & Parchment with one Harry Potter used book in 2016 and slowly built it to what it is today from strictly selling gently used books to now a wide variety of new and used books and comics.  </p>
-      <p class=" text-dark"> We at Quills & Parchment are dedicated to provide books in quality conditions to users of every budget, as a bibliophile and avid reader since childhood. Ariyana and the staff at Quills & Pages aims to bring the joy of reading to shoppers homes with as little effect as possible. </p>
+      <p class="text-dark"> Ariyana Clarke started Quills & Parchment with one Harry Potter used book in 2016 and slowly built it to what it is today from strictly selling gently used books to now a wide variety of new and used books and comics. </p>
+      <p class=" text-dark"> We at Quills & Parchment are dedicated to provide books in quality conditions to users of every budget, as a bibliophile and avid reader since childhood. Ariyana and the staff at Quills & Parchment aims to bring the joy of reading to shoppers homes with as little effect as possible. </p>
       <p class=" text-dark"> Our Staff is dedicated to keeping up with all trends from Comming Soon to Book TikTok recommendations to bring the best product listing we can for our customers. </p>
       <p class=" text-dark"> One of our mottos is you want it we find it and we are dedicated to this, if the book isn't in stock please feel free to contact us with any personal requests and we will perform our magic and find it for you.</p>
     </div>
