@@ -7,6 +7,11 @@
   body {
     min-height: 100vh;
   }
+
+  	/* Bullet */
+	.breadcrumb-bullet .breadcrumb-item+.breadcrumb-item::before {
+		content: '•';
+	}
 </style>
 
 <!--	URL: 
@@ -27,7 +32,14 @@
 
 </div>
 
-<div class="container">
+<div class="container bg-white">
+<nav aria-label="breadcrumb">
+		<ol class="breadcrumb breadcrumb-bullet">
+			<li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
+			<li aria-current="page" class="breadcrumb-item active text-uppercase">About Us<li>
+		</ol>
+	</nav>
+
   <h1 class="h1 mb-4 text-center">About Us</h1>
   <p class="text-dark mb-0">Quills & Parchment is an independent bookstore located in Trinidad and Tobago, we specialize in new and used books to suit the interests of novice readers and bibliophile alike. Whether you are a romance lover, manga collector, or a thriller seeker, we have a wide range of books to satisfy your interests.</p>
 

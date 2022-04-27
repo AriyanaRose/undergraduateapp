@@ -218,6 +218,11 @@
     .btn-lg {
         background-color: #011f4b;
     }
+
+      	/* Bullet */
+	.breadcrumb-bullet .breadcrumb-item+.breadcrumb-item::before {
+		content: '•';
+	}
 </style>
 
 <!--	URL: http://bestjquery.com/tutorial/product-grid/demo165/
@@ -236,7 +241,14 @@
 </div>
 
 
-<div class="container my-5">
+<div class="container my-3">
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-bullet">
+            <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
+            <li aria-current="page" class="breadcrumb-item active text-uppercase">Store<li>
+        </ol>
+    </nav>
 
     <!-- Sort and Filter Buttons	-->
     <?php require_once APP_DIR . "Views/includes/store-filter.php"; ?>

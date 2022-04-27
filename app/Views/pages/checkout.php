@@ -149,10 +149,14 @@
 
 
 <section class="shopping-cart dark">
-    <div class="container">
-        <div class="block-heading">
-            <h2 class="text-dark">Checkout</h2>
-        </div>
+    <div class="container my-3">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-bullet">
+            <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
+            <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>cart" class="text-uppercase">Cart</a></li>
+            <li aria-current="page" class="breadcrumb-item active text-uppercase">Checkout<li>
+        </ol>
+    </nav>
         <div class="content">
             <div class="row">
                 <div class="col-md-12 col-lg-8">
@@ -160,10 +164,10 @@
                         <?php foreach ($cart_details as $data) : ?>
                             <div class="product">
                                 <div class="row">
-                                    <div class="col-md-2">
+                                    <div class="col-md-3">
                                         <img class="img-fluid mx-auto d-block image" src="<?php echo $data["product_image1"] ?>">
                                     </div>
-                                    <div class="col-md-10">
+                                    <div class="col-md-8">
                                         <div class="info">
                                             <div class="row">
                                                 <div class="col-md-5 product-name">
@@ -199,7 +203,7 @@
                 </div>
                 <div class="col-md-12 col-lg-4">
                     <div class="summary">
-                        <h3>Summary</h3>
+                        <h3> Checkout Summary</h3>
                         <div class="mb-2">
                             <hr class="solid">
                         </div>

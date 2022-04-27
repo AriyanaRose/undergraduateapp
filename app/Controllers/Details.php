@@ -34,7 +34,7 @@ foreach ($product_details as $data) {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST["add_to_wishlist"])) {
-        echo "you clicked a button";
+        header("location: " . BASE_URL . "wishlist");
         require_once APP_DIR . "utils/code.isLoggedIn.php";
         $wish_object->addtoWishlist($user_id, $id,$_POST["add_to_wishlist"]);
     }

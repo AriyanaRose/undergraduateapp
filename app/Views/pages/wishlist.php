@@ -22,8 +22,8 @@
     }
 
     .img-sm {
-        width: 80px;
-        height: 80px
+        width: 100px;
+        height: 150px
     }
 
     .itemside .info {
@@ -121,6 +121,11 @@
     .btn-apply {
         font-size: 11px
     }
+
+    /* Bullet */
+    .breadcrumb-bullet .breadcrumb-item+.breadcrumb-item::before {
+        content: '•';
+    }
 </style>
 
 <!--	
@@ -133,11 +138,23 @@
 <div style="background: url('images/bannerbookends.jpg')" class="jumbotron bg-cover text-white">
 </div>
 
-<div class="container my-5">
+<div class="container my-5 bg-white">
+    <nav aria-label="breadcrumb">
+    </nav>
+    <ol class="breadcrumb breadcrumb-bullet">
+        <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
+        <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>store" class="text-uppercase">Store</a></li>
+        <li aria-current="page" class="breadcrumb-item active text-uppercase">Wishlist</li>
+    </ol>
+    <div class="row">
+        <div class="col-md-12">
+            <button name="add_to_cart" type="submit" class="btn btn-primary btn-sm float-right">Continue Shopping</button>
+        </div>
+    </div>
+    <br>
     <div class="row">
         <aside class="col-lg-12">
             <div class="card">
-
                 <div class="table-responsive">
                     <table class="table table-borderless table-shopping-cart">
                         <thead class="text-muted">
@@ -149,28 +166,32 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>
-                                    <figure class="itemside align-items-center">
-                                        <div class="aside"><img src="https://i.imgur.com/1eq5kmC.png" class="img-sm"></div>
-                                        <figcaption class="info"> <a href="#" class="title text-dark" data-abc="true">Tshirt with round nect</a>
-                                            <p class="text-muted small">Author: L <br> Condition: MAXTRA <br> Format: MAXTRA</p>
 
-                                        </figcaption>
-                                    </figure>
-                                </td>
-                                <td> <select class="form-control">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                    </select> </td>
-                                <td>
-                                    <div class="price-wrap"> <var class="price">$10.00</var> </div>
-                                </td>
-                                <td class="text-right d-none d-md-block"> <a data-original-title="Save to Wishlist" title="" href="" class="btn btn-light" data-toggle="tooltip" data-abc="true"> <i class="fa fa-trash"></i></a> <a href="" class="btn btn-light" data-abc="true"> Add to Cart</a> </td>
-                            </tr>
+                            <?php foreach ($wish_details as $data) : ?>
+                                <tr>
+                                    <td>
+                                        <figure class="itemside align-items-center">
+                                            <div class="aside"><img src="<?php echo $data["product_image1"] ?>" class="img-sm"></div>
+                                            <figcaption class="info"> <a href="#" class="title text-dark" data-abc="true"><?php echo $data["product_title"] ?></a>
+                                                <p class="text-muted small">Author: <?php echo $data["product_brand"] ?> <br> Condition: <?php echo $data["product_condition"] ?> <br> Format: <?php echo $data["product_format"] ?> <br> Status: <?php echo $data["product_status"] ?></p>
 
+                                            </figcaption>
+                                        </figure>
+                                    </td>
+                                    <td>
+                                    <form action="cart" method="post">
+                                        <div class="form-group">
+                                            <input type="number" value="1" name="cart_quantity" class="form-control" id="usr">
+                                            <input name="product_id" value="<?php echo $data["product_id"]; ?>" type="hidden">
+                                        </div>
+                                    <td>
+                                        <div class="price-wrap"> <var class="price">$<?php echo $data["product_price"] ?></var> </div>
+                                    </td>
+                                    
+                                        <td class="text-right d-none d-md-block"> <button name="add_to_cart" type="submit" class="btn btn-md btn-light" data-toggle="tooltip" data-abc="true"> <i class="fa fa-trash"></i></button> <button href="" name="add_to_cart" type="submit" class="btn btn-light" data-abc="true"> Add to Basket</button> </td>
+                                    </form>
+                                </tr>
+                            <?php endforeach ?>
                         </tbody>
                     </table>
                 </div>

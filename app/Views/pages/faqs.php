@@ -41,18 +41,17 @@
 	}
 
 	hr.dashed {
-    border-top: 2px dashed #999;
-}
+		border-top: 2px dashed #999;
+	}
 
-hr.solid {
-    border-top: 2px solid #999;
-}
+	hr.solid {
+		border-top: 2px solid #999;
+	}
 
-      /* Bullet */
-      .breadcrumb-bullet .breadcrumb-item+.breadcrumb-item::before {
-        content: '•';
-    }
-
+	/* Bullet */
+	.breadcrumb-bullet .breadcrumb-item+.breadcrumb-item::before {
+		content: '•';
+	}
 </style>
 
 
@@ -65,14 +64,14 @@ hr.solid {
                 Author:  PrepBootstrap
             -->
 
-<div class="container">
+<div class="container my-5 bg-white">
 
-<nav aria-label="breadcrumb">
-        <ol class="breadcrumb breadcrumb-bullet">
-            <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
-            <li aria-current="page" class="breadcrumb-item active text-uppercase">FAQs</li>
-        </ol>
-    </nav>
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb breadcrumb-bullet">
+			<li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
+			<li aria-current="page" class="breadcrumb-item active text-uppercase">Help</li>
+		</ol>
+	</nav>
 
 
 	<div class="text-dark text-center my-3">

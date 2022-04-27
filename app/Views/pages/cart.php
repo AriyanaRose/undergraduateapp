@@ -1,6 +1,6 @@
 <style>
 	.shopping-cart {
-		padding-bottom: 50px;
+		padding-bottom: 60px;
 	}
 
 	.shopping-cart.dark {
@@ -135,6 +135,11 @@
 	hr.dashed {
 		border-top: 2px dashed #999;
 	}
+
+	      	/* Bullet */
+			  .breadcrumb-bullet .breadcrumb-item+.breadcrumb-item::before {
+		content: '•';
+	}
 </style>
 
 
@@ -147,10 +152,14 @@
 
 
 <section class="shopping-cart dark">
-	<div class="container">
-		<div class="block-heading">
-			<h2 class="text-dark">Shopping Cart</h2>
-		</div>
+	<div class="container my-3">
+	<nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-bullet">
+            <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
+            <li aria-current="page" class="breadcrumb-item active text-uppercase">Cart<li>
+        </ol>
+    </nav>
+		
 		<div class="content">
 			<div class="row">
 				<div class="col-md-12 col-lg-8">
@@ -158,10 +167,10 @@
 						<?php foreach ($cart_details as $data) : ?>
 							<div class="product">
 								<div class="row">
-									<div class="col-md-2">
+									<div class="col-md-3">
 										<img class="img-fluid mx-auto d-block image" src="<?php echo $data["product_image1"] ?>">
 									</div>
-									<div class="col-md-10">
+									<div class="col-md-8">
 										<div class="info">
 											<div class="row">
 												<div class="col-md-5 product-name">
@@ -201,7 +210,7 @@
 					<div class="summary">
 						<button name="return" type="submit" class="btn btn-primary btn-lg btn-block"><a href="<?php echo BASE_URL ?>store"></a>Continue Shopping</button>
 						<br>
-						<h3>Summary</h3>
+						<h3> Cart Summary</h3>
 						<div class="mb-4">
 							<h6 class=" text-uppercase"></h6>
 							<!-- Dashed divider -->
