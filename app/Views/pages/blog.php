@@ -41,7 +41,7 @@
         <div class="col-lg-8">
             <!-- Featured blog post-->
             <div class="card mb-4">
-                <a href="#!"><img class="card-img-top" src="images/blog1.jpg" alt="..." /></a>
+                <a href="#!"><img class="card-img-top" src="images/blog6.jpg" alt="..." /></a>
                 <div class="card-body">
                     <div class="small text-muted">May 5th,2022</div>
                     <h2 class="card-title">The Flatshare by Beth O'Leary - Review</h2>

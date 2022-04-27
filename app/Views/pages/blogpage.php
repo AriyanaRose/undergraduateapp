@@ -32,7 +32,7 @@
                         <div class="text-muted fst-italic mb-2">Posted on May 5th, 2022 by Admin</div>
                     </header>
                     <!-- Preview image figure-->
-                    <figure class="mb-4"><img class="img-fluid rounded" src="images/blog1.jpg" alt="..." /></figure>
+                    <figure class="mb-4"><img class="img-fluid rounded" src="images/blog6.jpg" alt="..." /></figure>
                     <!-- Post content-->
                     <section class="mb-5">
                         <p class="fs-5 mb-4">This is a sweet and lovely work of modern fiction by Beth O'Leary, based on the intriguing idea of a one-bedroom flat in London shared by two inhabitants who never meet, each in residency, sleeping in the same bed when the other is out or working. This is a more kind and humorous take on the grave financial problems many workers confront in a city where rents are sky high. Leon Twomey, a kind palliative care nurse with few words, has a girlfriend, Kay, and a younger brother, Richie, who is in jail after being falsely accused of armed robbery.</p>

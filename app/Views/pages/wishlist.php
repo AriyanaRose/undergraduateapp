@@ -179,7 +179,7 @@
                                         </figure>
                                     </td>
                                     <td>
-                                    <form action="cart" method="post">
+                                    <form action="" method="post">
                                         <div class="form-group">
                                             <input type="number" value="1" name="cart_quantity" class="form-control" id="usr">
                                             <input name="product_id" value="<?php echo $data["product_id"]; ?>" type="hidden">

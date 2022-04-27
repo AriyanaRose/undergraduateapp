@@ -11,6 +11,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST["wish_id"])) {
         $wish_object->removefromWishlist($_POST["wish_id"], $user_id);
     }
+
+    if (isset($_POST["cart_quantity"])) {
+        header("location: " . BASE_URL . "cart");
+        require_once APP_DIR . "utils/code.isLoggedIn.php";
+        $cart_object->addToCart($user_id, $_POST["product_id"], $_POST["cart_quantity"]);
+    }
 }
 
 
