@@ -148,7 +148,7 @@
     </ol>
     <div class="row">
         <div class="col-md-12">
-            <button name="add_to_cart" type="submit" class="btn btn-primary btn-sm float-right">Continue Shopping</button>
+            <a class="btn btn-primary btn-sm float-right" href="<?php echo BASE_URL ?>store">Continue Shopping</a>
         </div>
     </div>
     <br>
@@ -159,10 +159,10 @@
                     <table class="table table-borderless table-shopping-cart">
                         <thead class="text-muted">
                             <tr class="small text-uppercase">
-                                <th scope="col">Product</th>
-                                <th scope="col" width="120">Quantity</th>
-                                <th scope="col" width="120">Price</th>
-                                <th scope="col" class="text-right d-none d-md-block" width="200"></th>
+                                <th class="text-dark" scope="col">Product</th>
+                                <th class="text-dark" scope="col" width="120">Quantity</th>
+                                <th class="text-dark" scope="col" width="120">Price</th>
+                                <th class="text-dark" scope="col" class="text-right d-none d-md-block" width="200"></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -173,22 +173,28 @@
                                         <figure class="itemside align-items-center">
                                             <div class="aside"><img src="<?php echo $data["product_image1"] ?>" class="img-sm"></div>
                                             <figcaption class="info"> <a href="#" class="title text-dark" data-abc="true"><?php echo $data["product_title"] ?></a>
-                                                <p class="text-muted small">Author: <?php echo $data["product_brand"] ?> <br> Condition: <?php echo $data["product_condition"] ?> <br> Format: <?php echo $data["product_format"] ?> <br> Status: <?php echo $data["product_status"] ?></p>
+                                                <p class="text-muted small">Author: <?php echo $data["product_brand"] ?> <br> Condition: <?php echo $data["product_condition"] ?> <br> Format: <?php echo $data["product_format"] ?> <br> Status: <?php echo $data["product_status"] ?></p> 
 
                                             </figcaption>
                                         </figure>
                                     </td>
                                     <td>
-                                    <form action="" method="post">
-                                        <div class="form-group">
-                                            <input type="number" value="1" name="cart_quantity" class="form-control" id="usr">
-                                            <input name="product_id" value="<?php echo $data["product_id"]; ?>" type="hidden">
-                                        </div>
+                                        <form action="" method="post">
+                                            <div class="form-group">
+                                                <input type="number" value="1" name="cart_quantity" class="form-control" id="usr">
+                                                <input name="product_id" value="<?php echo $data["product_id"]; ?>" type="hidden">
+                                                <input name="wish_id" value="<?php echo $data["wish_id"]; ?>" type="hidden">
+
+                                            </div>
                                     <td>
                                         <div class="price-wrap"> <var class="price">$<?php echo $data["product_price"] ?></var> </div>
                                     </td>
-                                    
-                                        <td class="text-right d-none d-md-block"> <button name="add_to_cart" type="submit" class="btn btn-md btn-light" data-toggle="tooltip" data-abc="true"> <i class="fa fa-trash"></i></button> <button href="" name="add_to_cart" type="submit" class="btn btn-light" data-abc="true"> Add to Basket</button> </td>
+                                    <td class="text-right d-none d-md-block"> <button href="" name="add_to_cart" type="submit" class="btn btn-light" data-abc="true"> Add to Basket</button> </td>
+                                    </form>
+
+                                    <form action="wishlist" method="post">
+                                    <td class="text-right d-none d-md-block"> <button name="remove_from_wish" type="submit" class="btn btn-md btn-light" data-toggle="tooltip" data-abc="true"> <i class="fa fa-trash"></i>
+                                    <input name="wish_id" value="<?php echo $data["wish_id"]; ?>" type="hidden">
                                     </form>
                                 </tr>
                             <?php endforeach ?>

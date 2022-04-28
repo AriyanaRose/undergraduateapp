@@ -6,16 +6,16 @@ require_once APP_DIR . "utils/code.precheckout.php";
 //$wish_object->removefromWishlist(1,1);
 
 
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (isset($_POST["wish_id"])) {
+    if (isset($_POST["remove_from_wish"])) {
         $wish_object->removefromWishlist($_POST["wish_id"], $user_id);
     }
 
-    if (isset($_POST["cart_quantity"])) {
+    if (isset($_POST["add_to_cart"])) {
         header("location: " . BASE_URL . "cart");
         require_once APP_DIR . "utils/code.isLoggedIn.php";
         $cart_object->addToCart($user_id, $_POST["product_id"], $_POST["cart_quantity"]);
+        $wish_object->removefromWishlist($_POST["wish_id"], $user_id);
     }
 }
 

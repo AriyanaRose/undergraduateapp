@@ -186,7 +186,7 @@
 														<br>
 														<div class="d flex">
 															<button class="btn btn-outline-danger btn-sm" name="add_to_wishlist" type="submit">Wish List</i></button>
-															 <br>
+															<br>
 															<form action="cart" method="post">
 																<button class="btn btn-outline-warning btn-sm" name="remove_from_cart" type="submit">Remove</i></button>
 																<input type="hidden" name="cart_id" value="<?php echo $data["cart_id"] ?>">
@@ -211,7 +211,7 @@
 				</div>
 				<div class="col-md-12 col-lg-4">
 					<div class="summary">
-						<button name="return" type="submit" class="btn btn-primary btn-lg btn-block"><a href="<?php echo BASE_URL ?>store"></a>Continue Shopping</button>
+						<a class="btn btn-primary btn-lg btn-block" href="<?php echo BASE_URL ?>store">Continue Shopping</a>
 						<br>
 						<h3> Cart Summary</h3>
 						<div class="mb-4">

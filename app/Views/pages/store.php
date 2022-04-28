@@ -207,7 +207,7 @@
 
     .bg-cover {
         background-size: cover !important;
-        opacity: 0.5
+     
     }
 
 
@@ -233,7 +233,7 @@
 
 <!-- Banner	-->
 
-<div style="background: url('images/bookself2.jpg')" class="jumbotron bg-cover text-dark">
+<div style="background: url('images/bookself2 - Copy.jpg')" class="jumbotron bg-cover text-dark">
 
     <div class="container py-5 text-center">
 
