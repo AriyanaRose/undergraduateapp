@@ -2,6 +2,11 @@
     body {
         background: #f8f8f8
     }
+
+                /* Bullet */
+                .breadcrumb-bullet .breadcrumb-item+.breadcrumb-item::before {
+        content: '•';
+    }
 </style>
 
 
@@ -11,7 +16,13 @@
             -->
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-<div class="container my-5">
+<div class="container my-3">
+<nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-bullet">
+            <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
+            <li aria-current="page" class="breadcrumb-item active text-uppercase">My  Account</li>
+        </ol>
+    </nav>
     <div class="row flex-lg-nowrap">
         <div class="col-12 col-lg-auto mb-3" style="width: 200px;">
             <div class="card p-3">

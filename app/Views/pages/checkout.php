@@ -150,13 +150,14 @@
 
 <section class="shopping-cart dark">
     <div class="container my-3">
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb breadcrumb-bullet">
-            <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
-            <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>cart" class="text-uppercase">Cart</a></li>
-            <li aria-current="page" class="breadcrumb-item active text-uppercase">Checkout<li>
-        </ol>
-    </nav>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb-bullet">
+                <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
+                <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>cart" class="text-uppercase">Cart</a></li>
+                <li aria-current="page" class="breadcrumb-item active text-uppercase">Checkout
+                <li>
+            </ol>
+        </nav>
         <div class="content">
             <div class="row">
                 <div class="col-md-12 col-lg-8">
@@ -223,8 +224,7 @@
                         <div class="mb-4">
                             <hr class="solid">
                         </div>
-
-                        <button type="button" class="btn btn-success btn-lg btn-block">Checkout</button>
+                        <?php require_once APP_DIR . "Views/includes/stripe-ui.php" ?>
                     </div>
                 </div>
             </div>

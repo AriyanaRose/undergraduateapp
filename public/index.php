@@ -74,8 +74,8 @@ get($_ENV["PROJECT_PATH"] . 'checkout', 'app/Controllers/Checkout.php');
 post($_ENV["PROJECT_PATH"] . 'checkout', 'app/Controllers/Checkout.php');
 
 //http://http://localhost/undergraduateapp/checkout/stripe
-get($_ENV["PROJECT_PATH"] . 'checkout/stripe', 'app/Controllers/Checkout.php');
-post($_ENV["PROJECT_PATH"] . 'checkout/stripe', 'app/Controllers/Checkout.php');
+get($_ENV["PROJECT_PATH"] . 'checkout/stripe', 'app/Controllers/Checkout-stripe.php');
+post($_ENV["PROJECT_PATH"] . 'checkout/stripe', 'app/Controllers/Checkout-stripe.php');
 
 //http://http://localhost/undergraduateapp/checkout/stripe
 get($_ENV["PROJECT_PATH"] . 'checkout/success/$payment/$id', 'app/Controllers/Checkout-success.php');

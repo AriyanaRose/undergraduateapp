@@ -157,6 +157,8 @@
                 width: 100%;
             }
         }
+
+
     </style>
 </head>
 
@@ -184,7 +186,7 @@
                 </div>
             </div>
             <div class="nav-item dropdown">
-                <a href="<?php echo BASE_URL ?>store" " class=" nav-item nav-link">Books and Comics</a>
+                <a href="<?php echo BASE_URL ?>store" class=" nav-item nav-link">Books and Comics</a>
                 <div class="dropdown-menu">
                     <a href="<?php echo BASE_URL ?>store" class="dropdown-item">Books</a>
                     <a href="#" class="dropdown-item">Comics</a>

@@ -11,7 +11,7 @@ $cart_details = $cart_object->getCartDetails($user_id);
 
 
 //check if cart is empty
-if(empty($cart_details)){
+if (empty($cart_details)) {
     echo "Cart is empty";
     exit;
 }
@@ -37,6 +37,11 @@ switch ($payment) {
 
     case 'stripe':
         # code...
+        $payment_object = new Stripehelper();
+        $checkout_order = $payment_object->getCheckoutOrder($id);
+        debug($checkout_order);
+        $completed = $payment_object->isCheckoutCompleted($checkout_order);
+        $data = $payment_object->getPaymentDetails($checkout_order);
         break;
 
 
@@ -51,6 +56,8 @@ switch ($payment) {
 if (!$completed || empty($data)) {
     echo "payment process not completed";
 }
+
+
 
 
 //set points info

@@ -1,6 +1,6 @@
 <style>
     .details-img {
-        height: 600px;
+        height: 700px;
         width: auto;
     }
 
@@ -20,18 +20,18 @@
             <li aria-current="page" class="breadcrumb-item active text-uppercase">Details</li>
         </ol>
     </nav>
+    <form method="post">
+        <div class="row">
+            <div class="col-md-12">
+                <button name="add_to_wishlist" type="submit" class="btn btn-outline-danger btn-sm float-right "><i class="fa fa-heart"></i></button>
+            </div>
+        </div>
+    </form>
 
     <div class="row">
 
         <div class="col-md-6">
-            <form method="post">
-                <div class="row">
-                    <div class="col-md-12">
-                        <button name="add_to_wishlist" type="submit" class="btn btn-outline-danger btn-md float-right "><i class="fa fa-heart"></i></button>
-                    </div>
-                </div>
-            </form>
-            <img class="img-fluid details-img" src="<?php echo BASE_URL . $data["product_image1"] ?>" alt="">
+            <img class="img-fluid details-img float-left" src="<?php echo BASE_URL . $data["product_image1"] ?>" alt="">
         </div>
 
 
@@ -61,17 +61,24 @@
                         </div>
                     </div>
                 </form>
-                <br>
                 <div class="row">
-                    <div class="col-md-12">
-                        <p class="font-weight-bold mb-0">About this Book </p>
-                        <p class="text-wrap"> <?php echo $data["product_description"] ?> </p>
+                <br>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="font-weight-bold mb-0">About this Book </p>
+                            <p class="text-wrap"> <?php echo $data["product_description"] ?> </p>
+                        </div>
                     </div>
+
                 </div>
 
         </div>
-
     </div>
+
+</div>
+
+
+
 
 
 
