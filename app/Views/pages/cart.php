@@ -4,7 +4,7 @@
 	}
 
 	.shopping-cart.dark {
-		background-color: #f6f6f6;
+		background-color: white;
 	}
 
 	.shopping-cart .content {
@@ -140,6 +140,14 @@
 	.breadcrumb-bullet .breadcrumb-item+.breadcrumb-item::before {
 		content: '•';
 	}
+
+	.breadcrumb {
+        background-color: white;
+    }
+
+	body{
+		background-color: white;
+	}
 </style>
 
 
@@ -149,17 +157,19 @@
                 Author:  Epicbootstrap
             -->
 
-
-
-<section class="shopping-cart dark">
-	<div class="container my-3">
-		<nav aria-label="breadcrumb">
+<div>
+<nav aria-label="breadcrumb">
 			<ol class="breadcrumb breadcrumb-bullet">
 				<li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
 				<li aria-current="page" class="breadcrumb-item active text-uppercase">Cart
 				<li>
 			</ol>
 		</nav>
+
+</div>
+
+<section class="shopping-cart">
+<div class="container my-3">
 
 		<div class="content">
 			<div class="row">
@@ -182,10 +192,6 @@
 															<div>Author: <span class="value"><?php echo $data["product_brand"] ?></span></div>
 															<div>Format: <span class="value"><?php echo $data["product_format"] ?></span></div>
 															<div>Condition: <span class="value"><?php echo $data["product_condition"] ?></span></div>
-														</div>
-														<br>
-														<div class="d flex">
-															<button class="btn btn-outline-danger btn-sm" name="add_to_wishlist" type="submit">Wish List</i></button>
 															<br>
 															<form action="cart" method="post">
 																<button class="btn btn-outline-warning btn-sm" name="remove_from_cart" type="submit">Remove</i></button>

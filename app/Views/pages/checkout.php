@@ -5,7 +5,7 @@
     }
 
     .shopping-cart.dark {
-        background-color: #f6f6f6;
+        background-color: white;
     }
 
     .shopping-cart .content {
@@ -119,7 +119,7 @@
 
         .shopping-cart .items .product .info .price {
             font-weight: bold;
-            font-size: 22px;
+            font-size: 18px;
             top: 17px;
         }
 
@@ -137,6 +137,15 @@
         }
 
     }
+
+        /* Bullet */
+        .breadcrumb-bullet .breadcrumb-item+.breadcrumb-item::before {
+        content: '•';
+    }
+
+    .breadcrumb {
+        background-color: white;
+    }
 </style>
 
 
@@ -146,11 +155,8 @@
                 Author:  Epicbootstrap
             -->
 
-
-
-<section class="shopping-cart dark">
-    <div class="container my-3">
-        <nav aria-label="breadcrumb">
+<div>
+<nav aria-label="breadcrumb">
             <ol class="breadcrumb breadcrumb-bullet">
                 <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
                 <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>cart" class="text-uppercase">Cart</a></li>
@@ -158,6 +164,12 @@
                 <li>
             </ol>
         </nav>
+</div>
+
+
+<section class="shopping-cart dark">
+    <div class="container my-3">
+
         <div class="content">
             <div class="row">
                 <div class="col-md-12 col-lg-8">
@@ -179,17 +191,11 @@
                                                             <div>Format: <span class="value"><?php echo $data["product_format"] ?></span></div>
                                                             <div>Condition: <span class="value"><?php echo $data["product_condition"] ?></span></div>
                                                         </div>
-                                                        <div class="d flex">
-                                                            <form action="cart" method="post">
-                                                                <button class="btn btn-outline-warning btn-sm" name="remove_from_cart" type="submit">Remove</button>
-                                                                <input type="hidden" name="cart_id" value="<?php echo $data["cart_id"] ?>">
-                                                            </form>
-                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4 quantity">
                                                     <label for="quantity">Quantity:</label>
-                                                    <input id="quantity" type="number" value="<?php echo $data["cart_quantity"] ?>" class="form-control quantity-input">
+                                                    <div> <span class="value"><?php echo $data["cart_quantity"] ?></span></div>
                                                 </div>
                                                 <div class="col-md-3 price">
                                                     <span>$<?php echo $data["product_price"] ?></span>

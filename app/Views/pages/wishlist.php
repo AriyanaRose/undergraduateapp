@@ -1,11 +1,11 @@
 <style>
     .bg-cover {
         background-size: cover !important;
-        opacity: 0.5
+      
     }
 
     body {
-        background-color: #f8f9fa;
+        background-color: white;
     }
 
     @import url();
@@ -126,6 +126,10 @@
     .breadcrumb-bullet .breadcrumb-item+.breadcrumb-item::before {
         content: '•';
     }
+
+    .breadcrumb{
+        background-color: white;
+    }
 </style>
 
 <!--	
@@ -135,17 +139,25 @@
             -->
 
 
-<div style="background: url('images/bannerbookends.jpg')" class="jumbotron bg-cover text-white">
+<div>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-bullet">
+            <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
+            <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>store" class="text-uppercase">Store</a></li>
+            <li aria-current="page" class="breadcrumb-item active text-uppercase">Wishlist</li>
+        </ol>
+    </nav>
+    <div style="background: url('images/bannerbookends.jpg')" class="jumbotron bg-cover text-white">
+        <div class="container py-3 text-center">
+
+        </div>
+    </div>
+
 </div>
 
 <div class="container my-5 bg-white">
-    <nav aria-label="breadcrumb">
-    </nav>
-    <ol class="breadcrumb breadcrumb-bullet">
-        <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
-        <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>store" class="text-uppercase">Store</a></li>
-        <li aria-current="page" class="breadcrumb-item active text-uppercase">Wishlist</li>
-    </ol>
+
+
     <div class="row">
         <div class="col-md-12">
             <a class="btn btn-primary btn-sm float-right" href="<?php echo BASE_URL ?>store">Continue Shopping</a>
@@ -173,7 +185,7 @@
                                         <figure class="itemside align-items-center">
                                             <div class="aside"><img src="<?php echo $data["product_image1"] ?>" class="img-sm"></div>
                                             <figcaption class="info"> <a href="#" class="title text-dark" data-abc="true"><?php echo $data["product_title"] ?></a>
-                                                <p class="text-muted small">Author: <?php echo $data["product_brand"] ?> <br> Condition: <?php echo $data["product_condition"] ?> <br> Format: <?php echo $data["product_format"] ?> <br> Status: <?php echo $data["product_status"] ?></p> 
+                                                <p class="text-muted small">Author: <?php echo $data["product_brand"] ?> <br> Condition: <?php echo $data["product_condition"] ?> <br> Format: <?php echo $data["product_format"] ?> <br> Status: <?php echo $data["product_status"] ?></p>
 
                                             </figcaption>
                                         </figure>
@@ -193,8 +205,8 @@
                                     </form>
 
                                     <form action="wishlist" method="post">
-                                    <td class="text-right d-none d-md-block"> <button name="remove_from_wish" type="submit" class="btn btn-md btn-light" data-toggle="tooltip" data-abc="true"> <i class="fa fa-trash"></i>
-                                    <input name="wish_id" value="<?php echo $data["wish_id"]; ?>" type="hidden">
+                                        <td class="text-right d-none d-md-block"> <button name="remove_from_wish" type="submit" class="btn btn-md btn-light" data-toggle="tooltip" data-abc="true"> <i class="fa fa-trash"></i>
+                                                <input name="wish_id" value="<?php echo $data["wish_id"]; ?>" type="hidden">
                                     </form>
                                 </tr>
                             <?php endforeach ?>

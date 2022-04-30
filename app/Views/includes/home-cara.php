@@ -29,7 +29,7 @@
         left: 0;
         min-width: 100%;
         height: 100%;
-        opacity: 0.2;
+       /* opacity: 0.2; */
     }
 
 
@@ -105,7 +105,7 @@
     </ol>
     <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
-            <img class="first-slide" src="images/home6.jpg" alt="First slide">
+            <img class="first-slide" src="images/home112.jpg" alt="First slide">
             <div class="container">
                 <div class="carousel-caption d-none d-md-block text-left">
                     <h1 class="text-white">
@@ -120,31 +120,31 @@
             </div>
         </div>
         <div class="carousel-item">
-            <img class="second-slide" src="images/home2.jpg" alt="Second slide">
+            <img class="second-slide" src="images/home142.jpg" alt="Second slide">
             <div class="container">
                 <div class="carousel-caption d-none d-md-block">
-                    <h1 class="text-white">
+                    <h1 class="text-white text-right">
                         <bold>Why choose Us?</bold>
                     </h1>
-                    <h1 class="text-white">
+                    <h1 class="text-white text-right">
                         <bold>We offer a wide range of new and used books and comics to suit every interest and pocket.</bold>
                     </h1>
-                    <p>Whether you love adventure, mystery, manga or romance we have an extensive selection to satisfy your inner biblophile.</p>
+                    <p class="text-white text-right">Whether you love adventure, mystery, manga or romance we have an extensive selection to satisfy your inner biblophile.</p>
                     <p><a class="btn btn-lg btn-primary" href="<?php echo BASE_URL ?>store" role="button">See books and comics</a></p>
                 </div>
             </div>
         </div>
         <div class="carousel-item">
-            <img class="third-slide" src="images/home3.jpg" alt="Third slide">
+            <img class="third-slide" src="images/home181.jpg" alt="Third slide">
             <div class="container">
                 <div class="carousel-caption d-none d-md-block text-right">
-                    <h1 class="text-white">
+                    <h1 class="text-white text-left">
                         <bold>Why choose Us?</bold>
                     </h1>
-                    <h1 class="text-white">
+                    <h1 class="text-white text-left">
                         <bold>Don't see something you like? Want to customize an order? We are happy to facilitate your requests.</bold>
                     </h1>
-                    <p class="text-white">Fill out a contact form and one of our book wizards will contact you in shortly to discuss your purchasing needs.</p>
+                    <p class="text-white text-left">Fill out a contact form and one of our book wizards will contact you in shortly to discuss your purchasing needs.</p>
                     <p><a class="btn btn-lg btn-primary" href="<?php echo BASE_URL ?>contactus" role="button">Contact Us</a></p>
                 </div>
             </div>

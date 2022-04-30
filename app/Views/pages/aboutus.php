@@ -1,17 +1,22 @@
 <style>
   .bg-cover {
     background-size: cover !important;
-    opacity: 0.6
+
   }
 
   body {
     min-height: 100vh;
   }
 
-  	/* Bullet */
-	.breadcrumb-bullet .breadcrumb-item+.breadcrumb-item::before {
-		content: '•';
-	}
+  /* Bullet */
+  .breadcrumb-bullet .breadcrumb-item+.breadcrumb-item::before {
+    content: '•';
+
+  }
+
+  .breadcrumb{
+        background-color: white;
+    }
 </style>
 
 <!--	URL: 
@@ -24,27 +29,37 @@
      Author:  Bootstrapious   
             -->
 
-<div style="background: url('images/bookself3.jpg')" class="jumbotron bg-cover text-white">
-  <div class="container py-5 text-center">
 
+<div>
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb breadcrumb-bullet">
+      <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
+      <li aria-current="page" class="breadcrumb-item active text-uppercase">About Us
+      <li>
+    </ol>
+  </nav>
+
+  <div style="background: url('images/bookself3.jpg')" class="jumbotron bg-cover text-white">
+    <div class="container py-3 text-center">
+
+    </div>
   </div>
+
 
 
 </div>
 
-<div class="container bg-white">
-<nav aria-label="breadcrumb">
-		<ol class="breadcrumb breadcrumb-bullet">
-			<li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
-			<li aria-current="page" class="breadcrumb-item active text-uppercase">About Us<li>
-		</ol>
-	</nav>
 
-  <h1 class="h1 mb-4 text-center">About Us</h1>
+
+<div class="container bg-white">
+
+
   <p class="text-dark mb-0">Quills & Parchment is an independent bookstore located in Trinidad and Tobago, we specialize in new and used books to suit the interests of novice readers and bibliophile alike. Whether you are a romance lover, manga collector, or a thriller seeker, we have a wide range of books to satisfy your interests.</p>
 
   <div class="row">
     <div class="col-lg-5">
+      <br>
       <img src="images/bookcorner.jpg" alt="" class="w-100 mb-4 border border-md border-white shadow-sm">
     </div>
     <div class="col-lg-7">

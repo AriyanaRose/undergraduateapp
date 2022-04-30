@@ -1,17 +1,21 @@
 <style>
     .bg-cover {
         background-size: cover !important;
-        opacity: 0.6
+     
     }
 
     body {
         min-height: 100vh;
     }
 
-    	/* Bullet */
-	.breadcrumb-bullet .breadcrumb-item+.breadcrumb-item::before {
-		content: '•';
-	}
+    /* Bullet */
+    .breadcrumb-bullet .breadcrumb-item+.breadcrumb-item::before {
+        content: '•';
+    }
+
+    .breadcrumb {
+        background-color: white;
+    }
 </style>
 
 
@@ -24,18 +28,26 @@
             -->
 
 <!-- Page header with logo and tagline-->
-<div style="background: url('images/bookself1.jpg')" class="jumbotron bg-cover text-white">
 
+<div>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-bullet">
+            <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
+            <li aria-current="page" class="breadcrumb-item active text-uppercase">Blog</li>
+        </ol>
+    </nav>
+
+    <div style="background: url('images/bookself1.jpg')" class="jumbotron bg-cover text-white">
+        <div class="container py-3 text-center">
+
+        </div>
+    </div>
 </div>
+
 
 <!-- Page content-->
 <div class="container">
-<nav aria-label="breadcrumb">
-		<ol class="breadcrumb breadcrumb-bullet">
-			<li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
-			<li aria-current="page" class="breadcrumb-item active text-uppercase">Blog</li>
-		</ol>
-	</nav>
+
     <div class="row">
         <!-- Blog entries-->
         <div class="col-lg-8">

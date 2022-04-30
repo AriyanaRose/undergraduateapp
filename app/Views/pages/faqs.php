@@ -33,7 +33,6 @@
 
 	.bg-cover {
 		background-size: cover !important;
-		opacity: 0.5
 	}
 
 	body {
@@ -52,12 +51,27 @@
 	.breadcrumb-bullet .breadcrumb-item+.breadcrumb-item::before {
 		content: '•';
 	}
+
+	.breadcrumb {
+		background-color: white;
+	}
 </style>
 
 
+<div>
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb breadcrumb-bullet">
+			<li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
+			<li aria-current="page" class="breadcrumb-item active text-uppercase">Help</li>
+		</ol>
+	</nav>
+	<div style="background: url('images/bookself4.jpg')" class="jumbotron bg-cover text-white">
+		<div class="container py-3 text-center">
 
-<div style="background: url('images/bookself4.jpg')" class="jumbotron bg-cover text-white">
+		</div>
+	</div>
 </div>
+
 
 <!--	URL: http://www.prepbootstrap.com/bootstrap-template/faq-example
                 Bootstrap FAQ Bootsrap Frequently Asked Questions
@@ -66,16 +80,10 @@
 
 <div class="container my-5 bg-white">
 
-	<nav aria-label="breadcrumb">
-		<ol class="breadcrumb breadcrumb-bullet">
-			<li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
-			<li aria-current="page" class="breadcrumb-item active text-uppercase">Help</li>
-		</ol>
-	</nav>
+
 
 
 	<div class="text-dark text-center my-3">
-		<h2 class="fw-bolder">Frequently Asked Questions</h2>
 	</div>
 
 	<div class="faqHeader text-center"></div>

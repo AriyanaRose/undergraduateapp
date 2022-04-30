@@ -1,9 +1,7 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-    body {
-        background-color: #F5F5F5
-    }
+
 
     .box {
         padding: 15px 15px;

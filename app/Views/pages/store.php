@@ -207,7 +207,7 @@
 
     .bg-cover {
         background-size: cover !important;
-     
+
     }
 
 
@@ -219,10 +219,14 @@
         background-color: #011f4b;
     }
 
-      	/* Bullet */
-	.breadcrumb-bullet .breadcrumb-item+.breadcrumb-item::before {
-		content: '•';
-	}
+    /* Bullet */
+    .breadcrumb-bullet .breadcrumb-item+.breadcrumb-item::before {
+        content: '•';
+    }
+
+    .breadcrumb {
+        background-color: white;
+    }
 </style>
 
 <!--	URL: http://bestjquery.com/tutorial/product-grid/demo165/
@@ -233,22 +237,27 @@
 
 <!-- Banner	-->
 
-<div style="background: url('images/bookself2 - Copy.jpg')" class="jumbotron bg-cover text-dark">
 
-    <div class="container py-5 text-center">
+<div>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-bullet">
+            <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
+            <li aria-current="page" class="breadcrumb-item active text-uppercase">Store
+            <li>
+        </ol>
+    </nav>
+    <div style="background: url('images/bookself2.jpg')" class="jumbotron bg-cover text-dark">
+
+        <div class="container py-1 text-center">
+        </div>
 
     </div>
 </div>
 
 
-<div class="container my-3">
+<div class="container my-3 bg-white">
 
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb breadcrumb-bullet">
-            <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
-            <li aria-current="page" class="breadcrumb-item active text-uppercase">Store<li>
-        </ol>
-    </nav>
+
 
     <!-- Sort and Filter Buttons	-->
     <?php require_once APP_DIR . "Views/includes/store-filter.php"; ?>

@@ -62,17 +62,21 @@
 
   .bg-cover {
     background-size: cover !important;
-    opacity: 0.5
-    }
+  
+  }
 
   body {
     min-height: 100vh;
   }
 
-      /* Bullet */
-      .breadcrumb-bullet .breadcrumb-item+.breadcrumb-item::before {
-        content: '•';
-    }
+  /* Bullet */
+  .breadcrumb-bullet .breadcrumb-item+.breadcrumb-item::before {
+    content: '•';
+  }
+
+  .breadcrumb {
+    background-color: white;
+  }
 </style>
 
 <!--	URL: https://bootsnipp.com/snippets/N6bPx
@@ -80,22 +84,30 @@
                 Author:  PaoloF
             -->
 
-<div style="background: url('images/bookself5.jpg')" class="jumbotron bg-cover text-white">
-<div class="container py-5 text-center">
+
+<div>
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb breadcrumb-bullet">
+      <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
+      <li aria-current="page" class="breadcrumb-item active text-uppercase">Contact Us</li>
+    </ol>
+  </nav>
+
+  <div style="background: url('images/bookself5.jpg')" class="jumbotron bg-cover text-white">
+    <div class="container py-3 text-center">
+
+    </div>
+  </div>
 
 </div>
-</div>
+
 
 
 
 <div class="row" id="contatti">
   <div class="container my-2">
-  <nav aria-label="breadcrumb">
-        <ol class="breadcrumb breadcrumb-bullet">
-            <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
-            <li aria-current="page" class="breadcrumb-item active text-uppercase">Contact Us</li>
-        </ol>
-    </nav>
+
 
     <div class="row" style="height:550px;">
       <div class="col-md-6 maps">
