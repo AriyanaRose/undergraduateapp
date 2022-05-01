@@ -15,12 +15,13 @@ $checkout_session = $stripe->checkout->sessions->create([
     'line_items' => [[
         # Provide the exact Price ID (e.g. pr_1234) of the product you want to sell
         'name' => 'Cart Checkout',
-        'images' => ['https://unsplash.com/photos/0eTLk6dA_Ds'],
+        'images' => ['https://source.unsplash.com/0eTLk6dA_Ds/700x700'],
         'amount' => $cart_object->getTotal() * 100,
         'currency' => 'USD',
         'quantity' => 1,
     ]],
     'payment_method_types' => ['card'],
+    'allow_promotion_codes' => true,
     'mode' => 'payment',
     'success_url' => $YOUR_DOMAIN . 'checkout/success/stripe/{CHECKOUT_SESSION_ID}',
     'cancel_url' => $YOUR_DOMAIN . 'checkout',

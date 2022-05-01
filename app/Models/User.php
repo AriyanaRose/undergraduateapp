@@ -65,27 +65,6 @@ class User
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public function showName()
     {
 
@@ -105,4 +84,6 @@ class User
     {
         $_SESSION["current_user"]["total_points"] = $new_points;
     }
+
+
 }
