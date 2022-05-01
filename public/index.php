@@ -97,6 +97,10 @@ post($_ENV["PROJECT_PATH"] . 'useraccount', 'app/Controllers/Useraccount.php');
 get($_ENV["PROJECT_PATH"] . 'rewards', 'app/Controllers/Rewards.php');
 post($_ENV["PROJECT_PATH"] . 'rewards', 'app/Controllers/Rewards.php');
 
+//http://http://localhost/undergraduateapp/rewards
+get($_ENV["PROJECT_PATH"] . 'membership', 'app/Controllers/Membership.php');
+post($_ENV["PROJECT_PATH"] . 'membership', 'app/Controllers/Membership.php');
+
 //http://http://localhost/undergraduateapp/orders
 get($_ENV["PROJECT_PATH"] . 'orders', 'app/Controllers/Orders.php');
 post($_ENV["PROJECT_PATH"] . 'orders', 'app/Controllers/Orders.php');

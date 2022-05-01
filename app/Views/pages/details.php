@@ -8,18 +8,22 @@
     .breadcrumb-bullet .breadcrumb-item+.breadcrumb-item::before {
         content: '•';
     }
+
+    .breadcrumb {
+        background-color: white;
+    }
 </style>
 
-
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb breadcrumb-bullet">
+        <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
+        <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>store" class="text-uppercase">Store</a></li>
+        <li aria-current="page" class="breadcrumb-item active text-uppercase">Details</li>
+    </ol>
+</nav>
 <div class="container my-2">
 
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb breadcrumb-bullet">
-            <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
-            <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>store" class="text-uppercase">Store</a></li>
-            <li aria-current="page" class="breadcrumb-item active text-uppercase">Details</li>
-        </ol>
-    </nav>
+
     <form method="post">
         <div class="row">
             <div class="col-md-12">
@@ -62,7 +66,7 @@
                     </div>
                 </form>
                 <div class="row">
-                <br>
+                    <br>
                     <div class="row">
                         <div class="col-md-12">
                             <p class="font-weight-bold mb-0">About this Book </p>

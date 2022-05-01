@@ -85,5 +85,22 @@ class User
         $_SESSION["current_user"]["total_points"] = $new_points;
     }
 
+    public function getUserAccount($user_id)
+    {
+        $sql = "SELECT * FROM users WHERE user_id =?";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute([$user_id]);
+        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $result;
+    }
+
+    public function addUserAddress($user_id, $shipping_address){
+        
+        $sql = "UPDATE users SET shipping_address = ? WHERE user_id =?";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute([$shipping_address, $user_id]);
+
+    }
+
 
 }

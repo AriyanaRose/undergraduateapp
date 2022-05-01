@@ -2,6 +2,7 @@
 
 require_once APP_DIR . "utils/code.precheckout.php";
 
+$user_details = $user_object->getUserAccount($user_id);
 
 
 // load views

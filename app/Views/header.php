@@ -157,8 +157,6 @@
                 width: 100%;
             }
         }
-
-
     </style>
 </head>
 
@@ -186,6 +184,13 @@
                 </div>
             </div>
             <div class="nav-item dropdown">
+                <a href="#" class="nav-item nav-link dropdown-toggle" data-toggle="dropdown">Rewards and Membership</a>
+                <div class="dropdown-menu">
+                    <a href="<?php echo BASE_URL ?>rewards" class="nav-item nav-link">Reward Points</a>
+                    <a href="<?php echo BASE_URL ?>membership" class="nav-item nav-link">Membership Tiers</a>
+                </div>
+            </div>
+            <div class="nav-item dropdown">
                 <a href="<?php echo BASE_URL ?>store" class=" nav-item nav-link">Books and Comics</a>
                 <div class="dropdown-menu">
                     <a href="<?php echo BASE_URL ?>store" class="dropdown-item">Books</a>
@@ -194,7 +199,6 @@
                     <a href="#" class="dropdown-item">Collectibles</a>
                 </div>
             </div>
-            <a href="<?php echo BASE_URL ?>rewards" class="nav-item nav-link">Reward Points</a>
             <a href="<?php echo BASE_URL ?>blog" class="nav-item nav-link">Blog</a>
         </div>
 
@@ -220,23 +224,23 @@
         <a href="<?php echo BASE_URL ?>cart" class="nav-item nav-link"><i class="fa fa-shopping-basket"></i></a>
 
         <div class="nav-item dropdown">
-        <a href="#" class="nav-item nav-link dropdown-toggle text-dark" data-toggle="dropdown"> Hi
-            <?php
+            <a href="#" class="nav-item nav-link dropdown-toggle text-dark" data-toggle="dropdown"> Hi
+                <?php
 
-            if (isset($_SESSION["current_user"]["user_id"])) {
-                echo $_SESSION["current_user"]["first_name"];
-            } else {
-                echo "Reader";
-            } ?> !
-        </a>
-        <div class="dropdown-menu">
-            <a href="<?php echo BASE_URL ?>registration" class="dropdown-item">Create Account</a>
-            <a href="<?php echo BASE_URL ?>useraccount" class="dropdown-item">My Account</a>
-            <a href="<?php echo BASE_URL ?>orders" class="dropdown-item">Orders</a>
-            <a href="<?php echo BASE_URL ?>wishlist" class="dropdown-item">Wish List </a>
-            <a href="<?php echo BASE_URL ?>login" class="dropdown-item">Log In </a>
+                if (isset($_SESSION["current_user"]["user_id"])) {
+                    echo $_SESSION["current_user"]["first_name"];
+                } else {
+                    echo "Reader";
+                } ?> !
+            </a>
+            <div class="dropdown-menu">
+                <a href="<?php echo BASE_URL ?>registration" class="dropdown-item">Create Account</a>
+                <a href="<?php echo BASE_URL ?>useraccount" class="dropdown-item">My Account</a>
+                <a href="<?php echo BASE_URL ?>orders" class="dropdown-item">Orders</a>
+                <a href="<?php echo BASE_URL ?>wishlist" class="dropdown-item">Wish List </a>
+                <a href="<?php echo BASE_URL ?>login" class="dropdown-item">Log In </a>
+            </div>
         </div>
-    </div>
     </div>
 
     </div>

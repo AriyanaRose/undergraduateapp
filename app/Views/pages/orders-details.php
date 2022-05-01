@@ -13,10 +13,22 @@
     }
 </style>
 
-<div class="container my-5">
+<!--	URL: https://bbbootstrap.com/snippets/product-list-65909871
+                Bootstrap 4 Product List
+                Author:  BBBootstrap Team 
+            -->
+
+<div class="container my-3">
     <div class="row">
-        <div class="col-lg-8 mx-auto">
-            <a class="text-center" href="<?php echo BASE_URL . "orders"; ?>">Return to Orders</a>
+        <div class="col-lg-12 mx-auto">
+        <a class="btn btn-primary btn-sm float-right" href="<?php echo BASE_URL . "storeorders"; ?>">Return To Orders</a>
+        </div>
+  
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-lg-12 mx-auto">
+        
             <!-- List group-->
             <ul class="list-group shadow">
 
@@ -26,12 +38,12 @@
                         <!-- Custom content-->
                         <div class="media align-items-lg-center flex-column flex-lg-row p-3">
                             <div class="media-body order-2 order-lg-1">
-                                <h5 class="mt-0 font-weight-bold mb-2"><?php echo $data["product_title"] ?></h5>
-                                <p class="font-italic text-muted mb-0 small"><?php echo $data["product_brand"]; ?></p>
-                                <p class="font-italic text-muted mb-0 small"><?php echo $data["product_format"]; ?></p>
-                                <p class="font-italic text-muted mb-0 small"><?php echo $data["product_condition"]; ?></p>
+                                <h4 class="mt-0 font-weight-bold mb-2"><?php echo $data["product_title"] ?></h4>
+                                <h5 class="font-italic text-dark mb-0 ">Author: <?php echo $data["product_brand"]; ?></h5>
+                                <h5 class="font-italic text-dark mb-0 ">Format: <?php echo $data["product_format"]; ?></h5>
+                                <h5 class="font-italic text-dark mb-0 ">Condition: <?php echo $data["product_condition"]; ?></h5>
                                 <div class="d-flex align-items-center justify-content-between mt-1">
-                                    <h6 class="font-weight-bold my-2"><?php echo $data["order_details_price"] ?></h6>
+                                    <h6 class="font-weight-bold my-2">$<?php echo $data["order_details_price"] ?></h6>
                                 </div>
                             </div><img src="<?php echo BASE_URL . $data["product_image1"]; ?>" alt="Generic placeholder image" width="200" class="ml-lg-5 order-1 order-lg-2">
                         </div> <!-- End -->
@@ -43,11 +55,11 @@
                     <!-- Custom content-->
                     <div class="media align-items-lg-center flex-column flex-lg-row p-3">
                         <div class="media-body order-2 order-lg-1">
-                        <h2 class="text-center">Summary</h2>
-                        <h4>Order No <span class="float-right"><?php echo $data ["order_id"] ?></span> </h4>
-                        <h4>Subtotal <span class="float-right"><?php echo $data ["subtotal"] ?></span> </h4>
-                        <h4>Delivery <span class="float-right">$40.00</span> </h4>
-                        <h4>Total <span class="float-right"><?php echo $data ["total"] ?></span> </h4>
+                            <h3 class="text-center">Summary</h3>
+                            <h5>Order No <span class="float-right"><?php echo $data["order_id"] ?></span> </h5>
+                            <h5>Subtotal <span class="float-right"><?php echo $data["subtotal"] ?></span> </h5>
+                            <h5>Delivery <span class="float-right">$40.00</span> </h5>
+                            <h5>Total <span class="float-right"><?php echo $data["total"] ?></span> </h5>
                         </div>
                     </div>
                 </li>
