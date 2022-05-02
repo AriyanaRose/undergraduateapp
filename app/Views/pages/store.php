@@ -255,7 +255,7 @@
 </div>
 
 
-<div class="container my-3 bg-white">
+<div class="container my-1 bg-white">
 
 
 

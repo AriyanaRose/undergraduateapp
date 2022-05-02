@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST["add_to_wishlist"])) {
         header("location: " . BASE_URL . "wishlist");
         require_once APP_DIR . "utils/code.isLoggedIn.php";
-        $wish_object->addtoWishlist($user_id, $id,$_POST["add_to_wishlist"]);
+        $wish_object->addtoWishlist($user_id, $id, $_POST["add_to_wishlist"]);
     }
 }
 

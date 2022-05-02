@@ -21,7 +21,7 @@
         <li aria-current="page" class="breadcrumb-item active text-uppercase">Details</li>
     </ol>
 </nav>
-<div class="container my-2">
+<div class="container my-0">
 
 
     <form method="post">
@@ -81,20 +81,7 @@
 
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
+<BR>
+</BR>
+<!-- Authors	-->
+<?php require_once APP_DIR . "Views/includes/product-reviews.php"; ?>
