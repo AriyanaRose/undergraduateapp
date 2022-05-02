@@ -1,4 +1,4 @@
-<div class="card p-2 my-3 bg-light text-dark">
+<div class="card p-2 my-1 bg-light text-dark">
 
     <div class="row">
 

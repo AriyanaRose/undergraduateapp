@@ -73,6 +73,8 @@
     hr.dotted {
         border-top: 2px dotted #999;
     }
+
+
 </style>
 
 <!--	URL: https://bbbootstrap.com/snippets/bootstrap-4-simple-catalog-template-59154867
@@ -80,7 +82,7 @@
                 Author:  Anand Vunnam 
             -->
 
-<div class="container my-5 bg-white">
+<div class="container my-1 bg-white">
     <div class="h2 font-weight-bold text-center py-3">Customer's Favourite Authors</div>
     <hr class="dotted">
     <div class="row">

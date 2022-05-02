@@ -219,7 +219,7 @@
 <?php require_once APP_DIR . "Views/includes/home-authors.php"; ?>
 
 <!-- New Arrivals	-->
-<div class="container my-5 bg-white">
+<div class="container my-1 bg-white">
     <h2 class="h2 font-weight-bold text-center py-3">New Arrivals</h2>
     <hr class="dotted">
     <div class="row">
@@ -253,7 +253,7 @@
 </div>
 
 <!-- Coming Soon	-->
-<div class="container my-5 bg-white">
+<div class="container my-1 bg-white">
     <h2 class="h2 font-weight-bold text-center py-3">Coming Soon</h2>
     <hr class="dotted">
 
@@ -286,3 +286,4 @@
         <?php endforeach; ?>
     </div>
 </div>
+
