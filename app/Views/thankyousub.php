@@ -74,9 +74,6 @@
 
 <div class="thankyou-page">
     <div class="_header">
-        <div class="logo">
-            <img src="https://codexcourier.com/images/banner-logo.png" alt="">
-        </div>
         <h1>Thank You!</h1>
         <h2><strong>You have now been added to our mailing list</strong></h2>
     </div>

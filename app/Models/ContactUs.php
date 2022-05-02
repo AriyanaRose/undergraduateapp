@@ -23,6 +23,7 @@ class ContactUs
             'first_name' => $inputs["first_name"],
             'last_name' => $inputs["last_name"],
             'email' => $inputs["email"],
+            'message_sub' => $inputs["message_sub"],
             'message_sent' => $inputs["message_sent"]
 
         ];
@@ -34,6 +35,7 @@ class ContactUs
         `first_name`,
         `last_name`,
         `email`,
+        `message_sub`,
         `message_sent`,
         `message_date`)
         VALUES
@@ -42,6 +44,7 @@ class ContactUs
         :first_name,
         :last_name,
         :email,
+        :message_sub,
         :message_sent,
         current_timestamp()
 
@@ -51,6 +54,4 @@ class ContactUs
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute($data);
     }
-
-
 }

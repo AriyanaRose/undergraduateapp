@@ -109,9 +109,25 @@ post($_ENV["PROJECT_PATH"] . 'orders', 'app/Controllers/Orders.php');
 get($_ENV["PROJECT_PATH"] . 'orders/details/$id', 'app/Controllers/Order-details.php');
 post($_ENV["PROJECT_PATH"] . 'orders/details/$id', 'app/Controllers/Order-details.php');
 
+//http://localhost/undergraduateapp/admin-emailsub
+get($_ENV["PROJECT_PATH"] . 'admin-emailsub', 'app/Controllers/Admin-email.php');
+post($_ENV["PROJECT_PATH"] . 'admin-emailsub', 'app/Controllers/Admin-email.php');
 
+//http://localhost/undergraduateapp/admin-contactus
+get($_ENV["PROJECT_PATH"] . 'admin-contactus', 'app/Controllers/Admin-contactus.php');
+post($_ENV["PROJECT_PATH"] . 'admin-contactus', 'app/Controllers/Admin-contactus.php');
 
+//http://localhost/undergraduateapp/admin-orders
+get($_ENV["PROJECT_PATH"] . 'admin-orders', 'app/Controllers/Admin-orders.php');
+post($_ENV["PROJECT_PATH"] . 'admin-orders', 'app/Controllers/Admin-orders.php');
 
+//http://localhost/undergraduateapp/admin-customers
+get($_ENV["PROJECT_PATH"] . 'admin-customers', 'app/Controllers/Admin-customers.php');
+post($_ENV["PROJECT_PATH"] . 'admin-customers', 'app/Controllers/Admin-customers.php');
+
+//http://localhost/undergraduateapp/admin-productlisting
+get($_ENV["PROJECT_PATH"] . 'admin-productlisting', 'app/Controllers/Admin-productlisting.php');
+post($_ENV["PROJECT_PATH"] . 'admin-productlisting', 'app/Controllers/Admin-productlisting.php');
 
 // ##################################################
 // ##################################################

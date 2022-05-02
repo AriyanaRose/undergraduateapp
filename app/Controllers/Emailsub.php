@@ -15,7 +15,7 @@ $emailSubscription_object = new EmailSubscription($db_object);
 if (isset($_POST["emailsub"])) {
     
     $emailSubscription_object->getEmailSub($_POST);
-
+    header("location: " . BASE_URL . "thankyousub");
    
 }
 

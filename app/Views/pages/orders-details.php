@@ -21,7 +21,7 @@
 <div class="container my-3">
     <div class="row">
         <div class="col-lg-12 mx-auto">
-        <a class="btn btn-primary btn-sm float-right" href="<?php echo BASE_URL . "storeorders"; ?>">Return To Orders</a>
+        <a class="btn btn-primary btn-sm float-right" href="<?php echo BASE_URL . "orders"; ?>">Return To Orders</a>
         </div>
   
     </div>

@@ -62,7 +62,7 @@
 
   .bg-cover {
     background-size: cover !important;
-  
+
   }
 
   body {
@@ -115,7 +115,7 @@
       </div>
       <div class="col-md-6">
         <h2 class="text mt-3 font-weight-bold text-dark text-center">Contact Us</h2>
-        <form action="" method="post">
+        <form action="thankyoucontactus" method="post">
           <div class="row">
             <div class="col-lg-6">
               <div class="form-group">
@@ -130,6 +130,11 @@
             <div class="col-lg-12">
               <div class="form-group">
                 <input name="email" type="email" class="form-control mt-2" placeholder="Email" required>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="form-group">
+                <input name="message_sub" type="text" class="form-control mt-2" placeholder="Subject" required>
               </div>
             </div>
             <div class="col-12">

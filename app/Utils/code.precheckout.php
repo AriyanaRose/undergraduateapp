@@ -10,6 +10,7 @@ require_once APP_DIR . "utils/Point.php";
 require_once APP_DIR . "Models/Order.php";
 require_once APP_DIR . "Models/Wishlist.php";
 require_once APP_DIR . "utils/code.isLoggedIn.php";
+require_once APP_DIR . "Models/Administrator.php";
 
 
 // create objects
@@ -19,3 +20,4 @@ $cart_object = new Cart($db_object);
 $order_object = new Order($db_object);
 $wish_object = new Wishlist($db_object);
 $payment_object = new Stripehelper($db_object);
+$administrator_object = new Administrator($db_object);

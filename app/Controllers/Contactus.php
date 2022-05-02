@@ -13,6 +13,7 @@ $contactus_object = new ContactUs($db_object);
 
 if (isset($_POST["contactus"])) {
     $contactus_object->getMesssage($_POST);
+    header("location: " . BASE_URL . "thankyoucontactus");
 }
 
 

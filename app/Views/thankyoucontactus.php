@@ -1,7 +1,4 @@
 <style>
-   
-
-
     .thankyou-page ._header {
         background: #6497b1;
         padding: 100px 30px;
@@ -74,9 +71,6 @@
 
 <div class="thankyou-page">
     <div class="_header">
-        <div class="logo">
-            <img src="https://codexcourier.com/images/banner-logo.png" alt="">
-        </div>
         <h1>Thank You!</h1>
         <h2><strong>Your Message Has Been Received</strong></h2>
     </div>
