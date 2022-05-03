@@ -129,6 +129,11 @@ post($_ENV["PROJECT_PATH"] . 'admin-customers', 'app/Controllers/Admin-customers
 get($_ENV["PROJECT_PATH"] . 'admin-productlisting', 'app/Controllers/Admin-productlisting.php');
 post($_ENV["PROJECT_PATH"] . 'admin-productlisting', 'app/Controllers/Admin-productlisting.php');
 
+
+//http://localhost/undergraduateapp/admin-dashboard
+get($_ENV["PROJECT_PATH"] . 'admin-dashboard', 'app/Controllers/Admin-dashboard.php');
+post($_ENV["PROJECT_PATH"] . 'admin-dashboard', 'app/Controllers/Admin-dashboard.php');
+
 // ##################################################
 // ##################################################
 // ##################################################

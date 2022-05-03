@@ -277,7 +277,7 @@
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb breadcrumb-bullet">
         <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>admin-dashboard" class="text-uppercase">Dashboard</a></li>
-        <li aria-current="page" class="breadcrumb-item active text-uppercase">Product Listing</li>
+        <li aria-current="page" class="breadcrumb-item active text-uppercase">Contact Us Listing</li>
     </ol>
 </nav>
 
