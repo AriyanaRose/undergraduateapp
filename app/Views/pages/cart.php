@@ -169,7 +169,7 @@
 </div>
 
 <section class="shopping-cart">
-<div class="container my-3">
+<div class="container my-1">
 
 		<div class="content">
 			<div class="row">
@@ -233,6 +233,7 @@
 						<div class="summary-item"><span class="text">Total</span><span class="price">$<?php echo $cart_object->getSubtotal(); ?> </span></div>
 						<button type="button" class="btn btn-success btn-lg btn-block">Checkout</button>
 					</div>
+
 				</div>
 			</div>
 		</div>

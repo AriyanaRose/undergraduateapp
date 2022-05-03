@@ -3,6 +3,10 @@
     .breadcrumb-bullet .breadcrumb-item+.breadcrumb-item::before {
         content: '•';
     }
+
+    .breadcrumb {
+        background-color: white;
+    }
 </style>
 
 <!--	URL: https://startbootstrap.com/template/blog-post
@@ -12,14 +16,15 @@
 
 <body>
     <!-- Page content-->
-    <div class="container my-3">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb breadcrumb-bullet">
-                <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
-                <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>blog" class="text-uppercase">Blog</a></li>
-                <li aria-current="page" class="breadcrumb-item active text-uppercase">Blog Post</li>
-            </ol>
-        </nav>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-bullet">
+            <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
+            <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>blog" class="text-uppercase">Blog</a></li>
+            <li aria-current="page" class="breadcrumb-item active text-uppercase">Blog Post</li>
+        </ol>
+    </nav>
+    <div class="container my-1">
+
         <div class="row">
             <div class="col-lg-8">
                 <!-- Post content-->

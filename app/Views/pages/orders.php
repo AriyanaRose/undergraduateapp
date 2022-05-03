@@ -1,15 +1,38 @@
 <style>
+    .bg-cover {
+        background-size: cover !important;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
     body {
-        background: white;
+        min-height: 100vh;
     }
 
     /* Bullet */
     .breadcrumb-bullet .breadcrumb-item+.breadcrumb-item::before {
         content: '•';
+
     }
 
     .breadcrumb {
         background-color: white;
+    }
+
+
+    .container {
+        position: centered;
+    }
+
+    /* Bottom right text */
+    .text-block {
+        position: centered;
+        bottom: 20px;
+        right: 20px;
+        background-color: black;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 </style>
 
@@ -21,8 +44,17 @@
     </ol>
 </nav>
 
-<div class="container my-3">
-    <h2 class="text-center">Order History</h2>
+<div style="background: url('images/bookself6.jpg')" class="jumbotron bg-cover text-white">
+    <div class="container py-1 text-center">
+        <div class="text-block">
+            <h1>My Order History</h1>
+        </div>
+    </div>
+</div>
+
+
+<div class="container my-1">
+
     <p></p>
     <table class="table table-hover">
         <thead>

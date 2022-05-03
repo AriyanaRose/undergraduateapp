@@ -1,7 +1,8 @@
 <style>
     .bg-cover {
         background-size: cover !important;
-     
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     body {
@@ -16,6 +17,21 @@
     .breadcrumb {
         background-color: white;
     }
+
+    .container {
+    position: centered;
+  }
+
+  /* Bottom right text */
+  .text-block {
+    position: centered;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 </style>
 
 
@@ -38,8 +54,10 @@
     </nav>
 
     <div style="background: url('images/bookself1.jpg')" class="jumbotron bg-cover text-white">
-        <div class="container py-3 text-center">
-
+        <div class="container py-1 text-center">
+        <div class="text-block">
+        <h1>Blog</h1>
+      </div>
         </div>
     </div>
 </div>

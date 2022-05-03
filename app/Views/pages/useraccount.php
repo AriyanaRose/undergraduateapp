@@ -1,7 +1,18 @@
 <style>
     body {
         background: white;
+
     }
+
+    .bg-cover {
+    background-size: cover !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  body {
+    min-height: 100vh;
+  }
 
     /* Bullet */
     .breadcrumb-bullet .breadcrumb-item+.breadcrumb-item::before {
@@ -11,6 +22,21 @@
     .breadcrumb {
         background-color: white;
     }
+
+    .container {
+        position: centered;
+    }
+
+    /* Bottom right text */
+    .text-block {
+        position: centered;
+        bottom: 20px;
+        right: 20px;
+        background-color: black;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 </style>
 
 
@@ -18,14 +44,27 @@
                 Bootstrap snippet. bs4 edit profile page
                 Author:  Bootdey
             -->
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb breadcrumb-bullet">
-        <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
-        <li aria-current="page" class="breadcrumb-item active text-uppercase">My Account</li>
-    </ol>
-</nav>
+
+<div>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-bullet">
+            <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
+            <li aria-current="page" class="breadcrumb-item active text-uppercase">My Account</li>
+        </ol>
+    </nav>
+
+    <div style="background: url('images/bookself3.jpg')" class="jumbotron bg-cover text-white">
+    <div class="container py-1 text-center">
+      <div class="text-block">
+        <h1>My Account</h1>
+      </div>
+    </div>
+  </div>
+
+</div>
+
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-<div class="container my-3">
+<div class="container my-1">
 
     <div class="row flex-lg-nowrap">
         <div class="col-12 col-lg-auto mb-3" style="width: 200px;">
@@ -92,7 +131,7 @@
                                                         </div>
                                                         <div class="row">
                                                             <div class="col d-flex justify-content-end">
-                                                                <button name="address" type ="submit" class="btn btn-primary" type="submit">Save Changes</button>
+                                                                <button name="address" type="submit" class="btn btn-primary" type="submit">Save Changes</button>
                                                             </div>
                                                         </div>
                                                     </div>

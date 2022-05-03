@@ -83,7 +83,7 @@
             -->
 
 <div class="container my-1 bg-white">
-    <div class="h2 font-weight-bold text-center py-3">Featured Genres</div>
+    <div class="h2 font-weight-bold text-center py-1">Featured Genres</div>
     <hr class="dotted">
     <div class="row">
         <div class="col-lg-4 col-md-6 my-lg-0 my-3">

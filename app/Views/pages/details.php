@@ -12,15 +12,45 @@
     .breadcrumb {
         background-color: white;
     }
+
+    .bg-cover {
+        background-size: cover !important;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    body {
+        min-height: 100vh;
+    }
+
+
+    .container {
+        position: centered;
+    }
+
+    /* Bottom right text */
+    .text-block {
+        position: centered;
+        bottom: 20px;
+        right: 20px;
+        background-color: black;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 </style>
 
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb breadcrumb-bullet">
-        <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
-        <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>store" class="text-uppercase">Store</a></li>
-        <li aria-current="page" class="breadcrumb-item active text-uppercase">Details</li>
-    </ol>
-</nav>
+<div class="row">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-bullet">
+            <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
+            <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>store" class="text-uppercase">Store</a></li>
+            <li aria-current="page" class="breadcrumb-item active text-uppercase">Details</li>
+        </ol>
+    </nav>
+</div>
+
+
 <div class="container my-0">
 
 

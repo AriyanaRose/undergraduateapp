@@ -33,6 +33,8 @@
 
 	.bg-cover {
 		background-size: cover !important;
+		padding-top: 30px;
+        padding-bottom: 30px;
 	}
 
 	body {
@@ -55,6 +57,21 @@
 	.breadcrumb {
 		background-color: white;
 	}
+
+	.container {
+		position: centered;
+	}
+
+	/* Bottom right text */
+	.text-block {
+		position: centered;
+		bottom: 20px;
+		right: 20px;
+		background-color: black;
+		color: white;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 </style>
 
 
@@ -66,8 +83,10 @@
 		</ol>
 	</nav>
 	<div style="background: url('images/bookself4.jpg')" class="jumbotron bg-cover text-white">
-		<div class="container py-3 text-center">
-
+		<div class="container py-1 text-center">
+			<div class="text-block">
+				<h1>Help</h1>
+			</div>
 		</div>
 	</div>
 </div>
@@ -78,10 +97,7 @@
                 Author:  PrepBootstrap
             -->
 
-<div class="container my-5 bg-white">
-
-
-
+<div class="container my-1 bg-white">
 
 	<div class="text-dark text-center my-3">
 	</div>
