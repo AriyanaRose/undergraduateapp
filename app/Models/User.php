@@ -48,6 +48,11 @@ class User
         $stmt->execute($data);
     }
 
+
+    public function uniqueEmail(){
+        
+    }
+
     public function login($inputs)
     {
         $sql = "SELECT * FROM users WHERE email = ?";
@@ -62,13 +67,6 @@ class User
             return true;
         }
         return false;
-    }
-
-
-    public function showName()
-    {
-
-        echo "Ariyana";
     }
 
 

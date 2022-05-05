@@ -11,7 +11,7 @@
     }
 
     .btn-block {
-        background-color: #005b96;
+        background-color: #011f4b;
     }
 </style>
 
@@ -37,7 +37,7 @@
                                 <div class="form-group mb-3"> <input name="password" id="inputPassword" type="password" placeholder="Password" required="" class="form-control rounded-pill border-0 shadow-sm px-4 text-danger"><br> </div>
                                 <div class="custom-control custom-checkbox mb-3"> <input id="customCheck1" type="checkbox" checked class="custom-control-input"> <label for="customCheck1" class="custom-control-label">By clicking Register you agree to our Terms and Conditions and Privacy Policy</label> </div> <button name="registration" type="submit" class="btn btn-block text-light">Register</button>
                                 <div class="text-center d-flex justify-content-between mt-4">
-                                    <p> OR &nbsp<a href="<?php echo BASE_URL ?>login" class="font-italic text-muted"> <u>Already have an account? Sign In</u></a></p>
+                                    <p><a href="<?php echo BASE_URL ?>login" class=" text-danger"> <u>Already have an account? Login Here</u></a></p>
                                 </div>
                             </form>
                         </div>

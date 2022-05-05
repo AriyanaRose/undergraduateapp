@@ -133,7 +133,7 @@
                                                         </div>
                                                         <div class="row">
                                                             <div class="col d-flex justify-content-end">
-                                                                <button name="address" type="submit" class="btn btn-lg btn-block text-light" type="submit">Save Changes</button>
+                                                                <button name="shipping_address" type="submit" class="btn btn-lg btn-block text-light" type="submit">Save Changes</button>
                                                             </div>
                                                         </div>
                                                     </div>

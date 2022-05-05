@@ -21,8 +21,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 $wish_details = $wish_object->getWishlistDetails($user_id);
-//debug($wish_details);
-
 
 
 // load views
