@@ -77,4 +77,21 @@ class Administrator
         $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
         return $result;
     }
+
+
+    public function adminLogin($inputs)
+    {
+        $sql = "SELECT * FROM users WHERE email = ? AND user_type = 'admin' ";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute([$inputs['email']]);
+        $user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        if ($user && password_verify($inputs['password'], $user['password'])) {
+            echo "valid!";
+            $user["password"] = null;
+            $_SESSION["admin_user"] = $user;
+            return true;
+        }
+        return false;
+    }
 }

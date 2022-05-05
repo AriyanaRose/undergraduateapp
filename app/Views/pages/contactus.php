@@ -93,6 +93,10 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  .btn-lg {
+        background-color: #011f4b;
+    }
 </style>
 
 <!--	URL: https://bootsnipp.com/snippets/N6bPx
@@ -164,7 +168,7 @@
 
             </div>
             <div class="col-12 text-center">
-              <button name="contactus" class="btn btn-warning btn-block" type="submit">Submit</button>
+              <button name="contactus" class="btn btn-lg btn-block text-light" type="submit">Submit</button>
             </div>
           </div>
         </form>

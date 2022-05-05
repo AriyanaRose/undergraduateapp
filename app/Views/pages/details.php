@@ -38,6 +38,10 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    .btn-lg {
+        background-color: #011f4b;
+    }
 </style>
 
 <div class="row">
@@ -57,7 +61,7 @@
     <form method="post">
         <div class="row">
             <div class="col-md-12">
-                <button name="add_to_wishlist" type="submit" class="btn btn-outline-danger btn-sm float-right "><i class="fa fa-heart"></i></button>
+                <button name="add_to_wishlist" type="submit" class="btn btn-danger btn-sm float-right "><i class="fa fa-heart"></i></button>
             </div>
         </div>
     </form>
@@ -91,7 +95,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <button name="add_to_cart" type="submit" class="btn btn-outline-success btn-lg">Add to Basket</button>
+                            <button name="add_to_cart" type="submit" class="btn btn-lg text-light">Add to Basket</button>
                         </div>
                     </div>
                 </form>

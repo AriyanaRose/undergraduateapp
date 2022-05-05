@@ -243,6 +243,10 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    .btn-lg {
+        background-color: #011f4b;
+    }
 </style>
 
 <!--	URL: http://bestjquery.com/tutorial/product-grid/demo165/

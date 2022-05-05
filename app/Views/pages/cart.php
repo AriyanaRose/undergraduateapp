@@ -194,7 +194,7 @@
 															<div>Condition: <span class="value"><?php echo $data["product_condition"] ?></span></div>
 															<br>
 															<form action="cart" method="post">
-																<button class="btn btn-outline-warning btn-sm" name="remove_from_cart" type="submit">Remove</i></button>
+																<button class="btn btn-warning btn-sm" name="remove_from_cart" type="submit">Remove</i></button>
 																<input type="hidden" name="cart_id" value="<?php echo $data["cart_id"] ?>">
 															</form>
 														</div>

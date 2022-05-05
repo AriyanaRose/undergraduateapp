@@ -66,8 +66,8 @@
     <div class="row d-flex justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="invoice p-5">
-                    <h5 class="text-center">Your order Confirmed!</h5>
+                <div class="invoice p-3">
+                    <h5 class="text-center">Order Confirmation</h5>
                     <span class="font-weight-bold d-block mt-4">Hello,
                         <?php
 
@@ -122,20 +122,6 @@
                                         <td>
                                             <div class="text-left">
 
-                                                <span class="text-muted">Subtotal</span>
-
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="text-right">
-                                                <span>$<?php echo $data["subtotal"] ?></span>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="text-left">
-
                                                 <span class="text-muted">Shipping Fee</span>
 
                                             </div>
@@ -149,12 +135,26 @@
                                     <tr>
                                         <td>
                                             <div class="text-left">
+
+                                                <span class="text-muted">Subtotal</span>
+
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text-right">
+                                                <span>$<?php echo $data["subtotal"] ?></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="text-left">
                                                 <span class="text-muted">Discount</span>
                                             </div>
                                         </td>
                                         <td>
                                             <div class="text-right">
-                                                <span class="text-success"></span>
+                                                <span class="text-success">$<?php echo $data["total_discount_amount"] ?></span>
                                             </div>
                                         </td>
                                     </tr>
@@ -162,7 +162,7 @@
                                         <td>
                                             <div class="text-left">
 
-                                                <span class="font-weight-bold">Subtotal</span>
+                                                <span class="font-weight-bold">Total</span>
 
                                             </div>
                                         </td>

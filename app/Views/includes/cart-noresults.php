@@ -1,7 +1,7 @@
 <style>
 
     .card {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
         border: 0;
         -webkit-transition: all .3s ease;
         transition: all .3s ease;
@@ -27,7 +27,7 @@
 
 
     .card .card-body {
-        padding: 30px;
+        padding: 15px;
         background-color: transparent;
     }
 
@@ -51,6 +51,10 @@
     body {
         background-color: white;
     }
+
+    .btn {
+        background-color: #011f4b;
+    }
 </style>
 
 <!--	URL: https://bbbootstrap.com/snippets/bootstrap-empty-cart-template-25715727
@@ -70,16 +74,14 @@
 
 </div>
 
-<div class="container-fluid  my-1">
+<div class="container  my-1">
     <div class="row">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">
-                </div>
                 <div class="card-body cart">
                     <div class="col-sm-12 empty-cart-cls text-center">
                         <img src="images/cartyempty.jpg" width="500" height="500" class="img-fluid">
-                        <a href="<?php echo BASE_URL ?>store" class="btn btn-primary cart-btn-transform m-3" data-abc="true">continue shopping</a>
+                        <a href="<?php echo BASE_URL ?>store" class="btn cart-btn-transform m-3 text-white" data-abc="true">Continue Shopping</a>
                     </div>
                 </div>
             </div>

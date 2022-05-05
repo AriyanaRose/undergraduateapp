@@ -146,6 +146,10 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    .btn-lg {
+        background-color: #011f4b;
+    }
 </style>
 
 <!--	
@@ -219,11 +223,11 @@
                                     <td>
                                         <div class="price-wrap"> <var class="price">$<?php echo $data["product_price"] ?></var> </div>
                                     </td>
-                                    <td class="text-right d-none d-md-block"> <button href="" name="add_to_cart" type="submit" class="btn btn-light" data-abc="true"> Add to Basket</button> </td>
+                                    <td class="text-right d-none d-md-block"> <button href="" name="add_to_cart" type="submit" class="btn btn-lg text-light" data-abc="true"> Add to Basket</button> </td>
                                     </form>
 
                                     <form action="wishlist" method="post">
-                                        <td class="text-right d-none d-md-block"> <button name="remove_from_wish" type="submit" class="btn btn-md btn-light" data-toggle="tooltip" data-abc="true"> <i class="fa fa-trash"></i>
+                                        <td class="text-right d-none d-md-block"> <button name="remove_from_wish" type="submit" class="btn btn-warning" data-toggle="tooltip" data-abc="true"> <i class="fa fa-trash"></i>
                                                 <input name="wish_id" value="<?php echo $data["wish_id"]; ?>" type="hidden">
                                     </form>
                                 </tr>
