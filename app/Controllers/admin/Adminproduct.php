@@ -18,31 +18,18 @@ if (isset($_POST["add_product"])) {
 
     // check if files were selected
 
-    if (isSelected(["product_image1", "product_image2", "product_image3", "product_image4"])) {
+    if (isSelected(["product_image1"])) {
 
         // check if file names did not have an error
         $product_image1 = getFilename("product_image1", "products");
-        $product_image2 = getFilename("product_image2", "products");
-        $product_image3 = getFilename("product_image3", "products");
-        $product_image4 = getFilename("product_image4", "products");
 
         if (
-            $product_image1 != "error" &&
-            $product_image2 != "error" &&
-            $product_image3 != "error" &&
-            $product_image4 != "error"
-
+            $product_image1 != "error" 
         ) {
             $_POST['product_image1'] = $product_image1;
-            $_POST['product_image2'] = $product_image2;
-            $_POST['product_image3'] = $product_image3;
-            $_POST['product_image4'] = $product_image4;
 
             $product_object->addProduct($_POST);
             upload("product_image1", "$product_image1");
-            upload("product_image2", "$product_image2");
-            upload("product_image3", "$product_image3");
-            upload("product_image4", "$product_image4");
         }
 
         // add new names to $_POST

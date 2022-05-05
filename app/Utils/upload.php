@@ -25,7 +25,7 @@ function getFilename($file, $upload_folder)
 
 
     // Check file size
-    if ($_FILES["$file"]["size"] > 500000) {
+    if ($_FILES["$file"]["size"] > 5500000) {
         echo "Sorry, your file is too large.";
         $uploadOk = 0;
         return "error";
