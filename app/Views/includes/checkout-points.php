@@ -9,7 +9,7 @@
         </div>
         <form action="checkout" method="post">
             <select name="points" class="form-control form-control-lg" id="points">
-                <option value="0">Reset</option>
+                <option value="0">No Points Used</option>
                 <option value="200">$20 Discount - 200 Points</option>
                 <option value="300">$30 Discount - 300 Points</option>
                 <option value="400">$40 Discount - 400 Points</option>

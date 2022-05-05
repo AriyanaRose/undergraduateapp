@@ -134,6 +134,10 @@ post($_ENV["PROJECT_PATH"] . 'admin-productlisting', 'app/Controllers/Admin-prod
 get($_ENV["PROJECT_PATH"] . 'admin-dashboard', 'app/Controllers/Admin-dashboard.php');
 post($_ENV["PROJECT_PATH"] . 'admin-dashboard', 'app/Controllers/Admin-dashboard.php');
 
+//http://localhost/undergraduateapp/admin-dashboard
+get($_ENV["PROJECT_PATH"] . 'checkout-confirmation', 'app/Controllers/Check-confirmation.php');
+post($_ENV["PROJECT_PATH"] . 'checkout-confirmation', 'app/Controllers/Check-confirmation.php');
+
 // ##################################################
 // ##################################################
 // ##################################################

@@ -226,12 +226,8 @@
 							<hr class="dashed">
 						</div>
 						<div class="summary-item"><span class="text">Subtotal</span><span class="price">$ <?php echo $cart_object->getSubtotal(); ?></span></div>
-
-						<div class="summary-item"><span class="text">Discount</span><span class="price">TBD</span></div>
-						<div class="summary-item"><span class="text">Shipping</span><span class="price">TBD</span></div>
-
-						<div class="summary-item"><span class="text">Total</span><span class="price">$<?php echo $cart_object->getSubtotal(); ?> </span></div>
-						<button type="button" class="btn btn-success btn-lg btn-block">Checkout</button>
+						<br>
+						<a class="btn btn-success btn-lg btn-block" href="<?php echo BASE_URL . "checkout"?>">Checkout</a>
 					</div>
 
 				</div>

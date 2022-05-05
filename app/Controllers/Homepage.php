@@ -39,5 +39,6 @@ if($_SERVER ["REQUEST_METHOD"] == "GET"){
 
 // required views
 require_once APP_DIR . "Views/header.php";
+require_once APP_DIR . "Views/includes/alerts.php";
 require APP_DIR . "Views/pages/Homepage.php";
 require_once APP_DIR . "Views/footer.php";

@@ -192,12 +192,6 @@
             </div>
             <div class="nav-item dropdown">
                 <a href="<?php echo BASE_URL ?>store" class=" nav-item nav-link">Books and Comics</a>
-                <div class="dropdown-menu">
-                    <a href="<?php echo BASE_URL ?>store" class="dropdown-item">Books</a>
-                    <a href="#" class="dropdown-item">Comics</a>
-                    <a href="#" class="dropdown-item">Rare</a>
-                    <a href="#" class="dropdown-item">Collectibles</a>
-                </div>
             </div>
             <a href="<?php echo BASE_URL ?>blog" class="nav-item nav-link">Blog</a>
         </div>
@@ -218,8 +212,6 @@
 
         </div>
         </form>
-        <a href="#" class="nav-item nav-link"><i class="fa fa-envelope"></i></a>
-        <a href="#" class="nav-item nav-link"><i class="fa fa-bell"></i></a>
         <a href="<?php echo BASE_URL ?>wishlist" class="nav-item nav-link"><i class="fa fa-heart"></i></a>
         <a href="<?php echo BASE_URL ?>cart" class="nav-item nav-link"><i class="fa fa-shopping-basket"></i></a>
 
@@ -234,11 +226,25 @@
                 } ?> !
             </a>
             <div class="dropdown-menu">
-                <a href="<?php echo BASE_URL ?>registration" class="dropdown-item">Create Account</a>
-                <a href="<?php echo BASE_URL ?>useraccount" class="dropdown-item">My Account</a>
-                <a href="<?php echo BASE_URL ?>orders" class="dropdown-item">Orders</a>
-                <a href="<?php echo BASE_URL ?>wishlist" class="dropdown-item">Wish List </a>
-                <a href="<?php echo BASE_URL ?>login" class="dropdown-item">Log In </a>
+
+                <?php
+                if (isset($_SESSION["current_user"])) {
+                ?>
+                    <a href="<?php echo BASE_URL ?>useraccount" class="dropdown-item">My Account</a>
+                    <a href="<?php echo BASE_URL ?>orders" class="dropdown-item">Orders</a>
+                    <a href="<?php echo BASE_URL ?>wishlist" class="dropdown-item">Wish List </a>
+                    <a href="<?php echo BASE_URL ?>logout" class="dropdown-item">Log Out </a>
+                <?php
+                } else {
+                ?>
+                    <a href="<?php echo BASE_URL ?>registration" class="dropdown-item">Create Account</a>
+
+                    <a href="<?php echo BASE_URL ?>login" class="dropdown-item">Log In </a>
+                <?php
+                }
+
+                ?>
+
             </div>
         </div>
     </div>
