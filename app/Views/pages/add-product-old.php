@@ -41,15 +41,6 @@
         <p>Image 1</p>
         <p><input type="file" name="product_image1"></p>
 
-        <p>Image 2</p>
-        <p><input type="file" name="product_image2"></p>
-
-        <p>Image 3</p>
-        <p><input type="file" name="product_image3"></p>
-
-        <p>Image 4</p>
-        <p><input type="file" name="product_image4"></p>
-
         <p>Status</p>
         <p><input type=" text" name="product_status"></p>
 
