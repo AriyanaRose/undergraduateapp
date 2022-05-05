@@ -55,4 +55,6 @@ if (isset($_POST["add_product"])) {
 }
 
 // load views
+require_once APP_DIR . "Views/header.php";
 require_once APP_DIR . "Views/pages/add-product.php";
+require_once APP_DIR . "Views/footer.php";

@@ -93,6 +93,12 @@ class User
     }
 
     public function addUserAddress($user_id, $shipping_address){
+
+        
+        $data = [
+            "shipping_address" => $shipping_address
+        ];
+
         
         $sql = "UPDATE users SET shipping_address = ? WHERE user_id =?";
         $stmt = $this->pdo->prepare($sql);

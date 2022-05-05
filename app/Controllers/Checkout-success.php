@@ -99,5 +99,5 @@ $cart_object->resetSessions();
 $_SESSION["confirmation"] = $order_id;
 
 // set info via url, note to self, need to set route
-header("location: " . BASE_URL . "order/details/$order_id");
+header("location: " . BASE_URL . "orders/details/$order_id");
 exit;
