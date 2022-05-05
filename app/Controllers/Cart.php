@@ -13,6 +13,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("location: " . BASE_URL . "cart");
         require_once APP_DIR . "utils/code.isLoggedIn.php";
         $cart_object->addToCart($user_id, $_POST["product_id"], $_POST["cart_quantity"]);
+        $_SESSION["message"] = "Item has been added to cart";
+        exit;
     }
 }
 
@@ -21,6 +23,7 @@ $cart_details = $cart_object->getCartDetails($user_id);
 
 // load views
 require_once APP_DIR . "Views/header.php";
+require_once APP_DIR . "Views/includes/alerts.php";
 
 if (empty($cart_details)) {
     require_once APP_DIR . "Views/includes/cart-noresults.php";

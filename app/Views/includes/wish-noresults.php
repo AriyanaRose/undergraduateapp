@@ -1,4 +1,5 @@
 <style>
+
     .card {
         margin-bottom: 15px;
         border: 0;
@@ -66,7 +67,7 @@
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb breadcrumb-bullet">
             <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
-            <li aria-current="page" class="breadcrumb-item active text-uppercase">Wishlist
+            <li aria-current="page" class="breadcrumb-item active text-uppercase">Cart
             <li>
         </ol>
     </nav>
@@ -79,7 +80,7 @@
             <div class="card">
                 <div class="card-body cart">
                     <div class="col-sm-12 empty-cart-cls text-center">
-                        <img src="images/cart-noresults.jpg" width="900" height="900" class="img-fluid">
+                        <img src="images/wishlist-noresults.jpg" width="900" height="900" class="img-fluid">
                         <a href="<?php echo BASE_URL ?>store" class="btn cart-btn-transform m-3 text-white" data-abc="true">Continue Shopping</a>
                     </div>
                 </div>

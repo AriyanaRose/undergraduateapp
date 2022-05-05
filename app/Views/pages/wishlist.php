@@ -201,12 +201,15 @@
                         </thead>
                         <tbody>
 
-                            <?php foreach ($wish_details as $data) : ?>
+                            <?php foreach ($wish_details as $data) : 
+                                 $link = "details/" . $data["product_id"];
+                                ?>
+                               
                                 <tr>
                                     <td>
                                         <figure class="itemside align-items-center">
-                                            <div class="aside"><img src="<?php echo $data["product_image1"] ?>" class="img-sm"></div>
-                                            <figcaption class="info"> <a href="#" class="title text-dark" data-abc="true"><?php echo $data["product_title"] ?></a>
+                                            <a class="aside" href="<?php echo $link ?>" ><img src="<?php echo $data["product_image1"] ?>" class="img-sm"></a>
+                                            <figcaption class="info"> <a href="<?php echo $link ?>" class="title text-dark" data-abc="true"><?php echo $data["product_title"] ?></a>
                                                 <p class="text-muted small">Author: <?php echo $data["product_brand"] ?> <br> Condition: <?php echo $data["product_condition"] ?> <br> Format: <?php echo $data["product_format"] ?> <br> Status: <?php echo $data["product_status"] ?></p>
 
                                             </figcaption>

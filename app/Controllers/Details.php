@@ -25,6 +25,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("location: " . BASE_URL . "cart");
         require_once APP_DIR . "utils/code.isLoggedIn.php";
         $cart_object->addToCart($user_id, $id, $_POST["cart_quantity"]);
+        $_SESSION["message"] = "Item has been added to cart";
+        exit;
+    
     }
 }
 
@@ -37,10 +40,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("location: " . BASE_URL . "wishlist");
         require_once APP_DIR . "utils/code.isLoggedIn.php";
         $wish_object->addtoWishlist($user_id, $id, $_POST["add_to_wishlist"]);
+        $_SESSION["message"] = "Item has been added to wishlist";
+        exit;
     }
 }
 
 // load views
 require_once APP_DIR . "Views/header.php";
+require_once APP_DIR . "Views/includes/alerts.php";
 require_once APP_DIR . "Views/pages/details.php";
 require_once APP_DIR . "Views/footer.php";

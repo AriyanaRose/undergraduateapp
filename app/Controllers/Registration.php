@@ -9,8 +9,8 @@ $db_object = new Database();
 $user_object = new User($db_object);
 
 if (isset($_POST["registration"])) {
-    $user_object->register($_POST);
-    header("location: " . BASE_URL . "home");
+    header("location: " . BASE_URL . "thankyouregister");
+    exit;
 }
 
 // load views
