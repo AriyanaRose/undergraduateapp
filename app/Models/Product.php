@@ -155,4 +155,41 @@ class Product
                 break;
         }
     }
+
+    //featured 
+    public function getRandomProducts()
+    {
+        $sql = "SELECT * FROM products ORDER BY RAND() LIMIT 8";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute();
+        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $result;
+    }
+
+    public function getBestSellingProducts()
+    {
+        $sql = "SELECT *, COUNT(order_details.product_id) times_sold
+        FROM order_details, products
+        WHERE order_details.product_id = products.product_id
+        GROUP BY order_details.product_id
+        having count(*) >= 2";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute();
+        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $result;
+    }
+
+    public function getRecommendedProducts($product_id)
+    {
+        $sql = "SELECT * 
+        FROM products
+        WHERE product_id in
+        (select distinct product_id from order_details where order_id in
+        (select distinct order_id from order_details where product_id = ?)
+        and product_id != ?)";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute([$product_id, $product_id]);
+        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $result;
+    }
 }

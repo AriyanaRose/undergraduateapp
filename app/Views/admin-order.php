@@ -311,7 +311,6 @@
                         <tr>
                             <th>Order No</th>
                             <th>User ID<i class="fa fa-sort"></i></th>
-                            <th>Customer Name <i class="fa fa-sort"></i></th>
                             <th>Date</th>
                             <th>Total</th>
                             <th>Action</th>
@@ -323,13 +322,12 @@
                             <tr>
                                 <td><?php echo $data["order_id"]; ?></td>
                                 <td><?php echo $data["user_id"]; ?> </td>
-                                <td></td>
                                 <td><?php echo $data["order_created"]; ?></td>
                                 <td><?php echo $data["total"]; ?></td>
                                 <td>
-                                <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xe417;</i></a>
-                                <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                                <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                                    <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xe417;</i></a>
+                                    <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                    <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
                                 </td>
                             </tr>
 

@@ -204,131 +204,16 @@
     }
 </style>
 
-<!--	URL: http://www.prepbootstrap.com/bootstrap-template/faq-example
-                Bootstrap FAQ Bootsrap Frequently Asked Questions
-                Author:  PrepBootstrap
-            -->
 
-
-<!-- Home Carousel	-->
-<?php require_once APP_DIR . "Views/includes/home-cara.php"; ?>
-
-<!-- Category	-->
-<?php require_once APP_DIR . "Views/includes/home-category.php"; ?>
-<!-- Authors	-->
-<?php require_once APP_DIR . "Views/includes/home-authors.php"; ?>
-
-<!-- New Arrivals	-->
+<!-- Featured using Random	-->
 <div class="container my-1 bg-white">
-    <h2 class="h2 font-weight-bold text-center py-1">New Arrivals</h2>
+    <h2 class="h4 font-weight-bold text-center py-1">Recommended Products</h2>
     <hr class="dotted">
     <div class="row">
         <!-- Code don't delete	-->
-        <?php foreach ($product_new as $data) :
-            $link = "details/" . $data["product_id"];
-        ?>
-            <div class="col-lg-3 w-100">
-                <div class="product-grid">
-                    <div class="product-image">
-                        <!-- Code don't delete	-->
-                        <a href="<?php echo $link ?>" class="image">
-                            <img src="<?php echo BASE_URL . $data["product_image1"] ?>">
-                        </a>
-                    </div>
-                    <div class="product-content">
-                        <h5 class="title font-weight-bold text-center text-sm">
-                            <!-- Code don't delete	-->
-                            <a href="<?php echo $link ?>"><?php echo $data["product_title"]; ?> </a>
-                        </h5>
-                        <h6 class="brand font-weight-light text-center">
-                            <!-- Code don't delete	-->
-                            <a><?php echo $data["product_brand"]; ?> </a>
-                        </h6>
-                    </div>
-                </div>
-            </div>
-            <!-- Code don't delete	-->
-        <?php endforeach; ?>
-    </div>
-</div>
-
-<!-- Coming Soon	-->
-<div class="container my-1 bg-white">
-    <h2 class="h2 font-weight-bold text-center py-1">Coming Soon</h2>
-    <hr class="dotted">
-
-    <div class="row">
-        <!-- Code don't delete	-->
+        
         <?php foreach ($product_details as $data) :
-            $link = "details/" . $data["product_id"];
-        ?>
-            <div class="col-md-3 w-100">
-                <div class="product-grid">
-                    <div class="product-image">
-                        <!-- Code don't delete	-->
-                        <a href="<?php echo $link ?>" class="image">
-                            <img src="<?php echo BASE_URL . $data["product_image1"] ?>">
-                        </a>
-                    </div>
-                    <div class="product-content">
-                        <h5 class="title font-weight-bold text-center text-sm">
-                            <!-- Code don't delete	-->
-                            <a href="<?php echo $link ?>"><?php echo $data["product_title"]; ?> </a>
-                        </h5>
-                        <h6 class="brand font-weight-light text-center">
-                            <!-- Code don't delete	-->
-                            <a><?php echo $data["product_brand"]; ?> </a>
-                        </h6>
-                    </div>
-                </div>
-            </div>
-            <!-- Code don't delete	-->
-        <?php endforeach; ?>
-    </div>
-</div>
-
-<!-- Featured using Random	-->
-<div class="container my-1 bg-white">
-    <h2 class="h2 font-weight-bold text-center py-1">Featured Products</h2>
-    <hr class="dotted">
-    <div class="row">
-        <!-- Code don't delete	-->
-        <?php foreach ($product_featured as $data) :
-            $link = "details/" . $data["product_id"];
-        ?>
-            <div class="col-lg-3 w-100">
-                <div class="product-grid">
-                    <div class="product-image">
-                        <!-- Code don't delete	-->
-                        <a href="<?php echo $link ?>" class="image">
-                            <img src="<?php echo BASE_URL . $data["product_image1"] ?>">
-                        </a>
-                    </div>
-                    <div class="product-content">
-                        <h5 class="title font-weight-bold text-center text-sm">
-                            <!-- Code don't delete	-->
-                            <a href="<?php echo $link ?>"><?php echo $data["product_title"]; ?> </a>
-                        </h5>
-                        <h6 class="brand font-weight-light text-center">
-                            <!-- Code don't delete	-->
-                            <a><?php echo $data["product_brand"]; ?> </a>
-                        </h6>
-                    </div>
-                </div>
-            </div>
-            <!-- Code don't delete	-->
-        <?php endforeach; ?>
-    </div>
-</div>
-
-
-<!-- Featured using Random	-->
-<div class="container my-1 bg-white">
-    <h2 class="h2 font-weight-bold text-center py-1">Best Sellers</h2>
-    <hr class="dotted">
-    <div class="row">
-        <!-- Code don't delete	-->
-        <?php foreach ($product_best as $data) :
+        $product_details = $product_object->getRecommendedProducts($id);
             $link = "details/" . $data["product_id"];
         ?>
             <div class="col-lg-3 w-100">

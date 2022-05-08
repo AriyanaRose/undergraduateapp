@@ -214,7 +214,7 @@
         </form>
         <a href="<?php echo BASE_URL ?>wishlist" class="nav-item nav-link"><i class="fa fa-heart"></i></a>
         <a href="<?php echo BASE_URL ?>cart" class="nav-item nav-link"><i class="fa fa-shopping-basket"></i></a>
-
+        <a href="<?php echo BASE_URL ?>admin-dashboard" class="nav-item nav-link"><i class="fa fa-cog"></i></a>  
         <div class="nav-item dropdown">
             <a href="#" class="nav-item nav-link dropdown-toggle text-dark" data-toggle="dropdown"> Hi
                 <?php

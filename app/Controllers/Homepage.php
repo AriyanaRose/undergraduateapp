@@ -37,6 +37,26 @@ if($_SERVER ["REQUEST_METHOD"] == "GET"){
 }
 
 
+if($_SERVER ["REQUEST_METHOD"] == "GET"){
+    if (!empty($_GET)){
+         $product_featured = $product_object->getRandomProducts();
+    } else{
+
+        $product_featured = $product_object->getRandomProducts();
+    }
+}
+
+
+if($_SERVER ["REQUEST_METHOD"] == "GET"){
+    if (!empty($_GET)){
+         $product_best = $product_object->getBestSellingProducts();
+    } else{
+
+        $product_best = $product_object->getBestSellingProducts();
+    }
+}
+
+
 // required views
 require_once APP_DIR . "Views/header.php";
 require_once APP_DIR . "Views/includes/alerts.php";

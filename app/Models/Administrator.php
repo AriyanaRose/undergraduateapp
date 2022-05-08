@@ -41,7 +41,6 @@ class Administrator
         AND order_details.product_id = products.product_id
         AND orders.user_id = ?
         AND orders.order_id = ?
-        AND users.first_name = ?
         ";
 
         $stmt = $this->pdo->prepare($sql);

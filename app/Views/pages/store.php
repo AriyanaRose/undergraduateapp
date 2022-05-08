@@ -277,7 +277,7 @@
 
     <!-- Sort and Filter Buttons	-->
     <?php require_once APP_DIR . "Views/includes/store-filter.php"; ?>
-
+    <br>
     <div class="row">
         <!-- Code don't delete	-->
         <?php foreach ($product_details as $data) :
