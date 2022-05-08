@@ -211,9 +211,10 @@
     <hr class="dotted">
     <div class="row">
         <!-- Code don't delete	-->
-        
-        <?php foreach ($product_details as $data) :
+
+        <?php 
         $product_details = $product_object->getRecommendedProducts($id);
+        foreach ($product_details as $data) :
             $link = "details/" . $data["product_id"];
         ?>
             <div class="col-lg-3 w-100">

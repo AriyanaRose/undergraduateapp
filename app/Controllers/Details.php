@@ -27,7 +27,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $cart_object->addToCart($user_id, $id, $_POST["cart_quantity"]);
         $_SESSION["message"] = "Item has been added to cart";
         exit;
-    
     }
 }
 
@@ -49,4 +48,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 require_once APP_DIR . "Views/header.php";
 require_once APP_DIR . "Views/includes/alerts.php";
 require_once APP_DIR . "Views/pages/details.php";
+require_once APP_DIR . "Views/includes/recommended-products.php";
 require_once APP_DIR . "Views/footer.php";

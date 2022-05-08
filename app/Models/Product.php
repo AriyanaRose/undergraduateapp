@@ -172,7 +172,7 @@ class Product
         FROM order_details, products
         WHERE order_details.product_id = products.product_id
         GROUP BY order_details.product_id
-        having count(*) >= 2";
+        having count(*) >= 4";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute();
         $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -186,7 +186,9 @@ class Product
         WHERE product_id in
         (select distinct product_id from order_details where order_id in
         (select distinct order_id from order_details where product_id = ?)
-        and product_id != ?)";
+        and product_id != ?)
+        LIMIT 4
+        ";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$product_id, $product_id]);
         $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
