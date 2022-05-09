@@ -11,11 +11,16 @@ $db_object = new Database();
 $product_object = new Product($db_object);
 
 
+// Testing
 
-if($_SERVER ["REQUEST_METHOD"] == "GET"){
-    if (!empty($_GET)){
+
+// end test
+
+
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
+    if (!empty($_GET)) {
         $product_details = $product_object->filterProducts($_GET);
-    } else{
+    } else {
 
         $product_details = $product_object->getAllProducts();
     }

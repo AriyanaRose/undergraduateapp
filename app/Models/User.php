@@ -49,8 +49,13 @@ class User
     }
 
 
-    public function uniqueEmail(){
-        
+    public function isUniqueEmail($email)
+    {
+        $sql = "SELECT 1 FROM users WHERE email=?";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute([$email]);
+        return $stmt->fetchColumn();
+      
     }
 
     public function login($inputs)
@@ -92,19 +97,17 @@ class User
         return $result;
     }
 
-    public function addUserAddress($user_id, $shipping_address){
+    public function addUserAddress($user_id, $shipping_address)
+    {
 
-        
+
         $data = [
             "shipping_address" => $shipping_address
         ];
 
-        
+
         $sql = "UPDATE users SET shipping_address = ? WHERE user_id =?";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$shipping_address, $user_id]);
-
     }
-
-
 }

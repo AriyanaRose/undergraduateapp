@@ -94,7 +94,11 @@ $cart_object->resetSessions();
 
 
 //successful checkout
-//
+// Update Stock
+foreach ($cart_details as $data) {
+    $product_object->updateStockPurcahsed($data["product_id"], $data["cart_quantity"]);
+}
+
 
 $_SESSION["confirmation"] = $order_id;
 

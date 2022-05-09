@@ -77,18 +77,23 @@ class Administrator
         return $result;
     }
 
+    public function isAdmin()
+    {
+        return (!empty($_SESSION["current_user"]["user_type"]) && $_SESSION["current_user"]["user_type"] == "admin");
+    }
 
-    public function adminLogin($inputs)
+
+    public function isAdmin1($inputs)
     {
         $sql = "SELECT * FROM users WHERE email = ? AND user_type = 'admin' ";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$inputs['email']]);
-        $user = $stmt->fetch(PDO::FETCH_ASSOC);
+        $admin_user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        if ($user && password_verify($inputs['password'], $user['password'])) {
+        if ($admin_user && password_verify($inputs['password'], $admin_user['password'])) {
             echo "valid!";
-            $user["password"] = null;
-            $_SESSION["admin_user"] = $user;
+            $admin_user["password"] = null;
+            $_SESSION["admin_user"] = $admin_user;
             return true;
         }
         return false;

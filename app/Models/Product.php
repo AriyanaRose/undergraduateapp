@@ -194,4 +194,11 @@ class Product
         $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
         return $result;
     }
+
+    public function updateStockPurcahsed($product_id, $product_quantity)
+    {
+        $sql = "UPDATE products SET product_quantity = product_quantity - ? WHERE product_id = ?";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute([$product_quantity, $product_id]);
+    }
 }

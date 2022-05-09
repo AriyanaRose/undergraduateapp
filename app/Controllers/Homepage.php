@@ -10,47 +10,44 @@ $db_object = new Database();
 //$user_object = new User($db_object);
 $product_object = new Product($db_object);
 
-//debug ($_GET);
-
-//$product_details = $product_object->getAllProducts();
 
 
 //debug($product_details);
 
-if($_SERVER ["REQUEST_METHOD"] == "GET"){
-    if (!empty($_GET)){
-         $product_details = $product_object->getComingSoon();
-    } else{
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
+    if (!empty($_GET)) {
+        $product_details = $product_object->getComingSoon();
+    } else {
 
         $product_details = $product_object->getComingSoon();
     }
 }
 
 
-if($_SERVER ["REQUEST_METHOD"] == "GET"){
-    if (!empty($_GET)){
-         $product_new = $product_object->getNewArrivals();
-    } else{
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
+    if (!empty($_GET)) {
+        $product_new = $product_object->getNewArrivals();
+    } else {
 
         $product_new = $product_object->getNewArrivals();
     }
 }
 
 
-if($_SERVER ["REQUEST_METHOD"] == "GET"){
-    if (!empty($_GET)){
-         $product_featured = $product_object->getRandomProducts();
-    } else{
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
+    if (!empty($_GET)) {
+        $product_featured = $product_object->getRandomProducts();
+    } else {
 
         $product_featured = $product_object->getRandomProducts();
     }
 }
 
 
-if($_SERVER ["REQUEST_METHOD"] == "GET"){
-    if (!empty($_GET)){
-         $product_best = $product_object->getBestSellingProducts();
-    } else{
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
+    if (!empty($_GET)) {
+        $product_best = $product_object->getBestSellingProducts();
+    } else {
 
         $product_best = $product_object->getBestSellingProducts();
     }

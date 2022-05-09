@@ -19,13 +19,16 @@ $wish_object = new Wishlist($db_object);
 $product_details = $product_object->getProductDetails($id);
 //debug($product_details);
 
+debug($_POST);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST["cart_quantity"])) {
-        header("location: " . BASE_URL . "cart");
+
         require_once APP_DIR . "utils/code.isLoggedIn.php";
         $cart_object->addToCart($user_id, $id, $_POST["cart_quantity"]);
         $_SESSION["message"] = "Item has been added to cart";
+
+        header("location: " . BASE_URL . "cart");
         exit;
     }
 }

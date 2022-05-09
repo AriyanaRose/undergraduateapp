@@ -47,6 +47,13 @@ class Cart
     public function addToCart($user_id, $product_id, $cart_quantity)
     {
 
+        if ($this->isInCart($user_id, $product_id)) {
+            // echo "Item is in the cart";
+            // exit;
+            $this->updateCart($user_id, $product_id, $cart_quantity);
+            return;
+        }
+
         $data = [
             "user_id" => $user_id,
             "product_id" => $product_id,
@@ -74,6 +81,14 @@ class Cart
         $stmt->execute($data);
     }
 
+    public function isInCart($user_id, $product_id)
+    {
+        $sql = "SELECT * FROM cart where user_id = ? AND product_id = ? AND cart_status = 'cart'";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute([$user_id, $product_id]);
+        return $stmt->fetchColumn();
+    }
+
 
     public function removeFromCart($cart_id, $user_id)
     {
@@ -87,7 +102,7 @@ class Cart
     {
         $sql = "UPDATE cart SET cart_quantity = ? WHERE cart.user_id = ? AND product_id =?;";
         $stmt = $this->pdo->prepare($sql);
-        $stmt->execute($cart_quantity, $user_id, $product_id);
+        $stmt->execute([$cart_quantity, $user_id, $product_id]);
     }
 
 

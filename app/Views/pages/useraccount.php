@@ -127,13 +127,13 @@
                                                             <div class="col mb-3">
                                                                 <div class="form-group">
                                                                     <label>Update Shipping Address</label>
-                                                                    <textarea class="form-control" rows="5" placeholder="My Address"></textarea>
+                                                                    <textarea name="shipping_address" class="form-control" rows="5" placeholder="My Address"></textarea>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="row">
                                                             <div class="col d-flex justify-content-end">
-                                                                <button name="shipping_address" type="submit" class="btn btn-lg btn-block text-light" type="submit">Save Changes</button>
+                                                                <button name="add_shipping_address" type="submit" class="btn btn-lg btn-block text-light" type="submit">Save Changes</button>
                                                             </div>
                                                         </div>
                                                     </div>
