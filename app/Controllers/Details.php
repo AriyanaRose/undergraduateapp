@@ -17,9 +17,7 @@ $cart_object = new Cart($db_object);
 $wish_object = new Wishlist($db_object);
 
 $product_details = $product_object->getProductDetails($id);
-//debug($product_details);
 
-debug($_POST);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST["cart_quantity"])) {

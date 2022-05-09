@@ -6,7 +6,6 @@ $user_details = $user_object->getUserAccount($user_id);
 
 //$user_address = $user_object->addUserAddress($user_id, $shipping_address);
 
-debug($_POST);
 
 if (isset($_POST["shipping_address"])) {
     $user_object->addUserAddress($user_id, $_POST["shipping_address"]);

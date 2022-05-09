@@ -72,7 +72,7 @@
 <div class="thankyou-page">
     <div class="_header">
         <h1>Registration Success</h1>
-        <h2><strong>You have successfully registered an account and earned 200 Points!</strong></h2>
+        <h2><strong>You have successfully registered an account and earned 200 Points and a coupon to be applied on you first purchase "THANKYOU10"</strong></h2>
     </div>
     <div class="_body">
         <div class="_box">
