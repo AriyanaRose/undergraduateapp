@@ -6,7 +6,7 @@ if (isset($_SESSION["message"])) {
 ?>
 
     <div class="container my-2">
-        <div class="alert alert-danger alert-dismissible">
+        <div class="alert alert-info alert-dismissible">
             <button type="button" class="close" data-dismiss="alert">&times;</button>
             <strong>Alert!</strong> <?php echo $message ?>.
         </div>

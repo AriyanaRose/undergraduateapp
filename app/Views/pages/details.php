@@ -44,15 +44,14 @@
     }
 </style>
 
-<div class="row">
-    <nav aria-label="breadcrumb">
+
+<nav aria-label="breadcrumb">
         <ol class="breadcrumb breadcrumb-bullet">
             <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
             <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>store" class="text-uppercase">Store</a></li>
             <li aria-current="page" class="breadcrumb-item active text-uppercase">Details</li>
         </ol>
     </nav>
-</div>
 
 
 <div class="container my-0">
@@ -89,7 +88,7 @@
                     <div class="row">
                         <div class="col-md-2">
                             <div class="form-group">
-                                <input type="number" value="1" name="cart_quantity" class="form-control" id="usr">
+                                <input type="number" min="0" value="1" name="cart_quantity" class="form-control" id="usr">
                             </div>
                         </div>
                     </div>

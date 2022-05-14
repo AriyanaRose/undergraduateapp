@@ -1,3 +1,4 @@
+</body>
 <style>
   footer {
 
@@ -147,3 +148,7 @@
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
+
+
+
+</html>

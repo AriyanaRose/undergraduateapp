@@ -5,14 +5,14 @@
     }
 
     .bg-cover {
-    background-size: cover !important;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
+        background-size: cover !important;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 
-  body {
-    min-height: 100vh;
-  }
+    body {
+        min-height: 100vh;
+    }
 
     /* Bullet */
     .breadcrumb-bullet .breadcrumb-item+.breadcrumb-item::before {
@@ -58,12 +58,12 @@
     </nav>
 
     <div style="background: url('images/bookself3.jpg')" class="jumbotron bg-cover text-white">
-    <div class="container py-1 text-center">
-      <div class="text-block">
-        <h1>My Account</h1>
-      </div>
+        <div class="container py-1 text-center">
+            <div class="text-block">
+                <h1>My Account</h1>
+            </div>
+        </div>
     </div>
-  </div>
 
 </div>
 
@@ -101,7 +101,7 @@
 
                                             </div>
                                             <div class="text-center text-sm-right">
-                                            <span class="badge badge-success">User Points</span>
+                                                <span class="badge badge-success">User Points</span>
                                                 <div class="text-dark text-right"><?php echo $data["membership_type"]; ?></small></div>
                                                 <div class="text-dark"><?php echo $data["total_points"]; ?></small></div>
                                             </div>
@@ -115,7 +115,7 @@
                                             <form class="form" action="" method="post">
                                                 <div class="row">
                                                     <div class="col">
-                                                    <div class="row">
+                                                        <div class="row">
                                                             <div class="col mb-3">
                                                                 <div class="form-group">
 
@@ -132,7 +132,7 @@
                                                         </div>
                                                         <div class="row">
                                                             <div class="col d-flex justify-content-end">
-                                                                <button name="add_shipping_address" type="submit" class="btn btn-lg btn-block text-light" type="submit">Save Changes</button>
+                                                                <button name="add_shipping_address" type="submit" class="btn btn-lg btn-block text-light" type="submit">Save Address</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -140,15 +140,15 @@
                                             </form>
                                             <br>
                                             <div></div>
-                                            <form action="">
+                                            <form action="" method="post">
                                                 <div class="row">
                                                     <div class="col-12 col-sm-6 mb-3">
-                                                        <div class="mb-2 text-center"><b>Change Password</b></div>
+                                                        <div class=""><b>Change Password</b></div>
                                                         <div class="row">
                                                             <div class="col">
                                                                 <div class="form-group">
                                                                     <label>Current Password</label>
-                                                                    <input class="form-control" type="password" placeholder="••••••">
+                                                                    <input name="old_password" class="form-control" type="password" placeholder="••••••">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -156,7 +156,7 @@
                                                             <div class="col">
                                                                 <div class="form-group">
                                                                     <label>New Password <span class="d-none d-xl-inline">Password</span></label>
-                                                                    <input class="form-control" type="password" placeholder="••••••">
+                                                                    <input name="new_password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" class="form-control" type="password" placeholder="••••••">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -166,7 +166,7 @@
                                                 </div>
                                                 <div class="row">
                                                     <div class="col d-flex justify-content-end">
-                                                        <button class="btn btn-lg btn-block text-light" type="submit">Save Changes</button>
+                                                        <button name ="add_new_password" class="btn btn-lg btn-block text-light" type="submit">Save Password</button>
                                                     </div>
                                                 </div>
                                             </form>

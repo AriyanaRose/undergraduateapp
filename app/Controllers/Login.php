@@ -11,9 +11,13 @@ $user_object = new User($db_object);
 
 if (isset($_POST["login"])) {
 
-    if ($user_object->login($_POST)) { 
+    if ($user_object->login($_POST)) {
         $_SESSION["message"] = "You have have been successfully logged in!";
-        header("location: " . BASE_URL . "home");
+        if (!empty($_SESSION["current_user"]["user_type"]) && $_SESSION["current_user"]["user_type"] == "admin") {
+            header("location: " . BASE_URL . "admin-dashboard");
+        } else {
+            header("location: " . BASE_URL . "home");
+        }
         exit;
     } else {
         $_SESSION["message"] = "You have entered an incorrect email or password, please re-enter and try again";

@@ -142,10 +142,10 @@
 	}
 
 	.breadcrumb {
-        background-color: white;
-    }
+		background-color: white;
+	}
 
-	body{
+	body {
 		background-color: white;
 	}
 </style>
@@ -158,18 +158,18 @@
             -->
 
 <div>
-<nav aria-label="breadcrumb">
-			<ol class="breadcrumb breadcrumb-bullet">
-				<li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
-				<li aria-current="page" class="breadcrumb-item active text-uppercase">Cart
-				<li>
-			</ol>
-		</nav>
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb breadcrumb-bullet">
+			<li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
+			<li aria-current="page" class="breadcrumb-item active text-uppercase">Cart
+			<li>
+		</ol>
+	</nav>
 
 </div>
 
 <section class="shopping-cart">
-<div class="container my-1">
+	<div class="container my-1">
 
 		<div class="content">
 			<div class="row">
@@ -194,16 +194,22 @@
 															<div>Condition: <span class="value"><?php echo $data["product_condition"] ?></span></div>
 															<br>
 															<form action="cart" method="post">
-																<button class="btn btn-warning btn-sm" name="remove_from_cart" type="submit">Remove</i></button>
+																<button class="btn btn-danger btn-sm" name="remove_from_cart" type="submit">Remove</i></button>
 																<input type="hidden" name="cart_id" value="<?php echo $data["cart_id"] ?>">
 															</form>
+															<br>
+															<form action="cart" method="post">
+																<button class="btn btn-warning btn-sm" name="update_cart" type="submit">Update</i></button>
+																<input type="hidden" name="product_id" value="<?php echo $data["product_id"] ?>">
+
 														</div>
 													</div>
 												</div>
 												<div class="col-md-4 quantity">
 													<label for="quantity">Quantity:</label>
-													<input id="quantity" type="number" value="<?php echo $data["cart_quantity"] ?>" class="form-control quantity-input">
+													<input name="cart_quantity" id="quantity" type="number" value="<?php echo $data["cart_quantity"] ?>" class="form-control quantity-input">
 												</div>
+												</form>
 												<div class="col-md-3 price">
 													<span> <small> $<?php echo $data["product_price"] ?></small></span>
 												</div>
@@ -227,7 +233,7 @@
 						</div>
 						<div class="summary-item"><span class="text">Subtotal</span><span class="price">$ <?php echo $cart_object->getSubtotal(); ?></span></div>
 						<br>
-						<a class="btn btn-success btn-lg btn-block" href="<?php echo BASE_URL . "checkout"?>">Checkout</a>
+						<a class="btn btn-success btn-lg btn-block" href="<?php echo BASE_URL . "checkout" ?>">Checkout</a>
 					</div>
 
 				</div>

@@ -55,7 +55,6 @@ class User
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$email]);
         return $stmt->fetchColumn();
-      
     }
 
     public function login($inputs)
@@ -100,7 +99,6 @@ class User
     public function addUserAddress($user_id, $shipping_address)
     {
 
-
         $data = [
             "shipping_address" => $shipping_address
         ];
@@ -109,5 +107,27 @@ class User
         $sql = "UPDATE users SET shipping_address = ? WHERE user_id =?";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$shipping_address, $user_id]);
+    }
+
+
+    public function updateUserPassword($user_id, $old_password, $new_password)
+    {
+
+
+        $sql = "SELECT password FROM users WHERE user_id = ?";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute([$user_id]);
+        $user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        if ($user && password_verify($old_password, $user['password'])) {
+
+            $new_pass =  password_hash($new_password, PASSWORD_DEFAULT);
+
+            $sql = "UPDATE users SET password = ? WHERE user_id =?";
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute([$new_pass, $user_id]);
+            return true;
+        }
+        return false;
     }
 }
