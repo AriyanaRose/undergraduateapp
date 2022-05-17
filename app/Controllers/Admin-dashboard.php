@@ -4,8 +4,7 @@ require_once APP_DIR . "utils/code.precheckout.php";
 
 // is user an admin
 if (!$administrator_object->isAdmin()) {
-    $_SESSION["message"] = "Access Denied";
-    header("location: " . BASE_URL . 'login');
+    header("location: " . BASE_URL . 'accessdenied');
     exit;
 }
 
