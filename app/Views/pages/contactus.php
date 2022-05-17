@@ -63,7 +63,7 @@
   .bg-cover {
     background-size: cover !important;
     padding-top: 30px;
-        padding-bottom: 30px;
+    padding-bottom: 30px;
   }
 
   body {
@@ -95,8 +95,8 @@
   }
 
   .btn-lg {
-        background-color: #011f4b;
-    }
+    background-color: #011f4b;
+  }
 </style>
 
 <!--	URL: https://bootsnipp.com/snippets/N6bPx
@@ -137,7 +137,7 @@
       </div>
       <div class="col-md-6">
         <h2 class="text mt-3 font-weight-bold text-dark text-center">Contact Us</h2>
-        <form action="thankyoucontactus" method="post">
+        <form action="contactus" method="post">
           <div class="row">
             <div class="col-lg-6">
               <div class="form-group">

@@ -153,7 +153,7 @@
 </style>
 
 <!--	
-                URL: https://bootstrapious.com/p/bootstrap-products-list
+                URL: https://bbbootstrap.com/snippets/simple-shopping-cart-coupon-code-input-text-39165166
                Bootstrap 4 simple ecommerce shopping cart with coupon code input text
                 Author: Ask SNB
             -->

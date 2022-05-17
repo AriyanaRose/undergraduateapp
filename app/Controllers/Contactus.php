@@ -9,11 +9,11 @@ require_once APP_DIR . "Models/ContactUs.php";
 $db_object = new Database();
 $contactus_object = new ContactUs($db_object);
 
-//debug  ($_POST);
 
 if (isset($_POST["contactus"])) {
     $contactus_object->getMesssage($_POST);
     header("location: " . BASE_URL . "thankyoucontactus");
+    exit;
 }
 
 

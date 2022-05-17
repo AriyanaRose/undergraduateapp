@@ -65,10 +65,7 @@
     </div>
   </div>
 
-
-
 </div>
-
 
 
 <div class="container bg-white">
