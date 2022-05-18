@@ -180,7 +180,7 @@ class Cart
 
         if ($points_discount_amount >= $this->subtotal) {
             $this->resetPoints();
-            echo "Discount cannot be greater than cart subtotal";
+            $_SESSION["message"] = "You can not redeem points higher than the subtotal value";
             return;
         }
 
@@ -189,10 +189,10 @@ class Cart
             //can exchange
             $_SESSION["checkout"]["points_used"] = $points_used;
             $_SESSION["checkout"]["points_discount_amount"] = POINT::getDiscountAmount($points_used);
-            echo "Discount Applied";
+            $_SESSION["message"] = "Points Redeemed and Discount Applied";
         } else {
             //cannot exchnage
-            echo "Not enough points";
+            $_SESSION["message"] = "You do not have enough points for this action";
             return;
         }
     }
@@ -235,4 +235,13 @@ class Cart
     {
         return $_SESSION["checkout"]["points_discount_amount"];
     }
+
+
+    
+    //=================================================
+    //POINTS
+    //=================================================
+
+
+
 }

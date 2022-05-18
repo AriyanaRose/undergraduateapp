@@ -73,6 +73,10 @@ class User
         return false;
     }
 
+    
+    //=================================================
+    //POINTS
+    //=================================================
 
     public function updateTotalPoints($user_id, $total_points)
     {
@@ -87,6 +91,11 @@ class User
         $_SESSION["current_user"]["total_points"] = $new_points;
     }
 
+
+    //=================================================
+    //POINTS
+    //=================================================
+
     public function getUserAccount($user_id)
     {
         $sql = "SELECT * FROM users WHERE user_id =?";
@@ -95,6 +104,7 @@ class User
         $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
         return $result;
     }
+
 
     public function addUserAddress($user_id, $shipping_address)
     {

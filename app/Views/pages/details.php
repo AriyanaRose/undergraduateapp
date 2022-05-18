@@ -118,6 +118,6 @@
 </BR>
 <!-- Authors	-->
 
-<?php require_once APP_DIR . "Views/includes/recommended-products.php";?>
-
 <?php require_once APP_DIR . "Views/includes/product-reviews.php"; ?>
+
+<?php require_once APP_DIR . "Views/includes/recommended-products.php";?>

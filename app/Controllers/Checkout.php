@@ -26,5 +26,6 @@ $cart_object->calculateTotal();
 
 // load views
 require_once APP_DIR . "Views/header.php";
+require_once APP_DIR . "Views/includes/alerts.php";
 require_once APP_DIR . "Views/pages/checkout.php";
 require_once APP_DIR . "Views/footer.php";

@@ -102,8 +102,9 @@
                                             </div>
                                             <div class="text-center text-sm-right">
                                                 <span class="badge badge-success">User Points</span>
-                                                <div class="text-dark text-right"><?php echo $data["membership_type"]; ?></small></div>
                                                 <div class="text-dark"><?php echo $data["total_points"]; ?></small></div>
+                                                <span class="badge badge-info">Membership Type</span>
+                                                <div class="text-dark text-right"><?php echo $data["membership_type"]; ?></small></div>
                                             </div>
                                         </div>
                                     </div>

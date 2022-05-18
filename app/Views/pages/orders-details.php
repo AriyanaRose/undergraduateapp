@@ -50,8 +50,8 @@
     }
 </style>
 
-<!--	*URL: https://bbbootstrap.com/snippets/bootstrap-checkout-payment-page-custom-radio-buttons-82373820
-        Bootstrap 5 checkout payment page with custom radio buttons
+<!--	*URL: https://bbbootstrap.com/snippets/bootstrap-order-confirmation-invoice-bill-template-49857128
+        Bootstrap 5 Order confirmation invoice/bill template
         Author :  BBBootstrap Team 
             -->
 
@@ -100,6 +100,9 @@
                                             </div>
                                             <div class="product-qty">
                                                 <span>Condition: <?php echo $data["product_condition"]; ?></span>
+                                            </div>
+                                            <div class="product-qty">
+                                                <span>Quantity: <?php echo $data["order_details_quantity"]; ?></span>
                                             </div>
                                         </td>
                                         <td width="20%">

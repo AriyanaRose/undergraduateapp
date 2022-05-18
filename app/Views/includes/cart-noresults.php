@@ -66,7 +66,7 @@
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb breadcrumb-bullet">
             <li class="breadcrumb-item"><a href="<?php echo BASE_URL ?>home" class="text-uppercase">Home</a></li>
-            <li aria-current="page" class="breadcrumb-item active text-uppercase">Wishlist
+            <li aria-current="page" class="breadcrumb-item active text-uppercase">Cart
             <li>
         </ol>
     </nav>

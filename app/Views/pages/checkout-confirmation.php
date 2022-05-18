@@ -1,8 +1,4 @@
 <style>
-    /*URL: https://bbbootstrap.com/snippets/bootstrap-checkout-payment-page-custom-radio-buttons-82373820
-        Bootstrap 5 checkout payment page with custom radio buttons
-Author :  BBBootstrap Team 
-*/
 
     .cancel {
         text-decoration: none
@@ -54,6 +50,11 @@ Author :  BBBootstrap Team
         line-height: 16px
     }
 </style>
+
+<!--	*URL: https://bbbootstrap.com/snippets/bootstrap-order-confirmation-invoice-bill-template-49857128
+        Bootstrap 5 Order confirmation invoice/bill template
+        Author :  BBBootstrap Team 
+            -->
 
 <div class="container mt-5 mb-5">
 
