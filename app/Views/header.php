@@ -248,6 +248,7 @@
                     <a href="<?php echo BASE_URL ?>useraccount" class="dropdown-item">My Account</a>
                     <a href="<?php echo BASE_URL ?>orders" class="dropdown-item">Orders</a>
                     <a href="<?php echo BASE_URL ?>wishlist" class="dropdown-item">Wish List </a>
+                    <a href="<?php echo BASE_URL ?>cart" class="dropdown-item">Cart </a>
                     <a href="<?php echo BASE_URL ?>logout" class="dropdown-item">Log Out </a>
                 <?php
                 } else {
