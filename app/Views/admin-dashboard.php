@@ -1,7 +1,4 @@
 <style>
-    body {
-        margin-top: 20px;
-    }
 
     .card-big-shadow {
         max-width: 320px;
@@ -111,8 +108,17 @@
     }
 
     /*======== COLORS ===========*/
+
+    .card[data-color="black"] {
+        background: black;
+    }
+
+    .card[data-color="black"] .description {
+        color: #506568;
+    }
+
     .card[data-color="blue"] {
-        background: #b8d8d8;
+        background: navy;
     }
 
     .card[data-color="blue"] .description {
@@ -120,7 +126,7 @@
     }
 
     .card[data-color="green"] {
-        background: #d5e5a3;
+        background: green;
     }
 
     .card[data-color="green"] .description {
@@ -132,7 +138,7 @@
     }
 
     .card[data-color="yellow"] {
-        background: #ffe28c;
+        background: magenta;
     }
 
     .card[data-color="yellow"] .description {
@@ -144,7 +150,7 @@
     }
 
     .card[data-color="brown"] {
-        background: #d6c1ab;
+        background: brown;
     }
 
     .card[data-color="brown"] .description {
@@ -156,7 +162,7 @@
     }
 
     .card[data-color="purple"] {
-        background: #baa9ba;
+        background: purple;
     }
 
     .card[data-color="purple"] .description {
@@ -168,7 +174,7 @@
     }
 
     .card[data-color="orange"] {
-        background: #ff8f5e;
+        background: orangered;
     }
 
     .card[data-color="orange"] .description {
@@ -178,6 +184,23 @@
     .card[data-color="orange"] .category {
         color: #e95e37;
     }
+
+    /* Bottom right text */
+    .text-block {
+        position: centered;
+        bottom: 20px;
+        right: 20px;
+        background-color: black;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .bg-cover {
+        background-size: cover !important;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 </style>
 
 
@@ -186,6 +209,15 @@
                 Author:   Bootdey
             -->
 
+<div>
+    <div style="background: url('images/bookself1.jpg')" class="jumbotron bg-cover text-white">
+        <div class="container py-1 text-center">
+            <div class="text-block">
+                <h1>Admin Dashboard</h1>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <div class="container bootstrap snippets bootdeys">
@@ -193,7 +225,7 @@
     <div class="row">
         <div class="col-md-12 col-sm-12 content-card">
             <div class="card-big ">
-                <div class="card card-just-text" data-background="color" data-color="blue" data-radius="none">
+                <div class="card card-just-text" data-background="color" data-color="black" data-radius="none">
                     <div class="content">
                         <h6 class="category"></h6>
                         <h4 class="title"><a href="<?php echo BASE_URL ?>admin-analytics">Analytics</a></h4>
